@@ -3,8 +3,8 @@
 // @import '~tailwindcss/components';
 
 @import 'variables';
-// @import 'symbols';
-// @import 'components/global';
+@import 'symbols';
+@import 'components/global';
 // @import 'components/symbols';
 // @import 'components/site';
 // @import 'components/header';
@@ -14,5 +14,25 @@
 // @import 'components/hero';
 
 .hero {
-    @apply h-screen w-screen flex justify-center items-center text-6xl font-bold;
+    @apply h-screen w-screen flex flex-wrap justify-center items-center  bg-teal-500 text-white;
+    &__title {
+        @apply flex items-center text-6xl font-bold mb-10;
+
+        .symbol {
+            @apply ml-8 fill-current;
+    
+            transform: scale(2.5);
+        }
+    }
+
+    
+    &__cta {
+        @apply w-full flex justify-center mt-3;
+
+        a {
+            @apply py-3 rounded-full bg-white text-teal-500 text-2xl font-medium text-center;
+            
+            width: 240px;
+        }
+    }
 }
