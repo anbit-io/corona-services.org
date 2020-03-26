@@ -42,6 +42,8 @@ export default {
     "nuxt-responsive-loader"
   ],
 
+  plugins: ["~/plugins/lazysizes.js"],
+
   render: {
     injectScripts: process.env.NODE_ENV === "development",
     bundleRenderer: {
@@ -107,9 +109,10 @@ export default {
   svgSprite: svgSpriteConfig,
 
   responsiveLoader: {
-    name: "img/hello-world-[width].[ext]",
-    min: 576,
-    max: 1156,
-    steps: 4
+    name: "img/[hash:7]-[width].[ext]",
+    min: 420,
+    max: 768,
+    steps: 4,
+    placeholder: true
   }
 }

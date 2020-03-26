@@ -1,10 +1,6 @@
 .header {
     @apply px-2;
 
-    @screen sm {
-        @apply px-12;
-    }
-
     &,
     &__nav {
         @apply w-full;
@@ -18,34 +14,19 @@
 
     &__actions {
         @apply flex items-center;
-
-        @screen xs-max {
-            @apply absolute;
-            
-            z-index: 1000;
-            right: 10px;
-            top: 10px;
-        }
     }
 
     &__cta {
-        @apply mt-2 rounded-full border-2 hidden text-xl font-medium;
-        @apply #{$border-primary $text-secondary};
-        @apply transition-all duration-300 ease-out;
-
-        padding: 13px 28px;
+        @apply mt-2 rounded-full border-2 text-xl font-medium px-6 py-3;
+        @apply #{$border-primary};
 
         .symbol {
-            @apply mr-3;
+            @apply mr-1;
         }
 
         &:hover,
         &:focus {
             @apply bg-teal-500 text-white;
-        }
-
-        @screen md {
-            @apply flex items-center
         }
     }
 }

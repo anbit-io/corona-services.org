@@ -1,14 +1,14 @@
 const translations = {
   site: {
-    title: "impax web",
-    slogan: "Industry 4.0 & IT-Consulting",
+    title: "Corona Services in #Aachen",
+    slogan:
+      "Gemeinsam sind wir stark - Lokale Aachener Unternehmen sind fur Sie da!",
     sub_slogan: "from Aachen Germany"
   },
-  email: "E-Mail",
   hero: {
-    title: "#Covid-19 Home office",
+    title: "In schwierigen Zeiten zusammenhalten!",
     subtitle:
-      "Ensure competitiveness - integrate a secure & modern remote infrastructure.",
+      "Wir helfen Ihen Produkte weiterhin Ihren Kunden anbieten zu konnen. Site mochten Ihr Unternehmen hinzufugen?",
     featured_1: { title: "Protect family, colleagues & friends" },
     featured_2: { title: "Safe time & be competitive" },
     featured_3: { title: "Up to 100% efficiency" },

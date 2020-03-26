@@ -18,6 +18,7 @@
     "@nuxtjs/markdownit": "^1.2.9",
     "@nuxtjs/sitemap": "^2.0.1",
     "@nuxtjs/svg-sprite": "^0.4.10",
+    "lazysizes": "^5.2.0",
     "markdown-it-attrs": "^3.0.2",
     "markdown-it-link-attributes": "^3.0.0",
     "nuxt": "^2.11.0",

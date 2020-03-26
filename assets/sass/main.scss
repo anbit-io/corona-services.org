@@ -3,16 +3,12 @@
 // @import '~tailwindcss/components';
 
 @import 'variables';
-// @import 'symbols';
-// @import 'components/global';
-// @import 'components/symbols';
-// @import 'components/site';
-// @import 'components/header';
+@import 'symbols';
+@import 'components/global';
+@import 'components/symbols';
+@import 'components/site';
+@import 'components/header';
 // @import 'components/footer';
 // @import 'components/page';
-// @import 'components/section';
-// @import 'components/hero';
-
-.hero {
-    @apply h-screen w-screen flex justify-center items-center text-6xl font-bold;
-}
+@import 'components/section';
+@import 'components/hero';
