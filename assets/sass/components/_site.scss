@@ -1,0 +1,86 @@
+.site {
+    @apply w-full h-full relative;
+
+    &__header {
+        @apply absolute top-0 left-0 right-0;
+        
+        z-index: 999;
+    }
+
+    &__footer {
+        z-index:999;
+
+        @screen sm-max {
+            @apply relative;
+        }
+
+        @screen md {
+            @apply absolute bottom-0 left-0 right-0;
+        }
+    }
+
+    &__main {
+        @apply w-full;
+    }
+
+    &__logo {
+        @apply flex items-start;
+
+        #{$symbol-logo} {
+            @screen sm-max {
+                @apply mr-3;
+                transform: scale(0.8);
+            }
+
+            @screen md {
+                @apply mr-5;
+            }
+        }
+
+        @screen sm {
+            @apply justify-between;
+        }
+
+        @screen lg {
+            margin-left: 35px;
+        }
+    }
+
+    &__info {
+        font-family: $font-family-secondary;
+
+        @screen sm {
+            @apply flex flex-wrap;
+        }
+    }
+
+    &__title {
+        @apply text-4xl w-full my-1 leading-none #{$text-primary};
+
+        font-family: $font-family-logo;
+        letter-spacing: 0.04rem;
+    }
+
+    &__slogan {
+        @apply w-full;
+        
+        margin-top: 1px;
+    }
+
+    &__sub-slogan {
+        @apply block;
+
+        font-size: 0.65rem;
+    }
+
+    &__langswitcher {
+        @apply px-1 bg-white border border-teal-500 rounded;
+        
+        height: 35px;
+        transform: translateY(5px);
+
+        @screen xs {
+            @apply mr-5;
+        }
+    }
+}

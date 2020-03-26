@@ -1,0 +1,20 @@
+.section {
+    &--page {
+        @apply min-h-full w-full;
+
+        padding-top: 130px;
+
+        @screen lg {
+            @apply min-h-screen;
+            
+            padding-top: 160px;
+        }
+    }
+
+    &--privacy {
+
+        .page__content {
+            @apply pl-8;
+        }
+    }
+}

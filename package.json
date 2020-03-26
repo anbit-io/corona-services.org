@@ -1,0 +1,45 @@
+{
+  "name": "corona-service",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "cross-env NODE_ENV=production nuxt generate",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "lintfix": "eslint --fix --ext .js,.vue --ignore-path .gitignore ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@nuxtjs/markdownit": "^1.2.9",
+    "@nuxtjs/sitemap": "^2.0.1",
+    "@nuxtjs/svg-sprite": "^0.4.10",
+    "markdown-it-attrs": "^3.0.2",
+    "markdown-it-link-attributes": "^3.0.0",
+    "nuxt": "^2.11.0",
+    "nuxt-i18n": "^6.6.1",
+    "nuxt-responsive-loader": "^2.0.1",
+    "tailwindcss": "^1.2.0",
+    "time-fix-plugin": "^2.0.6",
+    "vue-meta": "^2.3.3"
+  },
+  "devDependencies": {
+    "@nuxtjs/tailwindcss": "^1.4.0",
+    "babel-eslint": "^10.1.0",
+    "cross-env": "^7.0.2",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-loader": "^3.0.3",
+    "eslint-plugin-prettier": "^3.1.2",
+    "eslint-plugin-vue": "^6.2.2",
+    "file-loader": "^6.0.0",
+    "node-sass": "^4.13.1",
+    "prettier": "^1.19.1",
+    "sass-loader": "^8.0.2",
+    "url-loader": "^4.0.0"
+  }
+}
