@@ -29,7 +29,8 @@ export default {
         href:
           "https://fonts.googleapis.com/css?family=Lato:400,700|Poppins:400,500,700&display=swap"
       }
-    ]
+    ],
+    bodyAttrs: { class: "body" }
   },
 
   buildModules: ["@nuxtjs/tailwindcss"],

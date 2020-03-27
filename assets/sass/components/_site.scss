@@ -1,5 +1,12 @@
 .site {
-    @apply w-full h-full relative;
+    @apply w-full h-full relative bg-white mx-auto;
+
+    max-width: $container-width + 60px;
+    
+    @screen lg {
+        @apply shadow-xl py-4;
+        border-radius: 40px;
+    }
 
     &__header {
         @apply relative;

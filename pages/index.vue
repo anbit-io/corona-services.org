@@ -17,9 +17,11 @@ export default {
   data() {
     return {}
   },
-  head: {
-    titleTemplate: "Corona Service - %s",
-    title: "Corona Service"
+  head() {
+    return {
+      titleTemplate: "Corona Service - %s",
+      title: "Corona Service"
+    }
   }
 }
 </script>
