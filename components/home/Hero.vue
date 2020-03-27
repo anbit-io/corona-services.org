@@ -45,9 +45,9 @@
           >
         </div>
 
-        <a class="hero__sidebar-cta transition" href="#">
+        <!-- <a class="hero__sidebar-cta transition" href="#">
           Alle anzeigen
-        </a>
+        </a> -->
       </div>
     </div>
   </section>
