@@ -32,7 +32,7 @@
         <div class="hero__client">
           <img
             :src="require('~/assets/images/logo/la-becasse.png').placeholder"
-            :srcset="require('~/assets/images/logo/la-becasse.png').srcSet"
+            :data-srcset="require('~/assets/images/logo/la-becasse.png').srcSet"
             class="lazyload blur-up hero__client-logo"
           >
         </div>
@@ -40,7 +40,7 @@
         <div class="hero__client">
           <img
             :src="require('~/assets/images/logo/stobe.png').placeholder"
-            :srcset="require('~/assets/images/logo/stobe.png').srcSet"
+            :data-srcset="require('~/assets/images/logo/stobe.png').srcSet"
             class="lazyload blur-up hero__client-logo"
           >
         </div>
