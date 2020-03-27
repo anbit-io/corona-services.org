@@ -1,14 +1,14 @@
 <template>
   <header class="header">
     <nav class="header__nav">
-      <div class="site__info">
+      <nuxt-link :to="localePath('/')" class="site__info transition">
         <h1 class="site__title">
           {{ $t("site.title") }}
         </h1>
         <p class="site__slogan">
           {{ $t("site.slogan") }}
         </p>
-      </div>
+      </nuxt-link>
       <div class="header__actions">
         <a
           class="header__cta transition"

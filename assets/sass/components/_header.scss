@@ -7,9 +7,17 @@
     }
 
     &__nav {
-        @apply flex justify-between items-center py-5 mx-auto relative;
-
+        @apply flex items-center py-5 mx-auto relative px-6;
+        
         max-width: $container-width;
+        
+        @screen md-max {
+            @apply flex-col;
+        }
+        
+        @screen lg {
+            @apply justify-between;
+        }
     }
 
     &__actions {
@@ -17,7 +25,7 @@
     }
 
     &__cta {
-        @apply mt-2 rounded-full border-2 text-xl font-medium px-6 py-3;
+        @apply mt-2 rounded-full border-2 text-xl font-medium px-6 py-3 text-center;
         @apply #{$border-primary};
 
         .symbol {

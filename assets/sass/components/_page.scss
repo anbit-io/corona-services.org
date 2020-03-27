@@ -23,14 +23,14 @@
     }
 
     &__content {
-        @apply text-left py-6 px-3 text-gray-700 leading-loose;
+        @apply text-left py-6 px-3 text-gray-700 leading-loose text-sm;
 
         h4 {
-            @apply text-2xl leading-snug mb-4;
+            @apply text-xl leading-snug mb-4;
         }
 
         h5 {
-            @apply text-lg font-bold leading-normal mb-4;
+            @apply font-bold leading-normal mb-4;
         }
 
         p {
@@ -50,7 +50,7 @@
                 @apply relative list-none;
                 
                 &:before {
-                    @apply absolute text-2xl;
+                    @apply absolute text-xl;
 
                     content: attr(value);
                     top: -7px;

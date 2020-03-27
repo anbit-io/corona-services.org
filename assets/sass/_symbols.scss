@@ -1,6 +1,54 @@
 
+$symbol-arrow-right: '.symbol--arrow-right';
+#{$symbol-arrow-right}{ 
+  width: 48px; 
+  height: 48px;
+}
+
+$symbol-baker: '.symbol--baker';
+#{$symbol-baker}{ 
+  width: 60px; 
+  height: 60px;
+}
+
+$symbol-bar: '.symbol--bar';
+#{$symbol-bar}{ 
+  width: 50px; 
+  height: 50px;
+}
+
+$symbol-butchery: '.symbol--butchery';
+#{$symbol-butchery}{ 
+  width: 60px; 
+  height: 60px;
+}
+
+$symbol-cart: '.symbol--cart';
+#{$symbol-cart}{ 
+  width: 36px; 
+  height: 36px;
+}
+
 $symbol-email: '.symbol--email';
 #{$symbol-email}{ 
   width: 18px; 
   height: 18px;
+}
+
+$symbol-restaurant: '.symbol--restaurant';
+#{$symbol-restaurant}{ 
+  width: 60px; 
+  height: 60px;
+}
+
+$symbol-retail: '.symbol--retail';
+#{$symbol-retail}{ 
+  width: 60px; 
+  height: 60px;
+}
+
+$symbol-vegetables: '.symbol--vegetables';
+#{$symbol-vegetables}{ 
+  width: 60px; 
+  height: 60px;
 }

@@ -1,6 +1,3 @@
-import removeUselessDefs from "svgo/plugins/removeUselessDefs"
-import removeDoctype from "svgo/plugins/removeDoctype"
-
 export default {
   input: "~/assets/icons/",
   output: "~/assets/gen/",
@@ -16,14 +13,5 @@ $symbol-${symbol.name}: '.${options.spriteClassPrefix}${symbol.name}';
   width: ${symbol.info.width}px; 
   height: ${symbol.info.height}px;
 }`
-  },
-  svgoConfig() {
-    return {
-      plugins: (function() {
-        removeUselessDefs.active = true
-        removeDoctype.active = true
-        return [removeUselessDefs, removeDoctype]
-      })()
-    }
   }
 }

@@ -1,23 +1,13 @@
 .footer {
-    @apply px-3;
-
-    @screen md-max {
-        @apply pt-4 pb-8;
-    }
-
-    @screen lg {
-        @apply pb-3;
-    }
+    @apply px-3 pt-10 pb-8;
 
     &__links {
-        @screen md-max {
-            @apply flex justify-center;
-        }
+        @apply flex justify-center;
     }
 
     &__link {
-        @apply font-medium mr-3;
+        @apply font-medium mx-6;
 
-        font-size: 0.65rem;
+        font-size: 0.75rem;
     }
 }

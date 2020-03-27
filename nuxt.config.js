@@ -42,7 +42,16 @@ export default {
     "nuxt-responsive-loader"
   ],
 
-  plugins: ["~/plugins/lazysizes.js"],
+  plugins: [
+    {
+      src: "~/plugins/lazysizes.js",
+      ssr: false
+    },
+    {
+      src: "~/plugins/swiper.js",
+      ssr: false
+    }
+  ],
 
   render: {
     injectScripts: true,

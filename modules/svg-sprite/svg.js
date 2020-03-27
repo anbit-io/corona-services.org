@@ -16,7 +16,7 @@ function defaultPlugins() {
   // Disable removeViewBox plugin and enable removeDimensions
   // Keep viewBox and remove width & height attribute
   removeViewBox.active = false
-  removeDimensions.active = true
+  removeDimensions.active = false
 
   // Make all styles inline
   // By definition, a defs sprite is not usable as a CSS sprite

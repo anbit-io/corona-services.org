@@ -1,13 +1,14 @@
 .section {
-    &--page {
-        @apply min-h-full w-full;
 
-        padding-top: 130px;
+    &__container {
+        @apply px-6 mx-auto;
+    }
+
+    &--page {
+        @apply min-h-full w-full pt-10;
 
         @screen lg {
             @apply min-h-screen;
-            
-            padding-top: 160px;
         }
     }
 

@@ -1,0 +1,153 @@
+.hero {
+    $hero: &;
+
+    @apply w-full h-auto relative pt-10;
+
+    @screen md-max {
+        @apply mb-12;
+    }
+
+    &__container {      
+        @apply relative w-full h-full mx-auto px-6;
+
+        max-width: $container-width;
+
+        @screen lg {
+            @apply flex items-start;
+        }
+    }
+    
+    &__main {
+        @apply flex items-center;
+
+        @screen sm-max {
+            @apply flex-col;
+        }
+
+        @screen sm {
+            @apply flex-1;
+        }
+
+        @screen md-max {
+            @apply mb-8;
+        }
+    }
+
+   
+
+    &__image {
+        @apply w-full;
+
+        max-width: 240px;
+
+        @screen sm-max {
+            @apply mb-6;
+        }
+
+        img {
+            @apply w-full h-auto object-cover object-center;
+        }
+    }
+
+    &__content {
+        @apply flex flex-col p-10 bg-orange-100 w-full;
+
+        border-radius: 24px;
+
+        @screen sm-max {
+            @apply text-center;
+        }
+
+        @screen lg {
+            max-width: 775px;
+        }
+    }
+
+    &__title {
+        @apply mb-5 font-medium text-2xl;
+
+        letter-spacing: 1px;
+        line-height: 1;
+
+        @screen sm-max {
+            @apply text-center;
+        }
+
+        @screen lg {
+            @apply text-left;
+        }
+    }
+
+    &__subtitle {
+        @apply mb-6 text-lg leading-loose;
+
+        @screen lg {
+            @apply pr-5;
+        }
+    }
+
+    
+    &__cta {
+        @apply inline-flex justify-center items-center text-2xl rounded-md bg-teal-500 text-white py-3 px-6 text-center;
+
+        @screen lg {
+            @apply self-end;
+        }
+
+        @media (min-width: 1400px) {
+            margin-top: -45px;
+        }
+    }
+
+    &__sidebar {
+        @apply w-full pl-5 pr-5 flex items-center;
+
+        @screen md-max {
+            @apply mx-auto flex-wrap justify-center;
+        }
+
+        @screen lg {
+            @apply flex-col;
+            max-width: 380px;
+        }
+
+        @screen xl {
+            @apply pr-10;
+
+        }
+    }
+
+
+    &__sidebar-title {
+        @apply font-medium text-xl mb-10;
+
+        @screen md-max {
+            @apply w-full text-center;
+        }
+    }
+
+    &__client {
+        @apply mb-12;
+
+        @screen xs-max {
+            @apply w-full;
+        }
+
+        @screen md-max {
+            @apply px-6;
+        }
+
+        @screen md-only {
+            @apply w-1/2;
+        }
+    }
+
+    &__sidebar-cta {
+        @apply px-8 py-3 border-2 border-teal-500 rounded-md;
+
+        &:hover,
+        &:focus {
+            @apply bg-teal-500 text-white;
+        }
+    }
+}

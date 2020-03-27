@@ -2,25 +2,7 @@ const translations = {
   site: {
     title: "Corona Services in #Aachen",
     slogan:
-      "Gemeinsam sind wir stark - Lokale Aachener Unternehmen sind fur Sie da!",
-    sub_slogan: "from Aachen Germany"
-  },
-  hero: {
-    title: "In schwierigen Zeiten zusammenhalten!",
-    subtitle:
-      "Wir helfen Ihen Produkte weiterhin Ihren Kunden anbieten zu konnen. Site mochten Ihr Unternehmen hinzufugen?",
-    featured_1: { title: "Protect family, colleagues & friends" },
-    featured_2: { title: "Safe time & be competitive" },
-    featured_3: { title: "Up to 100% efficiency" },
-    featured_4: { title: "Protect against cyber attacks" },
-    featured_icon_1: { title: "Digitization" },
-    featured_icon_2: { title: "Industry 4.0" },
-    featured_icon_3: { title: "Cyber security" },
-    featured_icon_4: { title: "Web & Mobile app dev" },
-    cta_1: "Arrange call",
-    cta_2: "Futher Information",
-    link_1: "SOS Support",
-    it_solutions: "IT-Solutions"
+      "Gemeinsam sind wir stark - Lokale Aachener Unternehmen sind fur Sie da!"
   },
   footer: {
     link_privacy: "Privacy",

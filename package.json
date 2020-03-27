@@ -24,8 +24,10 @@
     "nuxt": "^2.11.0",
     "nuxt-i18n": "^6.6.1",
     "nuxt-responsive-loader": "^2.0.1",
+    "swiper": "^5.3.6",
     "tailwindcss": "^1.2.0",
     "time-fix-plugin": "^2.0.6",
+    "vue-awesome-swiper": "^4.0.4",
     "vue-meta": "^2.3.3"
   },
   "devDependencies": {

@@ -3,12 +3,19 @@
 // @import '~tailwindcss/components';
 
 @import 'variables';
+
+@import "vendor/swiper";
+
 @import 'symbols';
+
+
 @import 'components/global';
 @import 'components/symbols';
 @import 'components/site';
 @import 'components/header';
-// @import 'components/footer';
-// @import 'components/page';
+@import 'components/footer';
+@import 'components/page';
 @import 'components/section';
-@import 'components/hero';
+
+@import 'sections/hero';
+@import 'sections/services';

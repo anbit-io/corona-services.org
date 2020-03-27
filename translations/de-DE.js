@@ -1,26 +1,8 @@
 const translations = {
   site: {
-    title: "impax web",
-    slogan: "Industry 4.0 & IT-Consulting",
-    sub_slogan: "from Aachen Germany"
-  },
-  email: "E-Mail",
-  hero: {
-    title: "#Covid-19 Home office",
-    subtitle:
-      "Ensure competitiveness - integrate a secure & modern remote infrastructure.",
-    featured_1: { title: "Protect family, colleagues & friends" },
-    featured_2: { title: "Safe time & be competitive" },
-    featured_3: { title: "Up to 100% efficiency" },
-    featured_4: { title: "Protect against cyber attacks" },
-    featured_icon_1: { title: "Digitization" },
-    featured_icon_2: { title: "Industry 4.0" },
-    featured_icon_3: { title: "Cyber security" },
-    featured_icon_4: { title: "Web & Mobile app dev" },
-    cta_1: "Arrange call",
-    cta_2: "Futher Information",
-    link_1: "SOS Support",
-    it_solutions: "IT-Solutions"
+    title: "Corona Services in #Aachen",
+    slogan:
+      "Gemeinsam sind wir stark - Lokale Aachener Unternehmen sind für Sie da!"
   },
   footer: {
     link_privacy: "Datenschutzerklärung",
