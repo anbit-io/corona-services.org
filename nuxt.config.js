@@ -2,7 +2,7 @@ import nuxtI18nConfig from "./config/nuxt-i18n"
 import svgSpriteConfig from "./config/svgSprite"
 
 export default {
-  mode: "spa",
+  mode: "universal",
 
   dev: process.env.NODE_ENV !== "production",
 
@@ -45,7 +45,7 @@ export default {
   plugins: ["~/plugins/lazysizes.js"],
 
   render: {
-    injectScripts: process.env.NODE_ENV === "development",
+    injectScripts: true,
     bundleRenderer: {
       shouldPreload: (file, type) => {
         return ["script", "style", "font"].includes(type)
@@ -78,11 +78,7 @@ export default {
      ** You can extend webpack config here
      */
     // eslint-disable-next-line no-unused-vars
-    extend(config, ctx) {
-      config.plugins = config.plugins.filter(
-        p => p.constructor.name !== "TimeFixPlugin"
-      )
-    }
+    extend(_config, _ctx) {}
   },
 
   sitemap: {
