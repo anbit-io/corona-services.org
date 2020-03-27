@@ -27,7 +27,7 @@ export default {
       {
         rel: "stylesheet",
         href:
-          "https://fonts.googleapis.com/css?family=Lato:400,700|Oswald|Poppins:400,500,700&display=swap"
+          "https://fonts.googleapis.com/css?family=Lato:400,700|Poppins:400,500,700&display=swap"
       }
     ]
   },
