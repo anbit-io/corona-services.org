@@ -90,7 +90,7 @@ export default {
     ["nuxt-i18n", nuxtI18nConfig],
     "@nuxtjs/sitemap",
     "~/modules/svg-sprite/module.js",
-    "nuxt-responsive-loader"
+    "@bazzite/nuxt-optimized-images"
   ],
 
   plugins: [
@@ -167,11 +167,17 @@ export default {
 
   svgSprite: svgSpriteConfig,
 
-  responsiveLoader: {
-    name: "img/[hash:7]-[width].[ext]",
-    min: 420,
-    max: 768,
-    steps: 4,
-    placeholder: true
+  optimizedImages: {
+    handleImages: ["jpeg", "png", "webp"],
+    optimizeImages: true,
+    defaultImageLoader: "responsive-loader",
+    responsive: {
+      name: "img/[hash:7]-[width].[ext]",
+      min: 420,
+      max: 768,
+      steps: 4,
+      quality: 65,
+      placeholder: true
+    }
   }
 }
