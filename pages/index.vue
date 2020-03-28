@@ -19,8 +19,8 @@ export default {
   },
   head() {
     return {
-      titleTemplate: "Corona Service - %s",
-      title: "Corona Service"
+      titleTemplate: "Corona-Service | %s",
+      title: "Lebensmittel & Services bei lokalen Unternehmen bestellen"
     }
   }
 }

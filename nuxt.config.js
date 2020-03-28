@@ -12,14 +12,15 @@ export default {
   },
 
   head: {
-    titleTemplate: "%s - Corona Service",
+    titleTemplate: "%s | Corona Service",
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       {
         hid: "description",
         name: "description",
-        content: "Corona Service"
+        content:
+          "Einfach Essen, Getränke oder andere Dienstleistungen unter Beachtung der Quarantänemaßnahmen bestellen."
       }
     ],
     link: [
