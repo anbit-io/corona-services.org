@@ -144,7 +144,7 @@ export default {
     bodyAttrs: { class: "body" }
   },
 
-  buildModules: ["@nuxtjs/tailwindcss"],
+  buildModules: ["@nuxtjs/tailwindcss", "@nuxtjs/gtm"],
 
   modules: [
     "@nuxtjs/markdownit",
@@ -251,5 +251,10 @@ export default {
       quality: 45,
       placeholder: true
     }
+  },
+
+  gtm: {
+    id: "GTM-PTL2PJS",
+    scriptDefer: true
   }
 }
