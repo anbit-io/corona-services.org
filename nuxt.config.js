@@ -21,6 +21,55 @@ export default {
         name: "description",
         content:
           "Einfach Essen, Getränke oder andere Dienstleistungen unter Beachtung der Quarantänemaßnahmen bestellen."
+      },
+      {
+        hid: "og:site_name",
+        property: "og:site_name",
+        content: "Corona Services in #Aachen"
+      },
+      {
+        hid: "og:title",
+        property: "og:title",
+        content:
+          "Corona Service | Lebensmittel & Services bei lokalen Unternehmen bestellen"
+      },
+      {
+        hid: "og:description",
+        property: "og:description",
+        content:
+          "Einfach Essen, Getränke oder andere Dienstleistungen unter Beachtung der Quarantänemaßnahmen bestellen."
+      },
+      {
+        hid: "og:image",
+        property: "og:image",
+        content: "https://corona-service.org/images/corona.png"
+      },
+      {
+        hid: "og:url",
+        property: "og:url",
+        content: "https://corona-service.org/"
+      },
+      {
+        hid: "twitter:title",
+        property: "twitter:title",
+        content:
+          "Corona Service | Lebensmittel & Services bei lokalen Unternehmen bestellen"
+      },
+      {
+        hid: "twitter:description",
+        property: "twitter:description",
+        content:
+          "Einfach Essen, Getränke oder andere Dienstleistungen unter Beachtung der Quarantänemaßnahmen bestellen."
+      },
+      {
+        hid: "twitter:image",
+        property: "twitter:image",
+        content: "https://corona-service.org/images/corona.png"
+      },
+      {
+        hid: "twitter:card",
+        property: "twitter:card",
+        content: "summary_large_image"
       }
     ],
     link: [
