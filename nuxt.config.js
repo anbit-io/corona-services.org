@@ -42,7 +42,7 @@ export default {
       {
         hid: "og:image",
         property: "og:image",
-        content: "https://corona-service.org/images/corona.png"
+        content: "https://corona-service.org/images/corona.jpg"
       },
       {
         hid: "og:url",
