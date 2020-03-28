@@ -23,7 +23,7 @@
               :key="idx"
               class="swiper-slide services__slide"
             >
-              <div class="service-block transition">
+              <div class="service-block transition" @click="showModal">
                 <div class="service-block__icon">
                   <svg-icon :name="service.icon" />
                 </div>
@@ -46,11 +46,17 @@
         </div>
       </div>
     </div>
+    <Modal />
   </section>
 </template>
 
 <script>
+import Modal from "./Modal"
+
 export default {
+  components: {
+    Modal
+  },
   data() {
     return {
       nextIsVisible: false,
@@ -105,6 +111,9 @@ export default {
     this.checkNextVisibility()
   },
   methods: {
+    showModal() {
+      this.$modal.show("services-modal")
+    },
     checkNextVisibility() {
       if (
         this.servicesSwiper.slides.length >

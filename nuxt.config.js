@@ -51,6 +51,9 @@ export default {
     {
       src: "~/plugins/swiper.js",
       ssr: false
+    },
+    {
+      src: "~/plugins/vue-modal.js"
     }
   ],
 
