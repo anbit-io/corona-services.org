@@ -163,7 +163,18 @@ export default {
   optimizedImages: {
     handleImages: ["jpeg", "png", "webp"],
     optimizeImages: true,
-    defaultImageLoader: "responsive-loader",
+    defaultImageLoader: " img-loader",
+    mozjpeg: {
+      quality: 45
+    },
+    optipng: false,
+    pngquant: {
+      speed: 7,
+      quality: [0.45, 0.65]
+    },
+    webp: {
+      quality: 45
+    },
     responsive: {
       name: "img/[hash:7]-[width].[ext]",
       min: 240,

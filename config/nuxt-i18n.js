@@ -12,11 +12,5 @@ export default {
     cookieKey: "i18n_redirected",
     alwaysRedirect: true,
     fallbackLocale: "de"
-  },
-  vuex: {
-    moduleName: "i18n",
-    syncLocale: true,
-    syncMessages: true,
-    syncRouteParams: true
   }
 }

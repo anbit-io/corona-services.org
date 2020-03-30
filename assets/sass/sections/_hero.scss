@@ -143,7 +143,11 @@
     }
 
     &__client-logo {
-        @apply w-full h-auto object-cover object-center;
+        @apply w-full h-auto;
+        
+        img {
+            @apply w-full h-auto object-cover object-center;
+        }
     }
 
     &__sidebar-cta {

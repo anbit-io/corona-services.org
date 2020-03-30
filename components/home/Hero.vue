@@ -3,11 +3,21 @@
     <div class="section__container hero__container">
       <div class="hero__main">
         <figure class="hero__image">
-          <img
-            :src="require('~/assets/images/corona.png').placeholder"
-            :data-srcset="require('~/assets/images/corona.png').srcSet"
-            class="lazyload blur-up"
-          >
+          <picture>
+            <source
+              :data-srcset="require('~/assets/images/corona.png?webp').default"
+              type="image/webp"
+            >
+            <source
+              :data-srcset="require('~/assets/images/corona.png').default"
+              type="image/png"
+            >
+            <img
+              :data-src="require('~/assets/images/corona.png').default"
+              class="lazyload blur-up"
+              alt="Corona Virus"
+            >
+          </picture>
         </figure>
         <div class="hero__content">
           <h2 class="hero__title">
@@ -30,21 +40,45 @@
         </h4>
 
         <div class="hero__client">
-          <img
-            :data-src="
-              require('~/assets/images/logo/la-becasse.png').placeholder
-            "
-            :data-srcset="require('~/assets/images/logo/la-becasse.png').srcSet"
-            class="lazyload blur-up hero__client-logo"
-          >
+          <figure class="hero__client-logo">
+            <source
+              :data-srcset="
+                require('~/assets/images/logo/la-becasse.png?webp').default
+              "
+              type="image/webp"
+            >
+            <source
+              :data-srcset="
+                require('~/assets/images/logo/la-becasse.png').default
+              "
+              type="image/png"
+            >
+            <img
+              :data-src="require('~/assets/images/logo/la-becasse.png').default"
+              class="lazyload blur-up"
+              alt="LaBecasse Logo"
+            >
+          </figure>
         </div>
 
         <div class="hero__client">
-          <img
-            :data-src="require('~/assets/images/logo/stobe.png').placeholder"
-            :data-srcset="require('~/assets/images/logo/stobe.png').srcSet"
-            class="lazyload blur-up hero__client-logo"
-          >
+          <figure class="hero__client-logo">
+            <source
+              :data-srcset="
+                require('~/assets/images/logo/stobe.png?webp').default
+              "
+              type="image/webp"
+            >
+            <source
+              :data-srcset="require('~/assets/images/logo/stobe.png').default"
+              type="image/png"
+            >
+            <img
+              :data-src="require('~/assets/images/logo/stobe.png').default"
+              class="lazyload blur-up"
+              alt="Stobe Logo"
+            >
+          </figure>
         </div>
 
         <!-- <a class="hero__sidebar-cta transition" href="#">

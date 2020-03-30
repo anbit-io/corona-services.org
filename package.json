@@ -15,7 +15,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@bazzite/nuxt-optimized-images": "^0.3.0",
     "@nuxtjs/markdownit": "^1.2.9",
     "@nuxtjs/sitemap": "^2.0.1",
     "@nuxtjs/svg-sprite": "^0.4.10",
@@ -32,10 +31,10 @@
     "time-fix-plugin": "^2.0.6",
     "vue-awesome-swiper": "^4.0.4",
     "vue-js-modal": "^1.3.33",
-    "vue-meta": "^2.3.3",
-    "webp-loader": "^0.6.0"
+    "vue-meta": "^2.3.3"
   },
   "devDependencies": {
+    "@bazzite/nuxt-optimized-images": "^0.3.0",
     "@nuxtjs/tailwindcss": "^1.4.0",
     "babel-eslint": "^10.1.0",
     "cross-env": "^7.0.2",
@@ -45,9 +44,12 @@
     "eslint-plugin-prettier": "^3.1.2",
     "eslint-plugin-vue": "^6.2.2",
     "file-loader": "^6.0.0",
+    "imagemin-mozjpeg": "^8.0.0",
+    "imagemin-pngquant": "^8.0.0",
     "node-sass": "^4.13.1",
     "prettier": "^1.19.1",
     "sass-loader": "^8.0.2",
-    "url-loader": "^4.0.0"
+    "url-loader": "^4.0.0",
+    "webp-loader": "^0.6.0"
   }
 }
