@@ -3,12 +3,14 @@
 // @import '~tailwindcss/components';
 
 @import 'variables';
+@import 'common/functions';
+@import 'common/mixins';
+
+@import "fonts";
 
 @import "vendor/swiper";
 
 @import 'symbols';
-
-
 @import 'components/global';
 @import 'components/symbols';
 @import 'components/site';

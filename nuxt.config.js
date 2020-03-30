@@ -72,14 +72,7 @@ export default {
         content: "summary_large_image"
       }
     ],
-    link: [
-      { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
-      {
-        rel: "stylesheet",
-        href:
-          "https://fonts.googleapis.com/css?family=Lato:400,700|Poppins:400,500,700&display=swap"
-      }
-    ],
+    link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
     bodyAttrs: { class: "body" }
   },
 
