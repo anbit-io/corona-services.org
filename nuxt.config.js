@@ -166,10 +166,10 @@ export default {
     defaultImageLoader: "responsive-loader",
     responsive: {
       name: "img/[hash:7]-[width].[ext]",
-      min: 420,
-      max: 768,
-      steps: 4,
-      quality: 65,
+      min: 240,
+      max: 360,
+      steps: 2,
+      quality: 45,
       placeholder: true
     }
   }

@@ -142,6 +142,10 @@
         }
     }
 
+    &__client-logo {
+        @apply w-full h-auto object-cover object-center;
+    }
+
     &__sidebar-cta {
         @apply px-8 py-3 border-2 border-teal-500 rounded-md;
 
