@@ -52,8 +52,12 @@
 
 <script>
 import Modal from "./Modal"
+import { directive } from "vue-awesome-swiper"
 
 export default {
+  directives: {
+    swiper: directive
+  },
   components: {
     Modal
   },
