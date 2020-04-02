@@ -1,5 +1,5 @@
 .header {
-    @apply px-2;
+    @apply px-6;
 
     &,
     &__nav {
@@ -7,9 +7,10 @@
     }
 
     &__nav {
-        @apply flex items-center py-5 mx-auto relative px-6;
+        @apply flex items-center mx-auto relative pb-20px;
         
         max-width: $container-width;
+        padding-top: 55px;;
         
         @screen md-max {
             @apply flex-col;
@@ -20,13 +21,18 @@
         }
     }
 
+    &__menu {
+        @apply pr-5;
+    }
+
     &__actions {
         @apply flex items-center;
     }
 
     &__cta {
-        @apply mt-2 rounded-full border-2 text-xl font-medium px-6 py-3 text-center;
-        @apply #{$border-primary};
+        @apply rounded bg-primary text-white font-bold;
+
+        padding: 10px 30px;
 
         .symbol {
             @apply mr-1;
@@ -34,7 +40,18 @@
 
         &:hover,
         &:focus {
-            @apply bg-teal-500 text-white;
+            @apply bg-primary text-white;
         }
+    }
+}
+
+.header-menu {
+    @apply flex justify-evenly;
+    &__item {
+        @apply px-5;
+    }
+    &__link {
+        @apply font-semibold;
+        font-size: 15px;
     }
 }

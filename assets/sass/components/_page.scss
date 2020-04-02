@@ -11,7 +11,7 @@
         font-family: #{$font-family-primary};
 
         &:after {
-            @apply absolute bg-teal-500;
+            @apply absolute bg-primary;
 
             content: "";
             width: 100px;
@@ -60,12 +60,12 @@
         }
 
         a {
-            @apply text-teal-500;
+            @apply text-primary;
             
             &:hover,
             &:focus,
             &:active {
-                @apply text-teal-700;
+                @apply text-primary;
             }
         }
     }

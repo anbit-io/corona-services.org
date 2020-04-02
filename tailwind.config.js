@@ -17,7 +17,27 @@ module.exports = {
       "md-only": { min: "768px", max: "991.98px" },
       "lg-only": { min: "992px", max: "1198.98px" }
     },
-    extend: {}
+    extend: {
+      margin: {
+        "20px": "20px"
+      },
+      padding: {
+        "20px": "20px"
+      },
+      lineHeight: {
+        "1.6": "1.6"
+      },
+      colors: {
+        primary: {
+          dark: "#258984",
+          default: "#38B2AC"
+        },
+        "gray-dark": "#434343",
+        dark: "#202020",
+        darker: "#141618",
+        white: "#ffffff"
+      }
+    }
   },
   variants: {},
   plugins: []

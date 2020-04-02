@@ -1,12 +1,48 @@
 const translations = {
   site: {
-    title: "Corona Services in #Aachen",
-    slogan:
-      "Gemeinsam sind wir stark - Lokale Aachener Unternehmen sind fur Sie da!"
+    title: "Corona Services",
+    slogan: "In Aachen"
   },
+
+  header_menu: {
+    about_us: "About Us",
+    our_services: "Our Services"
+  },
+
+  header_cta: "Contact us",
+
+  hero: {
+    title: "Corona affect your business?",
+    para:
+      "Don’t worry about that! Keep that out of mind because we are here to connect you with customer by a safe and sound way."
+  },
+
+  services: {
+    title: "We provide a platform for",
+    items: {
+      bakery: "Bakery",
+      butchery: "Butchery, Fish shop",
+      vegetables: "Fruits, Vegetables",
+      retail: "Retailer (Clothing, Sports)",
+      restaurant: "Restaurant",
+      beverages: "Beverages"
+    },
+    cta: "Contact us"
+  },
+
+  featured: {
+    title: "Stay Safe & Increase Profit",
+    para:
+      "We help you to continue offering your products to your customers. Local Aachen companies are there for you!"
+  },
+
+  our_clients: {
+    title: "Our Clients"
+  },
+
   footer: {
     link_privacy: "Privacy",
-    link_impressum: "Imprint"
+    link_impressum: "Policy Imprint"
   },
 
   privacy_page: {

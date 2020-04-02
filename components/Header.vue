@@ -9,15 +9,26 @@
           {{ $t("site.slogan") }}
         </p>
       </nuxt-link>
+
       <div class="header__actions">
+        <ul class="header__menu header-menu">
+          <li
+            v-for="(item, key) in menuItems"
+            :key="key"
+            class="header-menu__item"
+          >
+            <nuxt-link :to="localePath(item.path)" class="header-menu__link">
+              {{ item.label }}
+            </nuxt-link>
+          </li>
+        </ul>
         <a
           class="header__cta transition"
           target="_blank"
           rel="noopener noreferrer"
           href="mailto:info@corona-service.org"
         >
-          <svg-icon name="email" />
-          info@corona-service.org
+          {{ $t("header_cta") }}
         </a>
       </div>
     </nav>
@@ -29,6 +40,12 @@ export default {
   computed: {
     availableLocales() {
       return this.$i18n.locales
+    },
+    menuItems() {
+      return [
+        { label: this.$t("header_menu.about_us"), path: "/about-us" },
+        { label: this.$t("header_menu.our_services"), path: "/our-services" }
+      ]
     }
   },
   methods: {

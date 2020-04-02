@@ -1,0 +1,7 @@
+.our-clients {
+    @apply py-16;
+
+    &__content {
+        @apply flex justify-evenly items-center py-4;
+    }
+}

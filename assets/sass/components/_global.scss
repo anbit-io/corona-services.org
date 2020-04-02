@@ -1,13 +1,6 @@
 body, html {
     font-family: $font-family-secondary;
-}
-
-body {
-    @apply bg-teal-500;
-
-    @screen lg {
-        @apply py-10;
-    }
+    font-size: 15px;
 }
 
 .blur-up {

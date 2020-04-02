@@ -1,7 +1,13 @@
 .section {
 
     &__container {
-        @apply px-6 mx-auto;
+        @apply w-full mx-auto;
+
+        max-width: $container-width;
+    }
+
+    &__title {
+        @apply font-bold text-4xl mb-2 text-center;
     }
 
     &--page {

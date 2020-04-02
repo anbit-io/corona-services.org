@@ -1,13 +1,6 @@
 .site {
     @apply w-full h-full relative bg-white mx-auto;
 
-    max-width: $container-width + 60px;
-    
-    @screen lg {
-        @apply shadow-xl py-4;
-        border-radius: 40px;
-    }
-
     &__header {
         @apply relative;
     }
@@ -17,31 +10,30 @@
     }
 
     &__main {
-        @apply w-full;
+        @apply w-full px-6;
     }
 
     &__info {
         @screen sm-max {
             @apply text-center mb-6;
         }
-
-        &:hover {
-            @apply text-teal-500;
-        }
     }
 
     &__title {
-        @apply text-4xl w-full my-1 leading-none font-medium;
+        @apply w-full my-1 leading-none font-bold text-primary-dark;
+
+        font-size: 28px;
     }
 
     &__slogan {
-        @apply w-full;
-        
-        margin-top: 1px;
+        @apply w-full text-right uppercase font-bold;
+
+        font-size: 10px;
+        letter-spacing: 6px;
     }
 
     &__langswitcher {
-        @apply px-1 bg-white border border-teal-500 rounded;
+        @apply px-1 bg-white border border-primary rounded;
         
         height: 35px;
         transform: translateY(5px);

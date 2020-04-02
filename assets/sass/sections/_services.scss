@@ -1,22 +1,7 @@
 .services {
-    &__container {
-        @apply w-full mx-auto;
+    @apply py-16;
 
-        max-width: $container-width;
-    }
-
-    &__header {
-        
-    }
-
-    &__title {
-        @apply font-medium text-3xl mb-2;
-
-        @screen sm-max {
-            @apply text-center;
-        }
-        
-    }
+    
 
     &__subtitle {
         @apply text-lg;
@@ -26,68 +11,39 @@
         }
     }
 
-    &__body {
+    &__content {
         @apply pt-10 flex items-center;
     }
 
-    &__swiper {
-        @apply w-full ml-0;
-
-        max-width: 1360px;
+    &__list {
+        @apply w-full flex;
     }
 
-    &__slide {
-        @apply h-full ;
-
-        @screen sm-max {
-            @apply px-3 pb-6;
-        }
-
-        @screen md {
-            @apply px-8;
-        }
+    &__item {
+        @apply w-1/6;
     }
 
-    &__swiper-navigation {
-        @apply flex-1 hidden;
-
-        @screen lg {
-            @apply flex flex justify-center items-center
-        }
-    }
-
-    &__swiper-next {
-        @apply p-6 bg-gray-200 cursor-pointer;
-
-        border-radius: 36px;
+    &__footer {
+        @apply flex justify-center pt-16;
     }
 }
 
 .service-block {
-    @apply w-full py-10 px-4 border border-gray-900 rounded flex flex-col items-center rounded-full mx-auto;
+    @apply w-full flex flex-col items-center mx-auto;
     @apply cursor-pointer;
 
-    max-width: 165px;
-    
-    @screen sm-max {
-        height: 260px;
-    }
-    
-    @screen md {
-        @apply ml-0;
-        height: 240px;
-    }
-
-    &:hover {
-        @apply bg-teal-500 text-white border-teal-500;
-    }
 
     &__icon {
-        @apply mb-10;
+        @apply mb-10 flex justify-center items-center w-full;
+
+        max-width: 160px;
+        height: 160px;
+        border-radius: 10px;
+        background-color: rgba(#38B2AC, 0.12);
     }
 
-    &__name {
-        @apply font-medium text-center;
+    &__label {
+        @apply font-semibold text-center;
     }
 }
 
@@ -99,7 +55,7 @@
     }
 
     &__title {
-        @apply text-4xl font-medium text-teal-500 my-4 text-center;
+        @apply text-4xl font-medium text-primary my-4 text-center;
     }
 
     &__subtitle {
@@ -107,7 +63,7 @@
     }
 
     &__cta {
-        @apply border-2 border-teal-500 px-8 py-3 rounded-full my-6;
+        @apply border-2 border-primary px-8 py-3 rounded-full my-6;
     }
 }
 

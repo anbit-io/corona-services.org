@@ -1,13 +1,29 @@
 .footer {
-    @apply px-3 pt-10 pb-8;
+    @apply px-6 pt-10 pb-8;
+
+    &__container {
+        @apply w-full mx-auto flex justify-between items-center;
+
+        max-width: $container-width;
+    }
+
+    &__contact {
+
+    }
+
+    &__contact-link {
+        @apply font-bold text-primary;
+
+        .symbol--email {
+            @apply mr-2;
+        }
+    }
 
     &__links {
         @apply flex justify-center;
     }
 
     &__link {
-        @apply font-medium mx-6;
-
-        font-size: 0.75rem;
+        @apply font-semibold mx-6;
     }
 }
