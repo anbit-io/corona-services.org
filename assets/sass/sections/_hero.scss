@@ -1,114 +1,11 @@
 .hero {
     $hero: &;
 
-    @apply w-full h-auto relative pt-20px;
+    @apply pt-20px;
 
     padding-bottom: 105px;
 
-    &__container {      
-        @apply relative;
-
-        height: 433px;
-    }
-    
     &__bg {
-        @apply absolute left-0 right-0 top-0 bottom-0 flex justify-end;
-
-        z-index: 1;
         background-color: rgba(#38B2AC, 0.12);
-        border-radius: 22px;
-    }
-
-    &__image {
-        img {
-            @apply w-full h-auto object-cover object-center;
-
-            transform: translateY(20px);
-        }
-    }
-
-    &__content {
-        @apply relative w-full h-full flex flex-col justify-center items-start ;
-        
-        max-width:400px;
-        z-index: 10;
-        padding-left:70px;
-    }
-
-    &__title {
-        @apply font-bold leading-none mb-20px;
-        
-        font-size: 46px;
-    }
-
-    &__para {
-        @apply font-medium mb-8;
-
-        line-height: 1.6;
-    }
-
-    
-    &__cta {
-        @apply font-bold rounded-md bg-primary text-white py-20px px-8 text-center;
-    }
-
-    &__sidebar {
-        @apply w-full pl-5 pr-5 flex items-center;
-
-        @screen md-max {
-            @apply mx-auto flex-wrap justify-center;
-        }
-
-        @screen lg {
-            @apply flex-col;
-            max-width: 380px;
-        }
-
-        @screen xl {
-            @apply pr-10;
-
-        }
-    }
-
-
-    &__sidebar-title {
-        @apply font-medium text-xl mb-10;
-
-        @screen md-max {
-            @apply w-full text-center;
-        }
-    }
-
-    &__client {
-        @apply mb-12;
-
-        @screen xs-max {
-            @apply w-full;
-        }
-
-        @screen md-max {
-            @apply px-6;
-        }
-
-        @screen md-only {
-            @apply w-1/2;
-        }
-    }
-
-    &__client-logo {
-        @apply w-full h-auto;
-        
-        img {
-            @apply w-full h-auto object-cover object-center;
-        }
-    }
-
-    &__sidebar-cta {
-        @apply px-8 py-3 border-2 border-teal-500 rounded-md;
-
-        &:hover,
-        &:focus {
-            @apply bg-primary text-white;
-        }
     }
 }

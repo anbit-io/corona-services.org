@@ -39,7 +39,7 @@
             >
             <source
               :data-srcset="require('~/assets/images/logo/stobe.jpg').default"
-              type="image/png"
+              type="image/jpg"
             >
             <img
               :data-src="require('~/assets/images/logo/stobe.jpg').default"

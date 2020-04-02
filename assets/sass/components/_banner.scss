@@ -1,0 +1,44 @@
+.banner {
+    @apply w-full h-auto relative;
+
+    &__container {      
+        @apply relative;
+
+        height: 433px;
+    }
+    
+    &__bg {
+        @apply absolute left-0 right-0 top-0 bottom-0 flex justify-end;
+
+        z-index: 1;
+        border-radius: 22px;
+    }
+
+    &__image {
+        img {
+            @apply w-full h-auto object-cover object-center;
+
+            transform: translateY(20px);
+        }
+    }
+
+    &__title {
+        @apply text-dark font-bold leading-none mb-20px;
+        
+        font-size: 46px;
+    }
+
+    &__para {
+        @apply text-darker font-medium mb-8;
+
+        line-height: 1.6;
+    }
+
+    &__content {
+        @apply relative w-full h-full flex flex-col justify-center items-start ;
+        
+        max-width:400px;
+        z-index: 10;
+        padding-left:70px;
+    }
+}

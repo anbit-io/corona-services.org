@@ -8,8 +8,8 @@
 </template>
 
 <script>
-import Hero from "../components/home/Hero2"
-import Services from "../components/home/Services2"
+import Hero from "../components/home/Hero"
+import Services from "../components/home/Services"
 import Featured from "../components/home/Featured"
 import OurClients from "../components/home/OurClients"
 
