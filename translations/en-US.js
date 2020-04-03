@@ -309,7 +309,7 @@ This is the current data protection declaration and has the status of September 
   },
 
   imprint_page: {
-    title: "Imprint",
+    title: "Policy Imprint",
     content: `
 Information according to § 5 Telemedia Act (TMG):
 
