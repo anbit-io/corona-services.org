@@ -79,16 +79,7 @@ export default {
       ]
     }
   },
-  mounted() {
-    setTimeout(() => this.scrollFix(this.$route.hash), 100)
-  },
   methods: {
-    scrollTo(refName) {
-      var element = this.$refs[refName]
-      var top = element.offsetTop
-
-      window.scrollTo(0, top)
-    },
     switchLanguage($e) {
       this.$i18n.setLocale($e.target.value)
     }
