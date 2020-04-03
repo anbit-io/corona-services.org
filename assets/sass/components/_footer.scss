@@ -29,7 +29,12 @@
         @apply font-bold text-primary;
 
         .symbol--email {
-            @apply mr-2;
+            @apply mr-2 fill-current;
+        }
+
+        &:hover,
+        &:focus {
+            @apply text-primary-dark;
         }
     }
 

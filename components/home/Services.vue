@@ -14,7 +14,7 @@
             class="services__item"
           >
             <div class="service-block">
-              <div class="service-block__icon">
+              <div class="service-block__icon transition">
                 <svg-icon :name="service.icon" />
               </div>
               <p class="service-block__label">

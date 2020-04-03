@@ -83,6 +83,10 @@
         height: 160px;
         border-radius: 10px;
         background-color: rgba(#38B2AC, 0.12);
+
+        &:hover {
+            background-color: rgba(#38B2AC, 0.24);
+        }
     }
 
     &__label {
