@@ -25,7 +25,7 @@ export default {
       {
         hid: "og:site_name",
         property: "og:site_name",
-        content: "Corona Services in #Aachen"
+        content: "Corona Services in Aachen"
       },
       {
         hid: "og:title",
@@ -42,7 +42,7 @@ export default {
       {
         hid: "og:image",
         property: "og:image",
-        content: "https://corona-service.org/images/corona.jpg"
+        content: "https://corona-service.org/images/hero.png"
       },
       {
         hid: "og:url",
@@ -64,7 +64,7 @@ export default {
       {
         hid: "twitter:image",
         property: "twitter:image",
-        content: "https://corona-service.org/images/corona.png"
+        content: "https://corona-service.org/images/hero.png"
       },
       {
         hid: "twitter:card",
@@ -90,13 +90,6 @@ export default {
     {
       src: "~/plugins/lazysizes.js",
       ssr: false
-    },
-    // {
-    //   src: "~/plugins/swiper.js",
-    //   ssr: false
-    // },
-    {
-      src: "~/plugins/vue-modal.js"
     }
   ],
 
