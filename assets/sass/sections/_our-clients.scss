@@ -2,6 +2,29 @@
     @apply py-16;
 
     &__content {
-        @apply flex justify-evenly items-center py-4;
+        @apply flex justify-center items-start pt-5 pb-4;
+
+        @screen sm-max {
+            @apply flex-wrap;
+        }
+    }
+
+    &__item {
+
+        @screen sm-max {
+            @apply w-full mt-4 mb-10;
+
+            max-width: 270px;
+        }
+
+        @screen md {
+            @apply px-12;
+        }
+    }
+
+    &__logo {
+        img {
+            @apply w-auto h-auto object-cover object-center;
+        }
     }
 }

@@ -6,7 +6,8 @@ const translations = {
 
   header_menu: {
     about_us: "About Us",
-    our_services: "Our Services"
+    our_services: "Our Services",
+    our_clients: "Our Clients"
   },
 
   header_cta: "Contact us",

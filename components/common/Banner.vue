@@ -7,6 +7,18 @@
       class="section__container banner__container"
       :class="`${name}__container`"
     >
+      <div class="banner__content" :class="`${name}__content`">
+        <h2 class="banner__title" :class="`${name}__title`">
+          {{ $t(`${name}.title`) }}
+        </h2>
+        <p class="banner__para" :class="`${name}__para`">
+          {{ $t(`${name}.para`) }}
+        </p>
+        <CTA class="banner__cta" :class="`${name}__cta`" :href="ctaHref">
+          {{ ctaLabel }}
+        </CTA>
+      </div>
+
       <div class="banner__bg" :class="`${name}__bg`">
         <figure class="banner__image" :class="`${name}__image`">
           <picture>
@@ -27,24 +39,12 @@
               :alt="image.alt"
             >
             <img
-              v-if="(!lazyload)"
+              v-if="!lazyload"
               :src="require(`~/assets/images/${image.name}`).default"
               :alt="image.alt"
             >
           </picture>
         </figure>
-      </div>
-
-      <div class="banner__content hero__content">
-        <h2 class="banner__title hero__title">
-          {{ $t(`${name}.title`) }}
-        </h2>
-        <p class="banner__para hero__para">
-          {{ $t(`${name}.para`) }}
-        </p>
-        <CTA class="banner__cta hero__cta" :href="ctaHref">
-          {{ ctaLabel }}
-        </CTA>
       </div>
     </div>
   </section>

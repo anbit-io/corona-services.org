@@ -1,11 +1,49 @@
 .hero {
     $hero: &;
 
-    @apply pt-20px;
+    @apply pt-1;
 
-    padding-bottom: 105px;
+    @screen sm-max {
+        padding-bottom: 70px;
+    }
 
-    &__bg {
+    @screen md-only {
+        padding-bottom: 30px;
+    }
+    
+    @screen lg {
+        @apply pt-3;
+        padding-bottom: 115px;
+    }
+
+
+    &__container {
         background-color: rgba(#38B2AC, 0.12);
+        
+        @screen sm-max {
+            @apply pb-2;
+        }
+        
+    }
+
+    &__image {
+        
+        @screen sm-max {
+            @apply px-3;
+        }
+
+        img {
+            @screen sm-max {
+                transform: translate(0,82px);
+            }
+
+            @screen md-only {
+                transform: translate(-20px,100px);
+            }
+
+            @screen lg {
+                transform: translate(-23px, 19px);
+            }
+        }
     }
 }

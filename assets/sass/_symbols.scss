@@ -1,10 +1,4 @@
 
-$symbol-arrow-right: '.symbol--arrow-right';
-#{$symbol-arrow-right}{ 
-  width: 48px; 
-  height: 48px;
-}
-
 $symbol-bakery: '.symbol--bakery';
 #{$symbol-bakery}{ 
   width: 70px; 
@@ -15,18 +9,6 @@ $symbol-beverages: '.symbol--beverages';
 #{$symbol-beverages}{ 
   width: 30px; 
   height: 65px;
-}
-
-$symbol-butchery: '.symbol--butchery';
-#{$symbol-butchery}{ 
-  width: 60px; 
-  height: 60px;
-}
-
-$symbol-cart: '.symbol--cart';
-#{$symbol-cart}{ 
-  width: 36px; 
-  height: 36px;
 }
 
 $symbol-email: '.symbol--email';
@@ -51,4 +33,10 @@ $symbol-veg: '.symbol--veg';
 #{$symbol-veg}{ 
   width: 60px; 
   height: 60px;
+}
+
+$symbol-butchery: '.symbol--butchery';
+#{$symbol-butchery}{ 
+  width: 66px; 
+  height: 66px;
 }

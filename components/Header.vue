@@ -43,8 +43,8 @@ export default {
     },
     menuItems() {
       return [
-        { label: this.$t("header_menu.about_us"), path: "/about-us" },
-        { label: this.$t("header_menu.our_services"), path: "/our-services" }
+        { label: this.$t("header_menu.our_services"), path: "/our-services" },
+        { label: this.$t("header_menu.our_clients"), path: "/about-us" }
       ]
     }
   },

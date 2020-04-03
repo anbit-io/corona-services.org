@@ -7,8 +7,9 @@
     }
 
     &__title {
-        @apply font-bold text-4xl mb-2 text-center;
-    }
+        @apply font-bold mb-2 text-center leading-tight;
+        font-size: 36px;
+    }   
 
     &--page {
         @apply min-h-full w-full pt-10;

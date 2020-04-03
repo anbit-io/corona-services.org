@@ -1,5 +1,9 @@
 .header {
-    @apply px-6;
+    @apply px-5;
+
+    @screen md {
+        @apply px-6;
+    }
 
     &,
     &__nav {
@@ -7,22 +11,18 @@
     }
 
     &__nav {
-        @apply flex items-center mx-auto relative pb-20px;
+        @apply flex items-center justify-between mx-auto relative pb-20px;
         
         max-width: $container-width;
-        padding-top: 55px;;
-        
-        @screen md-max {
-            @apply flex-col;
-        }
-        
-        @screen lg {
-            @apply justify-between;
+        padding-top: 24px;
+
+        @screen md {
+            padding-top: 36px;
         }
     }
 
     &__menu {
-        @apply pr-5;
+        @apply block mr-6 pr-1;
     }
 
     &__actions {
@@ -30,9 +30,15 @@
     }
 
     &__cta {
-        @apply rounded bg-primary text-white font-bold;
+        @apply rounded bg-primary text-white font-bold text-center;
 
-        padding: 10px 30px;
+        @screen sm-max {
+            padding: 10px 17px;
+        }
+        
+        @screen md {
+            padding: 9px 31px;
+        }
 
         .symbol {
             @apply mr-1;
@@ -46,7 +52,12 @@
 }
 
 .header-menu {
-    @apply flex justify-evenly;
+    @apply hidden;
+
+    @screen md {
+        @apply flex justify-evenly;
+    }
+
     &__item {
         @apply px-5;
     }

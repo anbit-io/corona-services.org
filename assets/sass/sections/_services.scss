@@ -1,7 +1,13 @@
 .services {
-    @apply py-16;
+    @apply pt-16;
 
-    
+    @screen sm-max {
+        @apply pb-20;
+    }
+
+    @screen md {
+        @apply pb-24;
+    }
 
     &__subtitle {
         @apply text-lg;
@@ -12,19 +18,51 @@
     }
 
     &__content {
-        @apply pt-10 flex items-center;
+        @apply flex items-center;
+
+        @screen sm-max {
+            @apply pt-4;
+        }
+        
+        @screen md {
+            padding-top: 25px;
+        }
     }
 
     &__list {
-        @apply w-full flex;
+        @apply w-full flex items-start;
+
+        @screen md-max  {
+            @apply flex-wrap justify-evenly;
+        }
+
+        @screen lg {
+            @apply justify-between;
+        }
     }
 
     &__item {
-        @apply w-1/6;
+        @apply w-1/2 mb-6;
+
+        @screen md {
+            @apply w-1/3;
+        }
+
+        @screen lg {
+            @apply w-1/6 mb-10;
+        }
     }
 
     &__footer {
-        @apply flex justify-center pt-16;
+        @apply flex justify-center pb-2;
+
+        @screen sm-max {
+            @apply pt-6;
+        }
+
+        @screen md {
+            @apply pt-1;
+        }
     }
 }
 
@@ -32,9 +70,10 @@
     @apply w-full flex flex-col items-center mx-auto;
     @apply cursor-pointer;
 
+    max-width: 160px;
 
     &__icon {
-        @apply mb-10 flex justify-center items-center w-full;
+        @apply mb-3 flex justify-center items-center w-full;
 
         max-width: 160px;
         height: 160px;
@@ -43,30 +82,6 @@
     }
 
     &__label {
-        @apply font-semibold text-center;
+        @apply font-semibold text-center text-xl px-2;
     }
-}
-
-.services-modal {
-    @apply px-6 py-12 flex flex-col items-center;
-
-    @screen md {
-        @apply px-10;
-    }
-
-    &__title {
-        @apply text-4xl font-medium text-primary my-4 text-center;
-    }
-
-    &__subtitle {
-        @apply text-center text-xl mb-8 font-medium;
-    }
-
-    &__cta {
-        @apply border-2 border-primary px-8 py-3 rounded-full my-6;
-    }
-}
-
-.v--modal-overlay .v--modal-box {
-    border-radius: 30px;
 }

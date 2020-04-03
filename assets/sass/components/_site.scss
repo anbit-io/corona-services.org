@@ -10,26 +10,35 @@
     }
 
     &__main {
-        @apply w-full px-6;
-    }
+        @apply w-full px-4;
 
-    &__info {
-        @screen sm-max {
-            @apply text-center mb-6;
+        @screen md {
+            @apply px-6;
         }
     }
 
-    &__title {
-        @apply w-full my-1 leading-none font-bold text-primary-dark;
+    &__info {
+    }
 
-        font-size: 28px;
+    &__title {
+        @apply w-full mt-2 leading-none font-bold text-primary-dark;
+
+        font-size: 26px;
     }
 
     &__slogan {
-        @apply w-full text-right uppercase font-bold;
+        @apply w-full uppercase font-bold;
 
         font-size: 10px;
-        letter-spacing: 6px;
+        letter-spacing: 0.35rem;
+
+        @screen sm-max {
+            @apply text-left;
+        }
+
+        @screen md {
+            @apply text-right;
+        }
     }
 
     &__langswitcher {

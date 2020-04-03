@@ -1,11 +1,46 @@
 .featured {
     $featured: &;
 
-    @apply pt-16;
+    @screen sm-max {
+        padding-bottom: 95px;
+    }
 
-    padding-bottom: 105px;
+    @screen md-only {
+        padding-bottom: 30px;
+    }
+
+    @screen lg {
+        @apply pt-3;
+        padding-bottom: 105px;
+    }
+
     
-    &__bg {
+    &__container {
         background-color: rgba(#FF9B21, 0.1);
+
+        @screen sm-max {
+            @apply pb-4;
+        }
+    }
+
+    &__image {
+
+        @screen sm-max {
+            @apply px-3;
+        }
+
+        img {
+            @screen sm-max {
+                transform: translate(0,82px);
+            }
+
+            @screen md-only {
+                transform: translate(-20px,120px);
+            }
+
+            @screen lg {
+                transform: translate(-34px, 30px);
+            }
+        }
     }
 }
