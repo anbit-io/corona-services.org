@@ -3,7 +3,7 @@
     &__container {
         @apply w-full px-5 mx-auto pb-10;
 
-        max-width: 1200px;
+        max-width: $container-width;
     }
 
     &__title {

@@ -1,5 +1,5 @@
 <template>
-  <section class="section section--services services">
+  <section id="our-services" class="section section--services services">
     <div class="section__container services__container">
       <div class="services__header">
         <h3 class="section__title services__title">

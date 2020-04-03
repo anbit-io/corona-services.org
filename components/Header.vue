@@ -11,13 +11,30 @@
       </nuxt-link>
 
       <div class="header__actions">
+        <select
+          class="site__langswitcher  site__langswitcher--ls"
+          @change="switchLanguage"
+        >
+          <option
+            v-for="locale in availableLocales"
+            :key="locale.code"
+            :value="locale.code"
+            :selected="$i18n.locale === locale.code"
+          >
+            {{ locale.label }}
+          </option>
+        </select>
+
         <ul class="header__menu header-menu">
           <li
             v-for="(item, key) in menuItems"
             :key="key"
             class="header-menu__item"
           >
-            <nuxt-link :to="localePath(item.path)" class="header-menu__link">
+            <nuxt-link
+              :to="{ path: localePath('/'), hash: item.path }"
+              class="header-menu__link"
+            >
               {{ item.label }}
             </nuxt-link>
           </li>
@@ -32,6 +49,20 @@
         </a>
       </div>
     </nav>
+
+    <select
+      class="site__langswitcher site__langswitcher--ss"
+      @change="switchLanguage"
+    >
+      <option
+        v-for="locale in availableLocales"
+        :key="locale.code"
+        :value="locale.code"
+        :selected="$i18n.locale === locale.code"
+      >
+        {{ locale.label }}
+      </option>
+    </select>
   </header>
 </template>
 
@@ -43,12 +74,21 @@ export default {
     },
     menuItems() {
       return [
-        { label: this.$t("header_menu.our_services"), path: "/our-services" },
-        { label: this.$t("header_menu.our_clients"), path: "/about-us" }
+        { label: this.$t("header_menu.our_services"), path: "#our-services" },
+        { label: this.$t("header_menu.our_clients"), path: "#our-clients" }
       ]
     }
   },
+  mounted() {
+    setTimeout(() => this.scrollFix(this.$route.hash), 100)
+  },
   methods: {
+    scrollTo(refName) {
+      var element = this.$refs[refName]
+      var top = element.offsetTop
+
+      window.scrollTo(0, top)
+    },
     switchLanguage($e) {
       this.$i18n.setLocale($e.target.value)
     }

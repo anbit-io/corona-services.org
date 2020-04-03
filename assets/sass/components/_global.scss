@@ -1,6 +1,20 @@
 body, html {
-    font-family: $font-family-secondary;
+    font-family: $font-family-primary;
     font-size: 15px;
+    scroll-behavior: smooth;
+}
+
+/*
+ * Fortunately, users in some browsers/operating systems 
+ * can express their preference for reduced motion 
+ * effects with the Reduce Motion API. 
+ * We can listen for that setting in our CSS, 
+ * and turn off smooth scrolling for them.
+ */
+@media screen and (prefers-reduced-motion: reduce) {
+	html {
+		scroll-behavior: auto;
+	}
 }
 
 .blur-up {

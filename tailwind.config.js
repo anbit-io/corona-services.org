@@ -1,11 +1,13 @@
 module.exports = {
   theme: {
     screens: {
+      iphone5: "360px",
       xs: "420px",
       sm: "576px",
       md: "768px",
       lg: "992px",
       xl: "1200px",
+      "iphone5-max": { max: "359.98px" },
       "xxs-max": { max: "419.98px" },
       "xs-max": { max: "575.98px" },
       "sm-max": { max: "767.98px" },

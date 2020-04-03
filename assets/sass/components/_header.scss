@@ -16,6 +16,10 @@
         max-width: $container-width;
         padding-top: 24px;
 
+        @screen iphone5-max {
+            @apply flex-col;
+        }
+
         @screen md {
             padding-top: 36px;
         }

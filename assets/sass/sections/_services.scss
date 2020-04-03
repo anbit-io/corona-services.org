@@ -42,7 +42,11 @@
     }
 
     &__item {
-        @apply w-1/2 mb-6;
+        @apply w-full mb-6;
+
+        @screen iphone5 {
+            @apply w-1/2;
+        }
 
         @screen md {
             @apply w-1/3;

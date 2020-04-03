@@ -5,7 +5,6 @@ const translations = {
   },
 
   header_menu: {
-    about_us: "About Us",
     our_services: "Our Services",
     our_clients: "Our Clients"
   },

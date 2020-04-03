@@ -11,6 +11,12 @@ $symbol-beverages: '.symbol--beverages';
   height: 65px;
 }
 
+$symbol-butchery: '.symbol--butchery';
+#{$symbol-butchery}{ 
+  width: 66px; 
+  height: 66px;
+}
+
 $symbol-email: '.symbol--email';
 #{$symbol-email}{ 
   width: 22px; 
@@ -33,10 +39,4 @@ $symbol-veg: '.symbol--veg';
 #{$symbol-veg}{ 
   width: 60px; 
   height: 60px;
-}
-
-$symbol-butchery: '.symbol--butchery';
-#{$symbol-butchery}{ 
-  width: 66px; 
-  height: 66px;
 }
