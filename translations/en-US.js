@@ -1,7 +1,7 @@
 const translations = {
   site: {
     title: "Corona Services",
-    slogan: "In Aachen"
+    slogan: "for your business"
   },
 
   header_menu: {
@@ -9,16 +9,16 @@ const translations = {
     our_clients: "Our Clients"
   },
 
-  header_cta: "Contact us",
+  header_cta: "Let's start",
 
   hero: {
-    title: "Corona affect your business?",
+    title: "Does Corona influence your company? ",
     para:
-      "Don’t worry about that! Keep that out of mind because we are here to connect you with customer by a safe and sound way."
+      " We are here for you! You can offer a pick-up and delivery service via your own online shop or app. Thus you protect employees and customers! "
   },
 
   services: {
-    title: "We provide a platform for",
+    title: "Choose your business sector",
     items: {
       bakery: "Bakery",
       butchery: "Butchery, Fish shop",
@@ -27,13 +27,13 @@ const translations = {
       restaurant: "Restaurant",
       beverages: "Beverages"
     },
-    cta: "Contact us"
+    cta: "More information"
   },
 
   featured: {
-    title: "Stay Safe & Increase Profit",
+    title: "Best possible protection and increased turnover ",
     para:
-      "We help you to continue offering your products to your customers. Local Aachen companies are there for you!"
+      "We help you to continue to offer and sell products and services to your customers. Local companies are there for your customers!"
   },
 
   our_clients: {

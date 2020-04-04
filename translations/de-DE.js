@@ -1,43 +1,43 @@
 const translations = {
   site: {
     title: "Corona Services",
-    slogan: "In Aachen"
+    slogan: "für Ihr Unternehmen"
   },
 
   header_menu: {
-    our_services: "Our Services",
-    our_clients: "Our Clients"
+    our_services: "Leistungen",
+    our_clients: "Referenzen"
   },
 
-  header_cta: "Contact us",
+  header_cta: "Jetzt starten",
 
   hero: {
-    title: "Corona affect your business?",
+    title: "Beeinflusst Corona Ihr Unternehmen?",
     para:
-      "Don’t worry about that! Keep that out of mind because we are here to connect you with customer by a safe and sound way."
+      "Wir sind für Sie da! Über Ihren eigenen Online-Shop oder Ihre eigene App können Sie einen Abhol- und Liefer-Service anbieten. Somit schützen Sie Mitarbeiter und Kunden!"
   },
 
   services: {
-    title: "We provide a platform for",
+    title: "Wählen Sie Ihre Branche aus",
     items: {
-      bakery: "Bakery",
-      butchery: "Butchery, Fish shop",
-      vegetables: "Fruits, Vegetables",
-      retail: "Retailer (Clothing, Sports)",
-      restaurant: "Restaurant",
-      beverages: "Beverages"
+      bakery: "Bäckerei",
+      butchery: "Metzger, Fischgeschäft",
+      vegetables: "Früchte, Gemüse",
+      retail: "Einzelhandel (Kleidung, Sport)",
+      restaurant: "Restaurants",
+      beverages: "Getränke"
     },
-    cta: "Contact us"
+    cta: "Weitere Informationen"
   },
 
   featured: {
-    title: "Stay Safe & Increase Profit",
+    title: "Bestmöglich schützen und Umsatz steigern",
     para:
-      "We help you to continue offering your products to your customers. Local Aachen companies are there for you!"
+      "Wir helfen Ihnen, weiterhin Produkte und Services Ihren Kunden anzubieten und zu verkaufen. Lokale Unternehmen sind für Ihre Kunden da - gerade jetzt!"
   },
 
   our_clients: {
-    title: "Our Clients"
+    title: "Unsere Kunden"
   },
 
   footer: {
