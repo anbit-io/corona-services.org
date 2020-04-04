@@ -90,6 +90,9 @@ export default {
     {
       src: "~/plugins/lazysizes.js",
       ssr: false
+    },
+    {
+      src: "~/plugins/vue-modal.js"
     }
   ],
 

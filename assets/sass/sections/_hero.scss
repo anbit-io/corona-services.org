@@ -30,20 +30,17 @@
         
         @screen sm-max {
             @apply px-3;
+
+            transform: translate(0,82px);
         }
 
-        img {
-            @screen sm-max {
-                transform: translate(0,82px);
-            }
-
-            @screen md-only {
-                transform: translate(-20px,100px);
-            }
-
-            @screen lg {
-                transform: translate(-23px, 19px);
-            }
+        @screen md-only {
+            transform: translate(-20px,100px);
         }
+
+        @screen lg {
+            transform: translate(-23px, 19px);
+        }
+
     }
 }

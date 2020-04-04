@@ -6,8 +6,8 @@
       ext: 'png',
       alt: 'Order online during corona pandemic'
     }"
-    cta-href="tel:0241 - 5600 73 600"
-    cta-label="0241 - 5600 73 600"
+    :cta-href="`tel:${$t('contact_no')}`"
+    :cta-label="$t('featured.cta_label')"
     :lazyload="true"
   />
 </template>

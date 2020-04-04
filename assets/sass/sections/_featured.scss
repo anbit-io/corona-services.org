@@ -27,20 +27,15 @@
 
         @screen sm-max {
             @apply px-3;
+            transform: translate(0,76px);
         }
 
-        img {
-            @screen sm-max {
-                transform: translate(0,76px);
-            }
+        @screen md-only {
+            transform: translate(-20px,120px);
+        }
 
-            @screen md-only {
-                transform: translate(-20px,120px);
-            }
-
-            @screen lg {
-                transform: translate(-34px, 30px);
-            }
+        @screen lg {
+            transform: translate(-34px, 30px);
         }
     }
 }

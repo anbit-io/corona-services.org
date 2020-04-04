@@ -13,7 +13,7 @@
             :key="key"
             class="services__item"
           >
-            <div class="service-block">
+            <div class="service-block" @click="showModal">
               <div class="service-block__icon transition">
                 <svg-icon :name="service.icon" />
               </div>
@@ -25,20 +25,29 @@
         </ul>
       </div>
       <div class="services__footer">
-        <CTA class="services__cta" href="mailto:info@corona-service.org">
-          {{ $t("services.cta") }}
-        </CTA>
+        <div class="services__call-support">
+          <span>
+            {{ $t("services.call_support") }}
+          </span>
+          <a
+            :href="`tel:${$t('contact_no')}`"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {{ $t("contact_no") }}
+          </a>
+        </div>
       </div>
     </div>
+    <Modal />
   </section>
 </template>
 
 <script>
-import CTA from "../common/CTA"
-
+import Modal from "./Modal"
 export default {
   components: {
-    CTA
+    Modal
   },
   computed: {
     services() {
@@ -50,6 +59,11 @@ export default {
         { label: this.$t("services.items.restaurant"), icon: "restaurant" },
         { label: this.$t("services.items.beverages"), icon: "beverages" }
       ]
+    }
+  },
+  methods: {
+    showModal() {
+      this.$modal.show("services-modal")
     }
   }
 }

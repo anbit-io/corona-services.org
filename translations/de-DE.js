@@ -1,4 +1,6 @@
 const translations = {
+  contact_no: "+49 - 241 5600 7360",
+
   site: {
     title: "Corona Services",
     slogan: "für Ihr Unternehmen"
@@ -14,7 +16,8 @@ const translations = {
   hero: {
     title: "Beeinflusst Corona Ihr Unternehmen?",
     para:
-      "Wir sind für Sie da! Über Ihren eigenen Online-Shop oder Ihre eigene App können Sie einen Abhol- und Liefer-Service anbieten. Somit schützen Sie Mitarbeiter und Kunden!"
+      "Wir sind für Sie da! Über Ihren eigenen Online-Shop oder Ihre eigene App können Sie einen Abhol- und Liefer-Service anbieten. Somit schützen Sie Mitarbeiter und Kunden!",
+    cta_label: "+49 - 241 5600 7360"
   },
 
   services: {
@@ -27,13 +30,22 @@ const translations = {
       restaurant: "Restaurants",
       beverages: "Getränke"
     },
-    cta: "Weitere Informationen"
+    cta: "Weitere Informationen",
+    call_support: "Oder rufen Sie Ihren Support an",
+    modal: {
+      title: "Corona Services",
+      content:
+        "In Kürze werden sie hier bei ihren lokalen Einzelhändel bestellen können.",
+      cta_label: "info@corona-service.org",
+      mailto_subject: "Weitere Informationen - App & Website bestellen"
+    }
   },
 
   featured: {
     title: "Bestmöglich schützen und Umsatz steigern",
     para:
-      "Wir helfen Ihnen, weiterhin Produkte und Services Ihren Kunden anzubieten und zu verkaufen. Lokale Unternehmen sind für Ihre Kunden da - gerade jetzt!"
+      "Wir helfen Ihnen, weiterhin Produkte und Services Ihren Kunden anzubieten und zu verkaufen. Lokale Unternehmen sind für Ihre Kunden da - gerade jetzt!",
+    cta_label: "In Kontakt kommen"
   },
 
   our_clients: {

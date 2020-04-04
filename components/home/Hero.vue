@@ -6,8 +6,8 @@
       ext: 'png',
       alt: 'Business during corona pandemic'
     }"
-    cta-href="tel:0241 - 5600 73 600"
-    cta-label="0241 - 5600 73 600"
+    :cta-href="`tel:${$t('contact_no')}`"
+    :cta-label="$t('hero.cta_label')"
   />
 </template>
 

@@ -1,4 +1,6 @@
 const translations = {
+  contact_no: "+49 - 241 5600 7360",
+
   site: {
     title: "Corona Services",
     slogan: "for your business"
@@ -14,7 +16,8 @@ const translations = {
   hero: {
     title: "Does Corona influence your company? ",
     para:
-      " We are here for you! You can offer a pick-up and delivery service via your own online shop or app. Thus you protect employees and customers! "
+      " We are here for you! You can offer a pick-up and delivery service via your own online shop or app. Thus you protect employees and customers! ",
+    cta_label: "+49 - 241 5600 7360"
   },
 
   services: {
@@ -27,13 +30,21 @@ const translations = {
       restaurant: "Restaurant",
       beverages: "Beverages"
     },
-    cta: "More information"
+    cta: "More information",
+    call_support: "Or call our support",
+    modal: {
+      title: "Corona Services",
+      content: "You will shortly be able order from your local retailer here.",
+      cta_label: "info@corona-service.org",
+      mailto_subject: "More information - Order app & Website"
+    }
   },
 
   featured: {
     title: "Best possible protection and increased turnover ",
     para:
-      "We help you to continue to offer and sell products and services to your customers. Local companies are there for your customers!"
+      "We help you to continue to offer and sell products and services to your customers. Local companies are there for your customers!",
+    cta_label: "Get in Touch"
   },
 
   our_clients: {

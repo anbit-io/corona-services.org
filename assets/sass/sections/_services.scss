@@ -68,6 +68,18 @@
             @apply pt-1;
         }
     }
+
+    &__call-support {
+        @apply flex flex-col text-center;
+
+        span {
+            @apply font-semibold text-3xl mb-3;
+        }
+
+        a {
+            @apply font-medium text-2xl;
+        }
+    }
 }
 
 .service-block {
@@ -92,4 +104,29 @@
     &__label {
         @apply font-semibold text-center text-xl px-2;
     }
+}
+
+
+.services-modal {
+    @apply px-6 py-12 flex flex-col items-center;
+
+    @screen md {
+        @apply px-10;
+    }
+
+    &__title {
+        @apply text-4xl font-bold text-primary my-4 text-center;
+    }
+
+    &__subtitle {
+        @apply text-center text-xl mb-12 font-medium;
+    }
+
+    &__cta {
+        @apply text-lg;
+    }
+}
+
+.v--modal-overlay .v--modal-box {
+    border-radius: 8px;
 }

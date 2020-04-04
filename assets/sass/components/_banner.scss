@@ -7,7 +7,7 @@
         border-radius: 22px;
 
         @screen lg {
-            height: 433px;
+            min-height: 433px;
         }
     }
     
@@ -73,6 +73,7 @@
         }
 
         @screen lg {
+            @apply py-12;
             max-width:400px;
             padding-left:66px;
         }
