@@ -19,12 +19,12 @@
               rel="noopener noreferrer"
               target="_blank"
             >
-              <div class="service-block__icon transition">
+              <span class="service-block__icon transition">
                 <svg-icon :name="service.icon" />
-              </div>
-              <p class="service-block__label">
+              </span>
+              <span class="service-block__label">
                 {{ service.label }}
-              </p>
+              </span>
             </a>
           </li>
         </ul>
