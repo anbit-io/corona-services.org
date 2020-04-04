@@ -70,7 +70,7 @@
     }
 
     &__call-support {
-        @apply flex flex-col text-center;
+        @apply flex flex-col text-center text-dark;
 
         span {
             @apply font-semibold text-3xl mb-3;
@@ -78,6 +78,11 @@
 
         a {
             @apply font-medium text-2xl;
+
+            &:hover,
+            &:focus {
+                @apply text-primary-dark;
+            }
         }
     }
 }

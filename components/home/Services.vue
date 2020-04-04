@@ -13,14 +13,19 @@
             :key="key"
             class="services__item"
           >
-            <div class="service-block" @click="showModal">
+            <a
+              class="service-block"
+              :href="servicesHref"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
               <div class="service-block__icon transition">
                 <svg-icon :name="service.icon" />
               </div>
               <p class="service-block__label">
                 {{ service.label }}
               </p>
-            </div>
+            </a>
           </li>
         </ul>
       </div>
@@ -30,6 +35,7 @@
             {{ $t("services.call_support") }}
           </span>
           <a
+            class="transition"
             :href="`tel:${$t('contact_no')}`"
             target="_blank"
             rel="noopener noreferrer"
@@ -44,12 +50,17 @@
 </template>
 
 <script>
-import Modal from "./Modal"
+// import Modal from "./Modal"
 export default {
-  components: {
-    Modal
-  },
+  // components: {
+  //   Modal
+  // },
   computed: {
+    servicesHref() {
+      return `mailto:info@corona-service.org?subject=${encodeURIComponent(
+        this.$t("services.modal.mailto_subject")
+      )}`
+    },
     services() {
       return [
         { label: this.$t("services.items.bakery"), icon: "bakery" },
@@ -60,11 +71,11 @@ export default {
         { label: this.$t("services.items.beverages"), icon: "beverages" }
       ]
     }
-  },
-  methods: {
-    showModal() {
-      this.$modal.show("services-modal")
-    }
   }
+  // methods: {
+  //   // showModal() {
+  //   //   this.$modal.show("services-modal")
+  //   // }
+  // }
 }
 </script>
