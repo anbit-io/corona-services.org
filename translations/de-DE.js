@@ -3,7 +3,7 @@ const translations = {
 
   site: {
     title: "Corona Services",
-    slogan: "für Ihr Unternehmen"
+    slogan: "Lokale Unternehmen unterstützen"
   },
 
   header_menu: {
@@ -17,7 +17,7 @@ const translations = {
     title: "Beeinflusst Corona Ihr Unternehmen?",
     para:
       "Wir sind für Sie da! Über Ihren eigenen Online-Shop oder Ihre eigene App können Sie einen Abhol- und Liefer-Service anbieten. Somit schützen Sie Mitarbeiter und Kunden!",
-    cta_label: "+49 - 241 5600 7360"
+    cta_label: "Gespräch vereinbaren"
   },
 
   services: {
@@ -31,7 +31,7 @@ const translations = {
       beverages: "Getränke"
     },
     cta: "Weitere Informationen",
-    call_support: "Oder rufen Sie Ihren Support an",
+    call_support: "Oder rufen Sie unseren Support an",
     modal: {
       title: "Corona Services",
       content:
@@ -330,15 +330,14 @@ Dies ist die aktuelle Datenschutzerklärung und hat den Stand September 2019. We
     content: `
 Angaben gemäß § 5 Telemediengesetz (TMG):
 
-Ein Produkt der IMPAX Tours UG (haftungsbeschränkt)
-
+Ein Produkt und Service der IMPAX Tours UG (haftungsbeschränkt)
 Rochusstraße 1
 52062 Aachen
 Germany
 
 Kontakt:
 
-Telefon : <a href="tel:+4901723472285" target="_blank" rel="noopener noreferrer">+49 (0) 172 34 722 85</a>
+Telefon : <a href="tel:+49(0)241 5600 7360" target="_blank" rel="noopener noreferrer">+49 (0) 172 34 722 85</a>
 E-Mail : <a href="mailto:info@andre-baumunk.de" target="_blank" rel="noopener noreferrer">info@andre-baumunk.de</a>
 Vertretungsberechtigter Geschäftsführer: Andre Baumunk
 Registergericht: Amtsgericht Aachen

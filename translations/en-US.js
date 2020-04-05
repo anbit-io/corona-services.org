@@ -3,7 +3,7 @@ const translations = {
 
   site: {
     title: "Corona Services",
-    slogan: "for your business"
+    slogan: "Support local stores"
   },
 
   header_menu: {
