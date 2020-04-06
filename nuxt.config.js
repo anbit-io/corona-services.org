@@ -73,6 +73,22 @@ export default {
       }
     ],
     link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
+    script: [
+      {
+        id: "CookieBot",
+        src: "https://consent.cookiebot.com/uc.js",
+        "data-cbid": "28705f59-5bbb-413b-8a43-68e591c38a2b",
+        "data-blockingmode": "auto",
+        type: "text/javascript"
+      },
+      {
+        id: "CookieDeclaration",
+        src:
+          "https://consent.cookiebot.com/28705f59-5bbb-413b-8a43-68e591c38a2b/cd.js",
+        type: "text/javascript",
+        async: "true"
+      }
+    ],
     bodyAttrs: { class: "body" }
   },
 
