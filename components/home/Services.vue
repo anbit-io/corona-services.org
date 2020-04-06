@@ -45,15 +45,15 @@
         </div>
       </div>
     </div>
-    <Modal />
+    <!-- <ServicesModal /> -->
   </section>
 </template>
 
 <script>
-// import Modal from "./Modal"
+// import ServicesModal from "./ServicesModal"
 export default {
   // components: {
-  //   Modal
+  //   ServicesModal
   // },
   computed: {
     servicesHref() {
