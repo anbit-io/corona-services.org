@@ -1,5 +1,7 @@
 const metaTagsMixin = {
   head() {
+    let htmlAttrs = {}
+
     let meta = [
       {
         hid: "description",
@@ -56,6 +58,8 @@ const metaTagsMixin = {
 
     this.$i18n.locales.forEach(locale => {
       if (this.$i18n.locale == locale.code) {
+        htmlAttrs["lang"] = locale.iso
+
         meta.push({
           hid: "og:locale",
           property: "og:locale",
@@ -71,6 +75,7 @@ const metaTagsMixin = {
     })
 
     return {
+      htmlAttrs,
       titleTemplate: "Corona-Service | %s",
       title: this.$t("head.title"),
       meta
