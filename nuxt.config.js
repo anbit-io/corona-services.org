@@ -37,6 +37,16 @@ export default {
         content: "https://corona-services.org"
       },
       {
+        hid: "og:locale",
+        property: "og:locale",
+        content: "de-DE"
+      },
+      {
+        hid: "og:locale:alternate",
+        property: "og:locale:alternate",
+        content: "en-US"
+      },
+      {
         hid: "og:site_name",
         property: "og:site_name",
         content: "Corona Service App & Website"
