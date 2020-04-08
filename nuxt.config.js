@@ -23,6 +23,19 @@ export default {
           "Einfach Essen, Getränke oder andere Dienstleistungen unter Beachtung der Quarantänemaßnahmen bestellen."
       },
       {
+        hid: "keywords",
+        name: "keywords",
+        content: ""
+      },
+      {
+        name: "copyright",
+        content: "Impax Web"
+      },
+      {
+        name: "url",
+        content: "https://corona-services.org"
+      },
+      {
         hid: "og:site_name",
         property: "og:site_name",
         content: "Corona Services in Aachen"

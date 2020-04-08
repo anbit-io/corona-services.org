@@ -1,6 +1,14 @@
 const translations = {
   contact_no: "+49 - 241 5600 7360",
 
+  head: {
+    title: "Order food & services from local companies",
+    description:
+      "Simply order food, drinks or other services in accordance with the quarantine measures.",
+    keywords: "",
+    og_title: "Corona Service | Order food & services from local companies"
+  },
+
   site: {
     title: "Corona Services",
     slogan: "Support local stores"

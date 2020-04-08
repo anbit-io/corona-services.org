@@ -1,6 +1,15 @@
 const translations = {
   contact_no: "+49 - 241 5600 7360",
 
+  head: {
+    title: "Lebensmittel & Services bei lokalen Unternehmen bestellen",
+    description:
+      "Einfach Essen, Getränke oder andere Dienstleistungen unter Beachtung der Quarantänemaßnahmen bestellen.",
+    keywords: "",
+    og_title:
+      "Corona Service | Lebensmittel & Services bei lokalen Unternehmen bestellen"
+  },
+
   site: {
     title: "Corona Services",
     slogan: "Lokale Unternehmen unterstützen"
