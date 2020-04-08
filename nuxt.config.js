@@ -72,6 +72,31 @@ export default {
         content: "https://corona-service.org/images/hero.png"
       },
       {
+        hid: "og:image:url",
+        property: "og:image:url",
+        content: "https://corona-service.org/images/hero.png"
+      },
+      {
+        hid: "og:image:secure_url",
+        property: "og:image:secure_url",
+        content: "https://corona-service.org/images/hero.png"
+      },
+      {
+        hid: "og:image:type",
+        property: "og:image:type",
+        content: "image/png"
+      },
+      {
+        hid: "og:image:width",
+        property: "og:image:width",
+        content: "597"
+      },
+      {
+        hid: "og:image:height",
+        property: "og:image:height",
+        content: "563"
+      },
+      {
         hid: "og:url",
         property: "og:url",
         content: "https://corona-service.org/"
