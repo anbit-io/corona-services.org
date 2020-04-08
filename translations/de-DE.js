@@ -6,6 +6,7 @@ const translations = {
     description:
       "Einfach Essen, Getränke oder andere Dienstleistungen unter Beachtung der Quarantänemaßnahmen bestellen.",
     keywords: "",
+    og_site_name: "Corona Service App & Website",
     og_title:
       "Corona Service | Lebensmittel & Services bei lokalen Unternehmen bestellen"
   },

@@ -38,7 +38,7 @@ export default {
       {
         hid: "og:site_name",
         property: "og:site_name",
-        content: "Corona Services in Aachen"
+        content: "Corona Service App & Website"
       },
       {
         hid: "og:title",

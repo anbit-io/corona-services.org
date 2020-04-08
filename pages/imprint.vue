@@ -32,6 +32,11 @@ export default {
           content: this.$t("head.keywords")
         },
         {
+          hid: "og:site_name",
+          name: "og:site_name",
+          content: this.$t("head.og_site_name")
+        },
+        {
           hid: "og:title",
           name: "og:title",
           content: this.$t("head.og_title")

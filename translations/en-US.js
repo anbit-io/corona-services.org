@@ -6,6 +6,7 @@ const translations = {
     description:
       "Simply order food, drinks or other services in accordance with the quarantine measures.",
     keywords: "",
+    og_site_name: "Corona Service App & Website",
     og_title: "Corona Service | Order food & services from local companies"
   },
 
