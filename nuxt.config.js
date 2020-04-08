@@ -32,6 +32,7 @@ export default {
         content: "Impax Web"
       },
       {
+        hid: "url",
         name: "url",
         content: "https://corona-services.org"
       },

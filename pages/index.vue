@@ -21,6 +21,11 @@ export default {
     OurClients
   },
   head() {
+    let meta_url =
+      this.$i18n.locale == this.$i18n.defaultLocale
+        ? "https://corona-services.org/"
+        : "https://corona-services.org/" + this.$i18n.locale
+
     return {
       titleTemplate: "Corona-Service | %s",
       title: this.$t("head.title"),
@@ -34,6 +39,16 @@ export default {
           hid: "keywords",
           name: "keywords",
           content: this.$t("head.keywords")
+        },
+        {
+          hid: "url",
+          name: "url",
+          content: meta_url
+        },
+        {
+          hid: "og:url",
+          name: "og:url",
+          content: meta_url
         },
         {
           hid: "og:site_name",
