@@ -1,0 +1,20 @@
+project_root: ~/
+
+project_source_path: "{{ project_root }}/source"
+
+project_current_path: current
+
+project_local_path: ../project
+
+project_subtree_path: project
+
+project_shared_children: []
+
+project_releases_path: releases
+
+keep_last_releases_count: 10
+
+purge_files_after_deploy:
+  - "dist.zip"
+
+purge_folders_after_deploy: []

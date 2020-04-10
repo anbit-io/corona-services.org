@@ -1,0 +1,5 @@
+project_root: ~/public_html/domains/corona-service.org/
+
+project_local_path: "../"
+
+keep_last_releases_count: 1

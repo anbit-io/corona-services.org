@@ -1,0 +1,25 @@
+image: besrabasant/ansible-apline
+
+cache:
+  key: "$CI_COMMIT_REF_NAME"
+  paths:
+    - node_modules
+
+before_script:
+    - mkdir -p ~/.ssh
+    - echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_rsa
+    - chmod 0600 ~/.ssh/id_rsa
+    - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
+
+deploy_prod:
+  stage: deploy
+  only:
+    - master
+  environment:
+    name: production
+    url: https://corona-services.org/
+  script:
+    - cd deploy
+    - export SSH_USER=$SSH_USER
+    - export ANSIBLE_CONFIG=./ansible.cfg
+    - ansible-playbook deploy.yml -e env=production

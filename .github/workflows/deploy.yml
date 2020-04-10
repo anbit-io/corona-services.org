@@ -1,0 +1,25 @@
+name: Deploy site
+
+on: 
+    push: 
+        branches:
+            - master
+
+jobs:
+    deploy:
+        name: Deploy site
+        runs-on: ubuntu-latest
+        steps: 
+            - name: Checkout project
+              uses: actions/checkout@v2
+            - name: Restore cache
+              uses: actions/cache@master
+              with:
+                path: |
+                  node_modules
+                key: ${{ runner.os }}-${{ hashFiles('package-lock.json') }}
+            - name: Deploy project
+              uses: ./.github/actions/ansible
+              env:
+                SSH_USER: ${{ secrets.SSH_USER }}
+                SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}

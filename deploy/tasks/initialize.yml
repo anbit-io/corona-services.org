@@ -1,0 +1,7 @@
+- name: Initialize the deploy root and gather facts
+  deploy_helper:
+    current_path: '{{ project_current_path | default("current")}}'
+    shared_path: 'shared'
+    releases_path: '{{ project_releases_path | default("releases") }}'
+    path: "{{ project_root }}"
+    state: present

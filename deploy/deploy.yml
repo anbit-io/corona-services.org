@@ -1,0 +1,15 @@
+---
+- name: Deploy Site
+  hosts: web:&{{ env }}
+  vars_files:
+    - group_vars/{{ env }}/main.yml
+    - group_vars/{{ env }}/vault.yml
+  tasks:
+    - name: Initialize Project
+      include_tasks: tasks/initialize.yml
+
+    - name: Prepare Project
+      include_tasks: tasks/prepare.yml
+
+    - name: Finalize Deployment
+      include_tasks: tasks/finalize.yml

@@ -1,0 +1,11 @@
+- name: Finalize deploy and Clean old releases
+  deploy_helper:
+    path: "{{ project_root }}"
+    release: '{{ deploy_helper.new_release_path }}'
+    state: finalize
+    keep_releases: "{{ keep_last_releases_count }}"
+
+- name: Remove project source
+  file:
+    path: '{{ project_source_path }}'
+    state: absent

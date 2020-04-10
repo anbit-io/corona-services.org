@@ -1,0 +1,10 @@
+all:
+    hosts:
+        server266.web-hosting.com
+    children:
+        production:
+            hosts:
+                server266.web-hosting.com
+        web:
+            hosts:
+                server266.web-hosting.com
