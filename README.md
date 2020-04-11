@@ -1,5 +1,7 @@
 # corona-service.org
 
+![Deploy status](https://github.com/andrebronko/corona-service.org/workflows/Deploy%20site/badge.svg?branch=master)
+
 This project is based on nuxt.js
 
 ## Run the project
