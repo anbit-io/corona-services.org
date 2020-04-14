@@ -69,17 +69,17 @@ export default {
       {
         hid: "og:image",
         property: "og:image",
-        content: "https://corona-service.org/images/hero.png"
+        content: "https://corona-services.org/images/hero.png"
       },
       {
         hid: "og:image:url",
         property: "og:image:url",
-        content: "https://corona-service.org/images/hero.png"
+        content: "https://corona-services.org/images/hero.png"
       },
       {
         hid: "og:image:secure_url",
         property: "og:image:secure_url",
-        content: "https://corona-service.org/images/hero.png"
+        content: "https://corona-services.org/images/hero.png"
       },
       {
         hid: "og:image:type",
@@ -99,7 +99,7 @@ export default {
       {
         hid: "og:url",
         property: "og:url",
-        content: "https://corona-service.org/"
+        content: "https://corona-services.org/"
       },
       {
         hid: "twitter:title",
@@ -116,7 +116,7 @@ export default {
       {
         hid: "twitter:image",
         property: "twitter:image",
-        content: "https://corona-service.org/images/hero.png"
+        content: "https://corona-services.org/images/hero.png"
       },
       {
         hid: "twitter:card",
@@ -202,7 +202,7 @@ export default {
   },
 
   sitemap: {
-    hostname: "https://corona-service.org",
+    hostname: "https://corona-services.org",
     gzip: true
   },
 
