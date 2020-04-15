@@ -17,6 +17,10 @@ body, html {
 	}
 }
 
+.scroll-lock {
+    overflow: hidden;
+}
+
 .blur-up {
     -webkit-filter: blur(5px);
     filter: blur(5px);

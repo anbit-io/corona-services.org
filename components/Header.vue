@@ -11,10 +11,7 @@
       </nuxt-link>
 
       <div class="header__actions">
-        <select
-          class="site__langswitcher  site__langswitcher--ls"
-          @change="switchLanguage"
-        >
+        <select class="site__langswitcher" @change="switchLanguage">
           <option
             v-for="locale in availableLocales"
             :key="locale.code"
@@ -25,20 +22,22 @@
           </option>
         </select>
 
-        <ul class="header__menu header-menu">
-          <li
-            v-for="(item, key) in menuItems"
-            :key="key"
-            class="header-menu__item"
-          >
-            <nuxt-link
-              :to="{ path: localePath('/'), hash: item.path }"
-              class="header-menu__link"
+        <div class="header__menu header-menu header-menu--ls">
+          <div class="header-menu__container">
+            <div
+              v-for="(item, key) in menuItems"
+              :key="key"
+              class="header-menu__item"
             >
-              {{ item.label }}
-            </nuxt-link>
-          </li>
-        </ul>
+              <nuxt-link
+                :to="{ path: localePath('/'), hash: item.path }"
+                class="header-menu__link"
+              >
+                {{ item.label }}
+              </nuxt-link>
+            </div>
+          </div>
+        </div>
         <a
           class="header__cta transition"
           target="_blank"
@@ -47,22 +46,47 @@
         >
           {{ $t("header_cta") }}
         </a>
+
+        <div
+          ref="mobileMenu"
+          v-mobile-menu
+          class="header__menu header-menu header-menu--ss"
+        >
+          <div ref="mobileMenuBg" class="header-menu__bg" />
+          <div class="header-menu__container">
+            <div
+              v-for="(item, key) in menuItems"
+              :key="key"
+              class="header-menu__item"
+            >
+              <a
+                :href="
+                  $router.resolve({ path: localePath('/'), hash: item.path })
+                    .href
+                "
+                class="header-menu__link"
+                @click="
+                  delayRouting(
+                    { path: localePath('/'), hash: item.path },
+                    $event
+                  )
+                "
+              >
+                {{ item.label }}
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div
+          ref="mobileMenuToggle"
+          v-mobile-menu-toggle
+          class="header__menu-toggle"
+        >
+          <span />
+        </div>
       </div>
     </nav>
-
-    <select
-      class="site__langswitcher site__langswitcher--ss"
-      @change="switchLanguage"
-    >
-      <option
-        v-for="locale in availableLocales"
-        :key="locale.code"
-        :value="locale.code"
-        :selected="$i18n.locale === locale.code"
-      >
-        {{ locale.label }}
-      </option>
-    </select>
   </header>
 </template>
 
@@ -75,8 +99,8 @@ export default {
     menuItems() {
       return [
         { label: this.$t("header_menu.our_services"), path: "#our-services" },
-        // { label: this.$t("header_menu.why_us"), path: "#why-us" },
-        // { label: this.$t("header_menu.how_it_works"), path: "#how-it-works" },
+        { label: this.$t("header_menu.why_us"), path: "#why-us" },
+        { label: this.$t("header_menu.how_it_works"), path: "#how-it-works" },
         { label: this.$t("header_menu.pricing"), path: "#pricing" },
         { label: this.$t("header_menu.our_clients"), path: "#our-clients" }
       ]

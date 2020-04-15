@@ -160,6 +160,10 @@ export default {
       ssr: false
     },
     {
+      src: "~/plugins/mobileMenu.js",
+      ssr: false
+    },
+    {
       src: "~/plugins/vue-modal.js"
     }
   ],

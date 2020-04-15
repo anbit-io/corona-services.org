@@ -1,3 +1,61 @@
+
+@mixin hamburgerMenu($hamburger-size: 35) {
+    @apply relative cursor-pointer overflow-visible;
+    
+    width: #{$hamburger-size}px;
+    height: #{$hamburger-size}px;
+    z-index: 1001;
+    
+    > span {
+
+        top: 50%;
+        transform: translate(0, 50%) rotate(0deg);
+
+        &, 
+        &:before,
+        &:after {
+            @apply absolute w-full rounded-full bg-primary;
+            height: 3px;
+            transform-origin: center center;
+            transition: all 0.3s ease-out 0.3s;
+        }
+
+        &:before,
+        &:after {
+            content: "";
+        }
+
+        &:before {
+            transform: translate(0, #{-$hamburger-size/3}px) rotate(0deg);
+        }
+
+        &:after {
+            transform: translate(0, #{$hamburger-size/3}px) rotate(0deg);
+        }
+    }
+
+    &[data-expanded="true"] {
+        > span {
+            transform: translate(0, 50%) rotate(-135deg);
+            
+            &, 
+            &:before,
+            &:after {
+                @apply bg-white;
+                transition: all 0.3s ease-out;
+            }
+
+            &:before {
+                transform: translate(0, 0) rotate(-90deg);
+            }
+    
+            &:after {
+                transform: translate(0, 0)  rotate(-270deg);
+            }
+        }
+    }
+}
+
 .header {
     @apply px-5;
 
@@ -20,21 +78,29 @@
             @apply flex-col;
         }
 
-        @screen md {
-            padding-top: 36px;
+        @screen lg {
+            padding-top: 45px;
         }
     }
 
     &__menu {
-        @apply block mr-6 pr-1;
+        @apply pr-1;
+
+        @screen lg {
+            @apply mr-6;
+        }
     }
 
     &__actions {
-        @apply flex items-center;
+        @apply relative flex items-center;
     }
 
     &__cta {
         @apply rounded bg-primary text-white font-bold text-center;
+
+        @screen xs-max {
+            @apply hidden;
+        }
 
         @screen sm-max {
             padding: 10px 17px;
@@ -53,20 +119,76 @@
             @apply bg-primary-dark;
         }
     }
+
+    &__menu-toggle {
+        @include hamburgerMenu
+        
+        @screen md-max {
+            @apply ml-5;
+        }
+
+        @screen lg {
+            @apply hidden;
+        }
+    }
 }
 
 .header-menu {
-    @apply hidden;
-
-    @screen md {
+    @screen md-max {
+        @apply hidden fixed top-0 left-0 right-0 bottom-0;
+        z-index: 999;
+    }
+    
+    @screen lg {
         @apply flex justify-evenly;
+    }
+    
+    &__bg {
+        @apply bg-primary;
+        @apply absolute;
+        width: 250vh;
+        height: 250vh;
+        border-radius: 50%;
+        z-index: 1;
+        transform-origin: center;
+    }
+
+    &__container {
+        @apply relative h-full w-full;
+        @apply flex items-center justify-center;
+        z-index: 10;
     }
 
     &__item {
         @apply px-5;
+
+        @screen md-max {
+            @apply mb-5;
+        }
     }
     &__link {
         @apply font-semibold;
         font-size: 15px;
     }
+
+    &--ls {
+    }
+
+    &--ss {
+
+        @screen lg {
+            @apply hidden;
+        }
+        
+        .header-menu__container {
+            @apply  flex-col;
+        }
+
+        &[data-expanded="true"] {
+            .header-menu__link {
+                @apply text-white;
+            }
+        }
+    }
+   
 }

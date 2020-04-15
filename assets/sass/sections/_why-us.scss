@@ -50,8 +50,8 @@
 
     max-width: 330px;
 
-    @screen xs-max {
-        @apply text-center;
+    @screen sm-max {
+        @apply text-center mx-auto;
     }
 
     @screen md-only {
