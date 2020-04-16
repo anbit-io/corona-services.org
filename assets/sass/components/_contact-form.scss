@@ -79,7 +79,7 @@
     &__acknowlegement {
       @apply absolute right-0 top-0 left-0 bottom-0 bg-white;
       @apply flex justify-center items-center;
-      @apply text-primary text-4xl font-semibold;
+      @apply text-primary text-4xl font-semibold text-center;
 
       z-index: 10;
     }
