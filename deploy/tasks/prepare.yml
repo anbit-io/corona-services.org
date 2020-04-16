@@ -24,7 +24,9 @@
 - name: Compress dist folder
   delegate_to: localhost
   archive:
-    path: "{{ project_local_path }}/dist/*"
+    path: 
+      - "{{ project_local_path }}/dist/*"
+      - "{{ project_local_path }}/dist/.*"
     dest: "{{ project_local_path }}/dist.zip"
     format: zip
 
