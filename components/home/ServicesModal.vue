@@ -1,8 +1,8 @@
 <template>
   <modal
+    name="services-modal"
     :adaptive="true"
     transition="nice-modal-fade"
-    name="services-modal"
     height="auto"
     width="700"
   >

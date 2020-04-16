@@ -1,0 +1,48 @@
+.easy-setup {
+    @apply bg-primary text-white pt-16;
+
+    &__title {
+        @apply w-full font-bold text-center mb-16 leading-tight;
+        font-size: 40px;
+    }
+
+    &__steps {
+        @apply w-full flex items-start ;
+
+        @screen md-max {
+            @apply flex-wrap justify-center;
+        }
+
+        @screen lg {
+            @apply justify-between;
+        }
+    }
+
+    &__step {
+        @apply w-full mb-24 px-6;
+        max-width: 350px;
+
+        .symbol--shop {
+            transform: translateY(-22px);
+        }
+
+        @screen md-max {
+            @apply text-center;
+        }
+    }
+
+    &__step-icon {
+        @apply flex items-start;
+        min-height: 90px;
+
+        @screen md-max {
+            @apply justify-center;
+        }
+    }
+
+    &__step-title {
+        @apply text-3xl font-semibold mb-3;
+    }
+
+    &__step-description {}
+}

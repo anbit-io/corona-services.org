@@ -1,0 +1,116 @@
+.pricing {
+
+    @apply py-24;
+
+    &__header {
+        @apply pb-16;
+    }
+
+    &__subtitle {
+        @apply text-center w-full mx-auto font-medium;
+
+        max-width: 400px;
+    }
+
+    &__content {
+        @apply flex flex-wrap justify-center items-stretch;
+    }
+
+    &__item {
+        @apply flex-1 px-5 mb-10;
+
+        &:nth-of-type(odd) {
+            .pricing-item {
+                @apply ml-auto;
+            }
+        }
+
+        &:nth-of-type(even) {
+            .pricing-item {
+                @apply mr-auto;
+            }
+        }
+    }
+}
+
+.pricing-item {
+    $pricing-item: &;
+
+    @apply w-full h-full flex flex-col items-center rounded-lg px-10 pt-12 pb-24 relative;
+    @apply text-center;
+    background-color: rgba(#b6b6b6, 0.1);
+
+    max-width: 445px;
+
+    &__bestchoice {
+        @apply text-white absolute left-0 rounded-r-full bg-primary uppercase;
+        @apply px-8 py-2;
+        @apply font-semibold;
+
+        font-size: 12px;
+        letter-spacing: 1.5px;
+        line-height: 18px;
+    }
+
+    &__name {
+        @apply w-full text-center font-medium mb-3 uppercase;
+        
+        font-size: 20px;
+        letter-spacing: 2.5px;
+    }
+
+    &__description {
+        @apply w-full block mb-12 leading-loose;
+    }
+
+    &__price {
+        @apply w-full font-bold;
+        font-size: 48px;
+    }
+
+    &__per-month {
+        @apply text-xl font-normal;
+    }
+
+    &__fees {
+        @apply w-full mb-8 font-medium;
+    }
+
+    &__features {
+        @apply text-left mb-12;
+    }
+
+    &__feature {
+        @apply mb-3 relative pl-12;
+
+        &:before {  
+            @apply absolute border-b-2 border-r-2 border-primary transform rotate-45 left-0;
+            content: "";
+            height: 16px;
+            width: 8px;
+        }
+    }
+
+    &__no-price {
+        @apply py-8 italic font-semibold;
+    }
+
+    &--plus {
+        @screen md-max {
+            .pricing-item__name {
+                @apply mt-16;
+            }
+        }
+    }
+
+    &--enterprise {
+        #{$pricing-item}__cta {
+            @apply bg-darker;
+
+            &:hover,
+            &:focus {
+                @apply bg-dark;
+            }
+        }
+    }
+}

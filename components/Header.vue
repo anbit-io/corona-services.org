@@ -75,6 +75,9 @@ export default {
     menuItems() {
       return [
         { label: this.$t("header_menu.our_services"), path: "#our-services" },
+        // { label: this.$t("header_menu.why_us"), path: "#why-us" },
+        // { label: this.$t("header_menu.how_it_works"), path: "#how-it-works" },
+        { label: this.$t("header_menu.pricing"), path: "#pricing" },
         { label: this.$t("header_menu.our_clients"), path: "#our-clients" }
       ]
     }

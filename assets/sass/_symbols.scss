@@ -1,4 +1,16 @@
 
+$symbol-01: '.symbol--01';
+#{$symbol-01}{ 
+  width: 53px; 
+  height: 44px;
+}
+
+$symbol-02: '.symbol--02';
+#{$symbol-02}{ 
+  width: 68px; 
+  height: 44px;
+}
+
 $symbol-bakery: '.symbol--bakery';
 #{$symbol-bakery}{ 
   width: 70px; 
@@ -17,10 +29,70 @@ $symbol-butchery: '.symbol--butchery';
   height: 66px;
 }
 
+$symbol-easy-to-use: '.symbol--easy-to-use';
+#{$symbol-easy-to-use}{ 
+  width: 60px; 
+  height: 60px;
+}
+
 $symbol-email: '.symbol--email';
 #{$symbol-email}{ 
   width: 22px; 
   height: 18px;
+}
+
+$symbol-enterprise: '.symbol--enterprise';
+#{$symbol-enterprise}{ 
+  width: 32px; 
+  height: 32px;
+}
+
+$symbol-mobile-menu: '.symbol--mobile-menu';
+#{$symbol-mobile-menu}{ 
+  width: 42px; 
+  height: 70px;
+}
+
+$symbol-online-payment: '.symbol--online-payment';
+#{$symbol-online-payment}{ 
+  width: 70px; 
+  height: 47px;
+}
+
+$symbol-optimize-workflows: '.symbol--optimize-workflows';
+#{$symbol-optimize-workflows}{ 
+  width: 60px; 
+  height: 60px;
+}
+
+$symbol-pick-up: '.symbol--pick-up';
+#{$symbol-pick-up}{ 
+  width: 90px; 
+  height: 58px;
+}
+
+$symbol-plus: '.symbol--plus';
+#{$symbol-plus}{ 
+  width: 32px; 
+  height: 32px;
+}
+
+$symbol-prestige: '.symbol--prestige';
+#{$symbol-prestige}{ 
+  width: 62px; 
+  height: 69px;
+}
+
+$symbol-protect-staff: '.symbol--protect-staff';
+#{$symbol-protect-staff}{ 
+  width: 70px; 
+  height: 65px;
+}
+
+$symbol-quarantine-rules: '.symbol--quarantine-rules';
+#{$symbol-quarantine-rules}{ 
+  width: 60px; 
+  height: 50px;
 }
 
 $symbol-restaurant: '.symbol--restaurant';
@@ -33,6 +105,24 @@ $symbol-retailer: '.symbol--retailer';
 #{$symbol-retailer}{ 
   width: 55px; 
   height: 65px;
+}
+
+$symbol-shop: '.symbol--shop';
+#{$symbol-shop}{ 
+  width: 94px; 
+  height: 68px;
+}
+
+$symbol-starter: '.symbol--starter';
+#{$symbol-starter}{ 
+  width: 32px; 
+  height: 32px;
+}
+
+$symbol-support-local: '.symbol--support-local';
+#{$symbol-support-local}{ 
+  width: 80px; 
+  height: 50px;
 }
 
 $symbol-veg: '.symbol--veg';

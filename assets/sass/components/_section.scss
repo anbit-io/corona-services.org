@@ -1,4 +1,9 @@
 .section {
+    @apply px-4;
+
+    @screen md {
+        @apply px-6;
+    }
 
     &__container {
         @apply w-full mx-auto;
@@ -9,7 +14,12 @@
     &__title {
         @apply font-bold mb-2 text-center leading-tight;
         font-size: 36px;
-    }   
+    } 
+    &__subtitle {
+        @apply w-full text-center mx-auto;
+
+        max-width: 600px;
+    }  
 
     &--page {
         @apply min-h-full w-full pt-10;

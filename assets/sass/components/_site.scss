@@ -10,11 +10,7 @@
     }
 
     &__main {
-        @apply w-full px-4;
-
-        @screen md {
-            @apply px-6;
-        }
+        @apply w-full;
     }
 
     &__info {
@@ -25,9 +21,13 @@
     }
 
     &__title {
-        @apply w-full mt-2 leading-none font-bold text-primary-dark;
+        @apply w-full mt-2 leading-none font-bold text-primary-dark text-center;
 
         font-size: 26px;
+
+        @screen iphone5 {
+            @apply text-left;
+        }
     }
 
     &__slogan {

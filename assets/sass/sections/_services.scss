@@ -99,15 +99,16 @@
         max-width: 160px;
         height: 160px;
         border-radius: 10px;
-        background-color: rgba(#38B2AC, 0.12);
-
-        &:hover {
-            background-color: rgba(#38B2AC, 0.24);
-        }
     }
 
     &__label {
         @apply block font-semibold text-center text-xl px-2;
+    }
+
+    &:hover {
+        .service-block__icon {
+            background-color: rgba(#38B2AC, 0.12);
+        }
     }
 }
 
