@@ -34,7 +34,16 @@ const translations = {
 
   footer: {
     link_privacy: "Datenschutzerklärung",
-    link_impressum: "Impressum"
+    link_impressum: "Impressum",
+    contact_form: {
+      title: "Let's get in touch",
+      subtitle:
+        "In the tumultuous business of cutting-in and attending to a whale, there is much running backwards and forwards among.",
+      label_name: "Name",
+      label_email: "E-mail",
+      label_message: "Message",
+      label_submit: "Submit"
+    }
   },
 
   privacy_page,

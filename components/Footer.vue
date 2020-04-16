@@ -1,5 +1,6 @@
 <template>
   <footer class="footer">
+    <ContactForm />
     <div class="footer__container">
       <div class="footer__contact">
         <a
@@ -23,3 +24,10 @@
     </div>
   </footer>
 </template>
+
+<script>
+import ContactForm from "./footer/ContactForm"
+export default {
+  components: { ContactForm }
+}
+</script>

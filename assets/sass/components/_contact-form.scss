@@ -1,0 +1,46 @@
+.section--contact-form {
+    @apply pt-16 pb-16;
+    .section {
+      &__content {
+        max-width: 800px;
+      }
+    }
+  }
+  
+  .contact-form {
+    @apply flex flex-wrap justify-evenly items-center pt-16 pb-4;
+    &__field {
+      @apply w-1/2 px-4 mb-6 flex items-start;
+
+      &--textarea,
+      &--submit {
+        @apply w-full;
+      }
+
+      &--submit {
+        @apply flex justify-center;
+      }
+    }
+  
+    &__label {
+    }
+  
+    &__input {
+      @apply bg-gray-lighter py-4 px-4 rounded-md w-full;
+      &:focus {
+        @apply outline-none shadow-sm shadow-inner;
+      }
+    }
+  
+    &__submit {
+      @apply font-bold rounded-md bg-primary text-white py-4 px-8 text-center;
+      @apply cursor-pointer;
+
+      min-width: 200px;
+  
+      &:hover,
+      &:focus {
+          @apply bg-primary-dark;
+      }
+    }
+  }
