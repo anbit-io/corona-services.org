@@ -1,0 +1,74 @@
+.accordion {
+    @apply border-b ;
+    border-bottom-color: rgba(#141618, 0.15);
+
+    &__header {
+        @apply py-6 flex cursor-pointer items-center justify-between;
+    }
+
+    &__title {
+        @apply flex-1 text-2xl font-semibold pr-3;
+    }
+
+    &__icon {
+        width: 15px;
+        height: 15px;
+
+        @apply relative;
+
+        &:before,
+        &:after {
+            @apply absolute left-0 right-0 bg-primary;
+            content: "";
+            top: 50%;
+            height: 2px;
+            transform-origin: center;
+            transition: transform 0.3s ease-out;
+            transition-delay: 0.3s;
+        }
+        
+        &:before {
+            transform: translateY(-50%) rotate(0deg);
+        }
+        
+        &:after {
+            transform: translateY(-50%) rotate(90deg);
+        }
+    }
+
+    &__body {
+    }
+
+    &__content {
+        @apply pb-6;
+    }
+
+    &--expanded {
+        .accordion__icon {
+            &:before,
+            &:after {
+                transition-delay: 0s;
+            }
+
+            &:before {
+                transform: translateY(-50%) rotate(-180deg);
+            }
+            
+            &:after {
+                transform: translateY(-50%) rotate(-360deg);
+            }
+        }
+    }
+}
+
+.expand-enter-active,
+.expand-leave-active {
+  transition: max-height 0.5s ease-in-out;
+  max-height: 600px;
+  overflow: hidden;
+}
+
+.expand-enter,
+.expand-leave-to {
+  max-height: 0;
+}

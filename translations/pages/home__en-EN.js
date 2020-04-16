@@ -145,5 +145,36 @@ export default {
 
   our_clients: {
     title: "Our Clients"
+  },
+
+  faq: {
+    title: "FAQ",
+    items: [
+      {
+        title: "Vel fringilla est ullamcorper eget nulla?",
+        content:
+          "Ac placerat vestibulum lectus mauris ultrices eros. Tincidunt eget nullam non nisi est sit amet facilisis magna. Id faucibus nisl tincidunt eget nullam non."
+      },
+      {
+        title: "Et magnis dis parturient montes?",
+        content:
+          "Ac placerat vestibulum lectus mauris ultrices eros. Tincidunt eget nullam non nisi est sit amet facilisis magna. Id faucibus nisl tincidunt eget nullam non."
+      },
+      {
+        title: "Ac felis donec et odio pellentesque?",
+        content:
+          "Ac placerat vestibulum lectus mauris ultrices eros. Tincidunt eget nullam non nisi est sit amet facilisis magna. Id faucibus nisl tincidunt eget nullam non."
+      },
+      {
+        title: "Vel pharetra vel turpis?",
+        content:
+          "Ac placerat vestibulum lectus mauris ultrices eros. Tincidunt eget nullam non nisi est sit amet facilisis magna. Id faucibus nisl tincidunt eget nullam non."
+      },
+      {
+        title: "Odio ut sem nulla pharetra?",
+        content:
+          "Ac placerat vestibulum lectus mauris ultrices eros. Tincidunt eget nullam non nisi est sit amet facilisis magna. Id faucibus nisl tincidunt eget nullam non."
+      }
+    ]
   }
 }

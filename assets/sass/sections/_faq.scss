@@ -1,0 +1,23 @@
+.section {
+    &--faq {
+        @apply py-24;
+
+        background: rgba(56,178,172,0.12);
+        
+        .section {
+
+            &__header {
+                @apply mb-5;
+            }
+
+            &__content {
+                @apply mx-auto;
+                max-width: 730px;
+
+                @screen md-max {
+                    @apply px-6;
+                }
+            }
+        }
+    }
+}
