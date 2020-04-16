@@ -7,4 +7,13 @@
     &:focus {
         @apply bg-primary-dark;
     }
+
+    &--inverted {
+        @apply bg-white text-primary;
+
+        &:hover,
+        &:focus {
+            @apply bg-gray-200 text-primary-dark;
+        }
+    }
 }

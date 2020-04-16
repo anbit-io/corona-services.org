@@ -28,72 +28,73 @@ export default {
   },
 
   why_us: {
-    title: "Why us?",
+    title: "Warum wir?",
     subtitle:
-      "We want to support you and want to implement innovative solutions that you are prepared for the current times and future as well.",
+      "Wir möchten Sie unterstützen und innovative Lösungen implementieren, die Sie auch auf die aktuelle und zukünftige Zeit vorbereiten.",
     support_local: {
       title: "Support Local",
       description:
-        "During this time, we’re happy to support local bussiness to continue their business."
+        "Während dieser Zeit unterstützen wir gerne das lokale Geschäft, um sein Geschäft fortzusetzen."
     },
     easy_to_use: {
-      title: "Easy to use",
+      title: "Einfach zu verwenden",
       description:
-        "The user experience is most valued. We offer a user friendly app and order process."
+        "Die Benutzererfahrung wird am meisten geschätzt. Wir bieten eine benutzerfreundliche App und Bestellvorgang."
     },
     quarantine_rules: {
-      title: "Quarantine rules",
+      title: "Quarantäneregeln",
       description:
-        "Observe the quarantine rules. Keep your distance and reduce the necessary contact."
+        "Beachten Sie die Quarantäneregeln. Halten Sie Abstand und reduzieren Sie den notwendigen Kontakt."
     },
     protect_staff: {
-      title: "Protect staff & clients",
-      description: "Reduce all unnecessary contact. Our system supports you."
+      title: "Schützen Sie Mitarbeiter und Kunden",
+      description:
+        "Reduzieren Sie jeden unnötigen Kontakt. Unser System unterstützt Sie."
     },
     pick_up: {
-      title: "Pick-up",
+      title: "Abholen",
       description:
-        "Pre-order saves resources and reduce the risk of getting Covid-19."
+        "Die Vorbestellung spart Ressourcen und verringert das Risiko, Covid-19 zu erhalten."
     },
     online_payment: {
-      title: "Online payment",
+      title: "Onlinebezahlung",
       description:
-        "No cash payment or place the card on a terminal. All transfers to your bank account."
+        "Keine Barzahlung oder Platzieren der Karte auf einem Terminal. Alle Überweisungen auf Ihr Bankkonto."
     },
     optimize_workflows: {
-      title: "Optimize workflows",
+      title: "Workflows optimieren",
       description:
-        "Reduce stressful times for your staff. Pre- package and wait for client’s pick-up."
+        "Reduzieren Sie stressige Zeiten für Ihre Mitarbeiter. Vorverpacken und auf die Abholung durch den Kunden warten."
     },
     mobile_menu: {
-      title: "Mobile menu",
+      title: "Mobiles Menü",
       description:
-        "Show all your products online. Updating is easy with just a few clicks."
+        "Zeigen Sie alle Ihre Produkte online. Das Aktualisieren ist mit nur wenigen Klicks einfach."
     },
     prestige: {
       title: "Prestige",
       description:
-        "Be innovative & be prepared for the times after the crisis as well."
+        "Seien Sie innovativ und seien Sie auch auf die Zeiten nach der Krise vorbereitet."
     }
   },
 
   easy_setup: {
-    title: "An easy setup for launching soon.",
+    title: "Ein einfaches Setup für den baldigen Start.",
     step_1: {
-      title: "Choose a package",
-      description: "Which business description."
+      title: "Wählen Sie ein Paket",
+      description: "Welche Geschäftsbeschreibung?"
     },
     step_2: {
-      title: "Provide information",
+      title: "Informationen bereitstellen",
       description:
-        "Arrange a call with our support & provide a list of your products and further general company."
+        "Vereinbaren Sie einen Anruf mit unserem Support und stellen Sie eine Liste Ihrer Produkte und weiterer allgemeiner Unternehmen bereit."
     },
     step_3: {
-      title: "Launch shop",
+      title: "Shop starten",
       description:
-        "After our team has completed the setup, you can start selling!."
+        "Nachdem unser Team die Einrichtung abgeschlossen hat, können Sie mit dem Verkauf beginnen."
     },
-    cta_label: "Need help?"
+    cta_label: "Brauchen Sie Hilfe?"
   },
 
   featured: {
@@ -108,7 +109,7 @@ export default {
     subtitle:
       "Wir richten Ihnen die App ein. Keine verstecken Gebühren & schneller Support!",
 
-    bestchoice: "Best choice",
+    bestchoice: "Beste Wahl",
 
     item_starter: {
       name: "Start",
@@ -127,21 +128,21 @@ export default {
       price: "90",
       fees: "4% gebühr auf umsatz",
       features: [
-        "Order App",
-        "Pick-up delivery",
-        "Your logo",
-        "Corporate design",
-        "Voucher codes",
-        "Connect Social Media",
-        "Online Payment",
-        "Fast Support"
+        "App bestellen",
+        "Abholung Lieferung",
+        "Dein Logo",
+        "Corporate Design",
+        "Gutscheincodes",
+        "Social Media verbinden",
+        "Onlinebezahlung",
+        "Schneller Support"
       ],
       ctaLabel: "Mehr Informationen"
     },
 
     item_enterprise: {
       name: "Enterprise",
-      no_price: "Contact us for the price",
+      no_price: "Kontaktieren Sie uns für den preis",
       description:
         "Nur für große Unternehmen. Wir unterstützen Sie mit unserem IT-Know How, um Ihre Umsätze zu steigern. Individuelle und zugeschnittene Lösungen auf Ihr Unternehmen.",
       ctaLabel: "Bitte nehmen Sie Kontakt auf"

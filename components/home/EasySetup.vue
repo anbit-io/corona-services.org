@@ -17,12 +17,21 @@
           </div>
         </div>
       </div>
+      <div class="easy-setup__cta-wrapper">
+        <CTA href="mailto:info@corona-service.org" :inverted="true">
+          {{ $t("easy_setup.cta_label") }}
+        </CTA>
+      </div>
     </div>
   </section>
 </template>
 
 <script>
+import CTA from "../common/CTA"
 export default {
+  components: {
+    CTA
+  },
   computed: {
     steps() {
       return [

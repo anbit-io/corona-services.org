@@ -80,7 +80,7 @@ export default {
     title: "An easy setup for launching soon.",
     step_1: {
       title: "Choose a package",
-      description: "Which business description."
+      description: "Which business description?"
     },
     step_2: {
       title: "Provide information",
@@ -90,7 +90,7 @@ export default {
     step_3: {
       title: "Launch shop",
       description:
-        "After our team has completed the setup, you can start selling!."
+        "After our team has completed the setup, you can start selling."
     },
     cta_label: "Need help?"
   },

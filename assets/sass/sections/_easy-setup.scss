@@ -1,5 +1,5 @@
 .easy-setup {
-    @apply bg-primary text-white pt-16;
+    @apply bg-primary text-white pt-16 pb-16;
 
     &__title {
         @apply w-full font-bold text-center mb-16 leading-tight;
@@ -45,4 +45,8 @@
     }
 
     &__step-description {}
+
+    &__cta-wrapper {
+        @apply flex justify-center;
+    }
 }
