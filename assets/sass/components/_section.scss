@@ -12,15 +12,23 @@
     }
 
     &__title {
-        @apply font-bold mb-2 text-center leading-tight;
+        @apply font-bold mb-6 text-center leading-tight;
         font-size: 40px;
     } 
-    
+
     &__subtitle {
         @apply w-full text-center mx-auto;
 
         max-width: 600px;
-    }  
+    } 
+
+    &__content {
+        @apply w-full mx-auto;
+
+        @screen md-max {
+            @apply px-6;
+        }
+    }
 
     &--page {
         @apply min-h-full w-full pt-10;

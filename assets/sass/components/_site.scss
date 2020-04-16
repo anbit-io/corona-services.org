@@ -19,28 +19,22 @@
 
         @screen iphone5-max {
             @apply mb-4;
+            min-width: 180px;
+            width: 180px;
         }
     }
 
     &__title {
-        @apply w-full mt-2 leading-none font-bold text-primary-dark text-center;
+        @apply w-full mt-2 leading-none font-bold text-primary-dark text-left;
 
         font-size: 26px;
-
-        @screen iphone5 {
-            @apply text-left;
-        }
     }
 
     &__slogan {
-        @apply w-full uppercase font-bold text-center;
+        @apply w-full uppercase font-bold text-left;
 
         font-size: 10px;
         letter-spacing: 0.325rem;
-
-        @screen iphone5 {
-            @apply text-left;
-        }
 
         @screen sm {
             @apply text-right;
@@ -48,10 +42,10 @@
     }
 
     &__langswitcher {
-        @apply px-2 py-1 bg-white border-2 border-primary rounded appearance-none font-medium mr-3;
+        @apply px-2 py-1 mr-3 bg-white border-2 border-primary rounded appearance-none font-medium;
 
         @screen xs-max {
-            @apply mr-0;
+            @apply mr-0 mt-2;
         }
 
         &:focus {

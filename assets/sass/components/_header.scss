@@ -69,13 +69,13 @@
     }
 
     &__nav {
-        @apply flex items-center justify-between mx-auto relative pb-20px;
+        @apply flex items-start justify-between mx-auto relative pb-20px;
         
         max-width: $container-width;
         padding-top: 24px;
 
-        @screen iphone5-max {
-            @apply flex-col;
+        @screen iphone5 {
+            @apply items-center;
         }
 
         @screen lg {
