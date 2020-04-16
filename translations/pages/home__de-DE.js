@@ -30,51 +30,56 @@ export default {
   why_us: {
     title: "Warum wir?",
     subtitle:
-      "Wir möchten Sie unterstützen und innovative Lösungen implementieren, die Sie auch auf die aktuelle und zukünftige Zeit vorbereiten.",
+      "Wir sind froh, lokale Unternehmer und Verbraucher unterstützen zu können – gerade in der Krise.",
     support_local: {
-      title: "Support Local",
+      title: "#Lokale Unternehmen unterstützen",
       description:
-        "Während dieser Zeit unterstützen wir gerne das lokale Geschäft, um sein Geschäft fortzusetzen."
-    },
-    easy_to_use: {
-      title: "Einfach zu verwenden",
-      description:
-        "Die Benutzererfahrung wird am meisten geschätzt. Wir bieten eine benutzerfreundliche App und Bestellvorgang."
+        "Wir sind froh, lokale Unternehmer und Verbraucher unterstützen zu können – gerade in der Krise."
     },
     quarantine_rules: {
-      title: "Quarantäneregeln",
+      title: "Sicherheitshinweise einhalten",
       description:
-        "Beachten Sie die Quarantäneregeln. Halten Sie Abstand und reduzieren Sie den notwendigen Kontakt."
+        "Beachten Sie die Sicherheitshinweise der Behörden. Halten Sie Abstand und vermeiden Sie unnötigen Kontakt. Unsere App hilft Ihnen dabei."
     },
     protect_staff: {
-      title: "Schützen Sie Mitarbeiter und Kunden",
+      title: "Kunden und Mitarbeiter schützen",
       description:
-        "Reduzieren Sie jeden unnötigen Kontakt. Unser System unterstützt Sie."
+        "Mit unserer App halten Sie die Sicherheitshinweise für Unternehmer ein und schützen sowohl Kunden als auch Mitarbeiter."
     },
     pick_up: {
-      title: "Abholen",
+      title: "Abhol-Service",
       description:
-        "Die Vorbestellung spart Ressourcen und verringert das Risiko, Covid-19 zu erhalten."
+        "Mit Vorbestellungen über Ihre App oder Website sparen Sie Ressourcen und Sie reduzieren das Risiko, an Covid-19 zu erkranken."
     },
     online_payment: {
-      title: "Onlinebezahlung",
+      title: "Online-Zahlung",
       description:
-        "Keine Barzahlung oder Platzieren der Karte auf einem Terminal. Alle Überweisungen auf Ihr Bankkonto."
+        "Bar-Zahlungen sind nicht mehr nötig. Alle Online-Zahlungen werden direkt auf Ihr Konto überwiesen. Gewinnen Sie weitere Kunden durch eine zusätzliche Bezahlmöglichkeit."
     },
     optimize_workflows: {
-      title: "Workflows optimieren",
+      title: "Arbeitsabläufe optimieren",
       description:
-        "Reduzieren Sie stressige Zeiten für Ihre Mitarbeiter. Vorverpacken und auf die Abholung durch den Kunden warten."
+        "In der Krise sind Ihre Mitarbeiter nicht nur während der Stoßzeiten gefordert. Vorbestellungen reduzieren den Stress: Bieten Sie die Vorbestellung mit einem Pick-up an."
     },
-    mobile_menu: {
-      title: "Mobiles Menü",
+    increase_sales: {
+      title: "Umsatz steigern",
       description:
-        "Zeigen Sie alle Ihre Produkte online. Das Aktualisieren ist mit nur wenigen Klicks einfach."
+        "Mit Ihrer Bestell-Website oder App können Sie auch in der Krise Ihre Services anbieten und verkaufen. Daneben erschließen Sie neue Kundenfelder, bspw. junge Menschen."
     },
     prestige: {
       title: "Prestige",
       description:
-        "Seien Sie innovativ und seien Sie auch auf die Zeiten nach der Krise vorbereitet."
+        "Seien Sie innovativ und digitaler Vorreiter. Mit einer eigenen App oder Bestell-Website sind Sie auch nach der Krise bestens aufgestellt und gegenüber Wettbewerbern im Vorteil."
+    },
+    easy_to_use: {
+      title: "Einfache Bedienung",
+      description:
+        "Aufgrund der benutzerfreundlichen Gestaltung wir jeder Kunde leicht über Ihre App oder Ihre Website Bestellungen aufgeben können."
+    },
+    online_catalog: {
+      title: "Digitale Produktübersicht",
+      description:
+        "Präsentieren Sie all Ihre Produkte und Services online. Mit wenigen Klicks können Sie Ihr Angebot stets aktualisieren.s"
     }
   },
 
@@ -111,22 +116,13 @@ export default {
 
     bestchoice: "Beste Wahl",
 
-    item_starter: {
-      name: "Start",
-      description:
-        "Perfekt für lokale Unternehmen, die mit Ihrer eigenen App ihre Umsätze erhöhen möchten. Starten Sie heute.",
-      price: "40",
-      fees: "8% gebühr auf umsatz",
-      ctaLabel: "Mehr Informationen"
-    },
-
     item_plus: {
       per_unit: "month",
       name: "Plus",
       description:
         "Sie führen einen bekanntes Unternehmen, Restaurant oder Geschäft in Ihrer Stadt? Dies ist die richtige Wahl für Sie.",
       price: "90",
-      fees: "4% gebühr auf umsatz",
+      fees: "Keine Einrichtungsgebühren",
       features: [
         "App bestellen",
         "Abholung Lieferung",

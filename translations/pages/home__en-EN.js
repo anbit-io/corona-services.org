@@ -33,46 +33,52 @@ export default {
     support_local: {
       title: "Support Local",
       description:
-        "During this time, we’re happy to support local bussiness to continue their business."
-    },
-    easy_to_use: {
-      title: "Easy to use",
-      description:
-        "The user experience is most valued. We offer a user friendly app and order process."
+        "We are glad to be able to support local shops and consumers - especially during the crisis."
     },
     quarantine_rules: {
       title: "Quarantine rules",
       description:
-        "Observe the quarantine rules. Keep your distance and reduce the necessary contact."
+        "Observe the safety instructions of the authorities. Keep your distance and avoid unnecessary contact. Our app will help you do this."
     },
     protect_staff: {
       title: "Protect staff & clients",
-      description: "Reduce all unnecessary contact. Our system supports you."
+      description:
+        "With our app you comply with the safety instructions for entrepreneurs and protect both customers and employees."
     },
     pick_up: {
       title: "Pick-up",
       description:
-        "Pre-order saves resources and reduce the risk of getting Covid-19."
+        "Pre-ordering from your app or website saves resources and reduces the risk of contracting Covid-19."
     },
     online_payment: {
       title: "Online payment",
       description:
-        "No cash payment or place the card on a terminal. All transfers to your bank account."
+        "Cash payments are no longer necessary. All online payments are transferred directly to your account. Win more customers by an additional payment option."
     },
     optimize_workflows: {
       title: "Optimize workflows",
       description:
-        "Reduce stressful times for your staff. Pre- package and wait for client’s pick-up."
+        "In a crisis your employees are not only challenged during peak hours. Pre-orders reduce stress: Offer the pre-order & a pick-up."
     },
-    mobile_menu: {
-      title: "Mobile menu",
+    increase_sales: {
+      title: "Increase sales",
       description:
-        "Show all your products online. Updating is easy with just a few clicks."
+        "With an order website or app, you can offer and sell your services even in a crisis. In addition, you open up new customer fields, for example young people."
     },
     prestige: {
       title: "Prestige",
       description:
-        "Be innovative & be prepared for the times after the crisis as well."
+        "Be an innovative and digital pioneer. With your own app or order website, you will be well positioned even after the crisis and have an advantage over your competitors."
+    },
+    easy_to_use: {
+      title: "Easy to use",
+      description:
+        "Due to the user-friendly design, every customer can easily place orders via your app or your website."
+    },
+    online_catalog: {
+      title: "Online catalog",
+      description:
+        "Present all your products and services online. With a few clicks you can always update your offer."
     }
   },
 
@@ -103,20 +109,10 @@ export default {
   },
 
   pricing: {
-    title: "Price and Plans",
-    subtitle:
-      "We set up the whole infrastructure, no hidden fees, fast support!",
+    title: "Plans & prices",
+    subtitle: "We will set up the app for you. No hidden fees & fast support!",
 
     bestchoice: "Best choice",
-
-    item_starter: {
-      name: "Starter",
-      description:
-        "Perfect for local business which want to increase their sales. Start today with this option.",
-      price: "40",
-      fees: "8% Fee on sales",
-      ctaLabel: "More information"
-    },
 
     item_plus: {
       per_unit: "month",
@@ -124,7 +120,7 @@ export default {
       description:
         "You are well known shop, restaurant or store in your city? This is the right choice.",
       price: "90",
-      fees: "4% fee on sales",
+      fees: "No set up fees",
       features: [
         "Order App",
         "Pick-up delivery",

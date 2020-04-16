@@ -22,8 +22,8 @@ const translations = {
 
   header_menu: {
     our_services: "Leistungen",
-    why_us: "Why us?",
-    how_it_works: "How it works?",
+    why_us: "Warum wir?",
+    how_it_works: "Wie es funktioniert?",
     pricing: "Pricing",
     our_clients: "Referenzen"
   },

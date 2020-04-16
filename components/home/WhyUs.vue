@@ -89,8 +89,8 @@ export default {
         },
         {
           key: "mobile-menu",
-          title: this.$t("why_us.mobile_menu.title"),
-          description: this.$t("why_us.mobile_menu.description")
+          title: this.$t("why_us.online_catalog.title"),
+          description: this.$t("why_us.online_catalog.description")
         },
         {
           key: "prestige",
