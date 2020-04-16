@@ -29,8 +29,6 @@ jobs:
                 SLACK_CHANNEL: 'corona-svs-website'
                 SLACK_COLOR: '#3278BD'
                 SLACK_ICON: https://raw.githubusercontent.com/John-Lin/octocat-images/master/img/droctocat.png
-                SLACK_MESSAGE: 'Post Content :rocket:'
-                SLACK_TITLE: Deployment
+                SLACK_TITLE: Deployment to Remote
                 SLACK_USERNAME: Github
-                # SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
-                SLACK_WEBHOOK: https://hooks.slack.com/services/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
+                SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
