@@ -36,14 +36,23 @@ const translations = {
     link_privacy: "Datenschutzerklärung",
     link_impressum: "Impressum",
     contact_form: {
-      title: "Let's get in touch",
+      title: "Nehmen wir Kontakt auf",
       subtitle:
-        "In the tumultuous business of cutting-in and attending to a whale, there is much running backwards and forwards among.",
+        "In dem turbulenten Geschäft, einen Wal einzuschneiden und sich um ihn zu kümmern, läuft viel hin und her.",
       label_name: "Name",
-      label_email: "E-mail",
-      label_message: "Message",
-      label_submit: "Submit"
+      label_email: "E-Mail",
+      label_message: "Botschaft",
+      label_submit: "Einreichen",
+      label_agreement:
+        "Ich habe die <a href='https://corona-services.org/privacy'>Datenschutzrichtlinie</a> gelesen und bin damit einverstanden.",
+      acknowledgement:
+        "Danke, dass Sie uns kontaktiert haben! Wir werden Sie bald erreichen."
     }
+  },
+
+  errors: {
+    empty: "Bitte füllen Sie dieses Feld aus.",
+    unchecked: "Bitte akzeptieren Sie die Datenschutzbestimmungen, bevor Sie das Formular abschicken."
   },
 
   privacy_page,

@@ -33,7 +33,24 @@ const translations = {
 
   footer: {
     link_privacy: "Privacy",
-    link_impressum: "Policy Imprint"
+    link_impressum: "Policy Imprint",
+    contact_form: {
+      title: "Let's get in touch",
+      subtitle:
+        "In the tumultuous business of cutting-in and attending to a whale, there is much running backwards and forwards among.",
+      label_name: "Name",
+      label_email: "E-Mail",
+      label_message: "Message",
+      label_submit: "Submit",
+      label_agreement:
+        "I have read the <a href='https://corona-services.org/en/privacy'>privacy policy</a> and agree to it.",
+      acknowledgement: "Thank you for contacting us! we will reach you soon."
+    }
+  },
+
+  errors: {
+    empty: "Please fill this field.",
+    unchecked: "Please accept the privacy policy before submitting the form."
   },
 
   privacy_page,

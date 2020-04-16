@@ -1,28 +1,56 @@
 .section--contact-form {
-    @apply pt-16 pb-16;
+    @apply pt-16 pb-16 px-0;
     .section {
       &__content {
-        max-width: 800px;
+        @apply px-0;
+        max-width: 770px;
       }
     }
   }
   
   .contact-form {
-    @apply flex flex-wrap justify-evenly items-center pt-16 pb-4;
+    @apply flex flex-wrap justify-evenly items-start pt-16 pb-4;
+    @apply relative;
+    z-index: 1;
+
     &__field {
-      @apply w-1/2 px-4 mb-6 flex items-start;
+      @apply w-full px-4 mb-6 flex flex-wrap items-start;
+      
+      @screen sm {
+        @apply w-1/2;
+      }
 
       &--textarea,
+      &--agreement,
       &--submit {
         @apply w-full;
       }
 
+      &--agreement,
       &--submit {
-        @apply flex justify-center;
+        @apply justify-center;
       }
-    }
-  
-    &__label {
+
+      &--agreement {
+        .contact-form {
+          &__error {
+            @apply text-center;
+          }
+       
+          &__label {
+            @apply flex items-center;
+
+            a {
+              @apply underline;
+            }
+          }
+
+          &__input {
+            @apply cursor-pointer;
+            width: 30px;
+          }
+        }
+      }
     }
   
     &__input {
@@ -30,6 +58,10 @@
       &:focus {
         @apply outline-none shadow-sm shadow-inner;
       }
+    }
+
+    &__error {
+      @apply w-full px-3 mt-2 text-sm text-red-500;
     }
   
     &__submit {
@@ -42,5 +74,13 @@
       &:focus {
           @apply bg-primary-dark;
       }
+    }
+
+    &__acknowlegement {
+      @apply absolute right-0 top-0 left-0 bottom-0 bg-white;
+      @apply flex justify-center items-center;
+      @apply text-primary text-4xl font-semibold;
+
+      z-index: 10;
     }
   }
