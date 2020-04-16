@@ -21,17 +21,17 @@
       }
 
       &--textarea,
-      &--agreement,
+      &--gdpr,
       &--submit {
         @apply w-full;
       }
 
-      &--agreement,
+      &--gdpr,
       &--submit {
         @apply justify-center;
       }
 
-      &--agreement {
+      &--gdpr {
         .contact-form {
           &__error {
             @apply text-center;

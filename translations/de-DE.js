@@ -43,7 +43,7 @@ const translations = {
       label_email: "E-Mail",
       label_message: "Botschaft",
       label_submit: "Einreichen",
-      label_agreement:
+      label_gdpr:
         "Ich habe die <a href='https://corona-services.org/privacy'>Datenschutzrichtlinie</a> gelesen und bin damit einverstanden.",
       acknowledgement:
         "Danke, dass Sie uns kontaktiert haben! Wir werden Sie bald erreichen."
@@ -52,7 +52,8 @@ const translations = {
 
   errors: {
     empty: "Bitte füllen Sie dieses Feld aus.",
-    unchecked: "Bitte akzeptieren Sie die Datenschutzbestimmungen, bevor Sie das Formular abschicken."
+    gdpr_accepted:
+      "Bitte akzeptieren Sie die Datenschutzbestimmungen, bevor Sie das Formular abschicken."
   },
 
   privacy_page,

@@ -42,7 +42,7 @@ const translations = {
       label_email: "E-Mail",
       label_message: "Message",
       label_submit: "Submit",
-      label_agreement:
+      label_gdpr:
         "I have read the <a href='https://corona-services.org/en/privacy'>privacy policy</a> and agree to it.",
       acknowledgement: "Thank you for contacting us! we will reach you soon."
     }
@@ -50,7 +50,8 @@ const translations = {
 
   errors: {
     empty: "Please fill this field.",
-    unchecked: "Please accept the privacy policy before submitting the form."
+    gdpr_accepted:
+      "Please accept the privacy policy before submitting the form."
   },
 
   privacy_page,

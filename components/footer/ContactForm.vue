@@ -57,18 +57,21 @@
               {{ getError("message") }}
             </span>
           </div>
-          <div class="contact-form__field contact-form__field--agreement">
+          <div class="contact-form__field contact-form__field--gdpr">
             <label for="privacypolicy" class="contact-form__label">
               <input
-                v-model="agreement"
+                v-model="gdpr_accepted"
                 class="contact-form__input"
                 type="checkbox"
-                name="privacypolicy"
+                name="gdpr_accepted"
               >
-              <span v-html="$t('footer.contact_form.label_agreement')" />
+              <span v-html="$t('footer.contact_form.label_gdpr')" />
             </label>
-            <span :v-if="errorsHas('agreement')" class="contact-form__error">
-              {{ getError("agreement") }}
+            <span
+              :v-if="errorsHas('gdpr_accepted')"
+              class="contact-form__error"
+            >
+              {{ getError("gdpr_accepted") }}
             </span>
           </div>
           <div class="contact-form__field contact-form__field--submit">
@@ -91,7 +94,7 @@ export default {
       name: "",
       email: "",
       message: "",
-      agreement: false,
+      gdpr_accepted: false,
       acknowledgement: null,
       errors: {}
     }
@@ -132,22 +135,22 @@ export default {
       this.name = ""
       this.email = ""
       this.message = ""
-      this.agreement = false
+      this.gdpr_accepted = false
     },
     verifyForm() {
       let fields = {
         name: this.name,
         email: this.email,
         message: this.message,
-        agreement: this.agreement
+        gdpr_accepted: this.gdpr_accepted
       }
 
       let errors = {}
 
       for (const [fieldName, fieldValue] of Object.entries(fields)) {
-        if (fieldName == "agreement") {
+        if (fieldName == "gdpr_accepted") {
           if (fieldValue == false) {
-            errors[fieldName] = this.$t("errors.unchecked")
+            errors[fieldName] = this.$t("errors.gdpr_accepted")
           }
         } else {
           if (fieldValue == "") {
