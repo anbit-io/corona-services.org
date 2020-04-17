@@ -88,8 +88,40 @@
 </template>
 
 <script>
-const EMAIL_URL =
-  "https://email.microservices.corona-services.org/api/emails/send"
+const emailService = {
+  serialize: function(o) {
+    var r = []
+    return (
+      Object.keys(o).forEach(function(e) {
+        var n = "boolean" == typeof o[e] ? +o[e] : o[e]
+        r.push(encodeURIComponent(e) + "=" + encodeURIComponent(n))
+      }),
+      r.join("&")
+    )
+  },
+  send: function(e) {
+    return fetch(
+      "https://email.microservices.corona-services.org/api/emails/send",
+      {
+        method: "POST",
+        mode: "cors",
+        headers: {
+          Accept: "text/html, application/xhtml+xml",
+          "Content-Type": "application/x-www-form-urlencoded"
+        },
+        redirect: "follow",
+        referrerPolicy: "no-referrer",
+        body: emailService.serialize(e)
+      }
+    )
+      .then(function(e) {
+        return e.text()
+      })
+      .then(function(e) {
+        return JSON.parse(e)
+      })
+  }
+}
 
 export default {
   data() {
@@ -130,19 +162,7 @@ export default {
         message: this.message,
         gdpr_accepted: this.gdpr_accepted
       }
-
-      const response = await fetch(EMAIL_URL, {
-        method: "POST",
-        mode: "cors",
-        headers: {
-          "Content-Type": "application/json"
-        },
-        redirect: "follow",
-        referrerPolicy: "no-referrer",
-        body: JSON.stringify(data)
-      })
-
-      let result = await response.json()
+      const result = await emailService.send(data)
       return result.status
     },
     showAcknowledgement() {

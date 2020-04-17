@@ -138,7 +138,7 @@ export default {
         src:
           "https://consent.cookiebot.com/28705f59-5bbb-413b-8a43-68e591c38a2b/cd.js",
         type: "text/javascript",
-        async: "true"
+        defer: true
       }
     ],
     bodyAttrs: { class: "body" }
