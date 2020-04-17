@@ -88,6 +88,9 @@
 </template>
 
 <script>
+const EMAIL_URL =
+  "https://email.microservices.corona-services.org/api/emails/send"
+
 export default {
   data() {
     return {
@@ -100,7 +103,6 @@ export default {
     }
   },
   mounted() {
-    this.resetFields()
     this.dismissAcknowledgement()
   },
   methods: {
@@ -121,8 +123,27 @@ export default {
         this.showAcknowledgement()
       }
     },
-    postForm() {
-      return true
+    async postForm() {
+      let data = {
+        name: this.name,
+        email: this.email,
+        message: this.message,
+        gdpr_accepted: this.gdpr_accepted
+      }
+
+      const response = await fetch(EMAIL_URL, {
+        method: "POST",
+        mode: "cors",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        redirect: "follow",
+        referrerPolicy: "no-referrer",
+        body: JSON.stringify(data)
+      })
+
+      let result = await response.json()
+      return result.status
     },
     showAcknowledgement() {
       this.acknowledgement = this.$t("footer.contact_form.acknowledgement")
