@@ -18,6 +18,9 @@
           >
             {{ acknowledgement }}
           </div>
+          <div v-show="submitting" class="contact-form__spinner">
+            <span class="loader" />
+          </div>
           <div class="contact-form__field contact-form__field--text">
             <input
               ref="name"
@@ -131,7 +134,8 @@ export default {
       message: "",
       gdpr_accepted: false,
       acknowledgement: null,
-      errors: {}
+      errors: {},
+      submitting: false
     }
   },
   mounted() {
@@ -149,10 +153,14 @@ export default {
         return
       }
 
+      this.submitting = true
+
       let result = await this.postForm()
 
       if (result) {
         this.showAcknowledgement()
+      } else {
+        this.showErrorMessage()
       }
     },
     async postForm() {
@@ -166,7 +174,12 @@ export default {
       return result.status
     },
     showAcknowledgement() {
+      this.submitting = false
       this.acknowledgement = this.$t("footer.contact_form.acknowledgement")
+    },
+    showErrorMessage() {
+      this.submitting = false
+      this.acknowledgement = this.$t("footer.contact_form.submit_error")
     },
     dismissAcknowledgement() {
       this.acknowledgement = null

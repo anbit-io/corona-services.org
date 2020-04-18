@@ -44,7 +44,9 @@ const translations = {
       label_submit: "Submit",
       label_gdpr:
         "I have read the <a href='https://corona-services.org/en/privacy'>privacy policy</a> and agree to it.",
-      acknowledgement: "Thank you for contacting us! we will reach you soon."
+      acknowledgement: "Thank you for contacting us! we will reach you soon.",
+      submit_error:
+        "There was an issue while submitting your request. Please try again later."
     }
   },
 

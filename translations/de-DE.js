@@ -46,7 +46,9 @@ const translations = {
       label_gdpr:
         "Ich habe die <a href='https://corona-services.org/privacy'>Datenschutzrichtlinie</a> gelesen und bin damit einverstanden.",
       acknowledgement:
-        "Danke, dass Sie uns kontaktiert haben! Wir werden Sie bald erreichen."
+        "Danke, dass Sie uns kontaktiert haben! Wir werden Sie bald erreichen.",
+      submit_error:
+        "Beim Senden Ihrer Anfrage ist ein Problem aufgetreten. Bitte versuchen Sie es später noch einmal."
     }
   },
 

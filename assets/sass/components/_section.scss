@@ -13,7 +13,12 @@
 
     &__title {
         @apply font-bold mb-6 text-center leading-tight;
-        font-size: 40px;
+
+        font-size: 36px;
+
+        @screen md {
+            font-size: 40px;
+        }
     }
 
     &__subtitle {
