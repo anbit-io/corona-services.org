@@ -1,5 +1,5 @@
 <template>
-  <section class="section section--contact-form">
+  <section id="contact" class="section section--contact-form">
     <div class="section__container">
       <div class="section__header">
         <h3 class="section__title">

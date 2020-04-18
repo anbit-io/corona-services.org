@@ -52,9 +52,12 @@
               </li>
             </ul>
 
-            <CTA :href="pricingHref" class="pricing-item__cta">
+            <nuxt-link
+              :to="{ path: localePath('/'), hash: 'contact' }"
+              class="cta pricing-item__cta"
+            >
               {{ pricing.ctaLabel }}
-            </CTA>
+            </nuxt-link>
           </div>
         </div>
       </div>
@@ -63,9 +66,7 @@
 </template>
 
 <script>
-import CTA from "../common/CTA"
 export default {
-  components: { CTA },
   computed: {
     pricingHref() {
       return `mailto:info@corona-service.org?subject=${encodeURIComponent(

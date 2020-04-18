@@ -120,18 +120,17 @@ export default {
       per_unit: "month",
       name: "Plus",
       description:
-        "Sie führen einen bekanntes Unternehmen, Restaurant oder Geschäft in Ihrer Stadt? Dies ist die richtige Wahl für Sie.",
+        "Sie besitzen ein Restaurant, Metzgerei, Bäckerei oder lokalen Einzelhandel? Dies ist die richtige Wahl für Sie! Ideal für Restaurants, Metzgereien, Bäckereien oder lokalen Einzelahndel.",
       price: "90",
-      fees: "Keine Einrichtungsgebühren",
+      fees: "Keine Provision!",
       features: [
-        "App bestellen",
-        "Abholung Lieferung",
-        "Dein Logo",
-        "Corporate Design",
-        "Gutscheincodes",
-        "Social Media verbinden",
-        "Onlinebezahlung",
-        "Schneller Support"
+        "Eigene Bestell-App",
+        "Pick-up oder Lieferservice",
+        "Schutz von Mitarbeitern, Kunden & Familie",
+        "Eigenes Logo & cooperate design",
+        "Kontaktloses bezahlen (Onlinebezahlung)",
+        "Schneller Support",
+        "Keine Provisionen"
       ],
       ctaLabel: "Mehr Informationen"
     },
@@ -140,7 +139,7 @@ export default {
       name: "Enterprise",
       no_price: "Kontaktieren Sie uns für den preis",
       description:
-        "Nur für große Unternehmen. Wir unterstützen Sie mit unserem IT-Know How, um Ihre Umsätze zu steigern. Individuelle und zugeschnittene Lösungen auf Ihr Unternehmen.",
+        "Maßgeschneiderte IT-Lösungen für Unternehmen mit mehreren Standorten sowie große Verkaufsflächen (z.B. Modehäuser). ",
       ctaLabel: "Bitte nehmen Sie Kontakt auf"
     }
   },

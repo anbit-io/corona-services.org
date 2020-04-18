@@ -118,18 +118,18 @@ export default {
       per_unit: "month",
       name: "Plus",
       description:
-        "You are well known shop, restaurant or store in your city? This is the right choice.",
+        "Do you own a restaurant, butcher shop, bakery or local retail business? This is the right choice for you!",
       price: "90",
-      fees: "No set up fees",
+      fees: "No commission!",
       features: [
-        "Order App",
-        "Pick-up delivery",
-        "Your logo",
-        "Corporate design",
-        "Voucher codes",
-        "Connect Social Media",
+        "Own order-app",
+        "Pick-up or delivery service",
+        "Protect employees, clients & family",
+        "Own logo & corporate colors",
+        "Contactless payment (online payment)",
+        "Quick support",
         "Online Payment",
-        "Fast Support"
+        "No commission"
       ],
       ctaLabel: "More information"
     },
@@ -138,7 +138,7 @@ export default {
       name: "Enterprise",
       no_price: "Contact us for the price",
       description:
-        "Just for business with several branches or big companies. We support your business with our IT-knowledge to increase your sales. Custom consulting & tailored IT-solutions.",
+        "Tailor-made IT solutions for companies with several locations and large sales areas (e.g. fashion stores).",
       ctaLabel: "Please get in touch"
     }
   },
