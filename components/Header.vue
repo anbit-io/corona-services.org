@@ -29,12 +29,15 @@
               :key="key"
               class="header-menu__item"
             >
-              <nuxt-link
-                :to="{ path: localePath('/'), hash: item.path }"
+              <a
+                :href="
+                  $router.resolve({ path: localePath('/'), hash: item.path })
+                    .href
+                "
                 class="header-menu__link"
               >
                 {{ item.label }}
-              </nuxt-link>
+              </a>
             </div>
           </div>
         </div>
