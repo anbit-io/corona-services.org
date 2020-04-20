@@ -47,6 +47,22 @@
               {{ getError("email") }}
             </span>
           </div>
+          <div class="contact-form__field contact-form__field--select">
+            <select
+              ref="reason"
+              v-model="reason"
+              class="contact-form__input"
+              name="reason"
+            >
+              <option
+                v-for="(option, key) in reasonOptions"
+                :key="key"
+                :value="option.value"
+              >
+                {{ option.label }}
+              </option>
+            </select>
+          </div>
           <div class="contact-form__field contact-form__field--textarea">
             <textarea
               ref="message"
@@ -132,16 +148,36 @@ export default {
       name: "",
       email: "",
       message: "",
+      reason: "general",
       gdpr_accepted: false,
       acknowledgement: null,
       errors: {},
       submitting: false
     }
   },
+  computed: {
+    reasonOptions() {
+      return [
+        {
+          value: "plus_package",
+          label: this.$t("reason_options.plus_package")
+        },
+        {
+          value: "enterprise_package",
+          label: this.$t("reason_options.enterprise_package")
+        },
+        { value: "general", label: this.$t("reason_options.general") }
+      ]
+    }
+  },
   mounted() {
     this.dismissAcknowledgement()
+    this.$EventBus.$on("select-contact-reason", this.setContactReason)
   },
   methods: {
+    setContactReason(value) {
+      this.reason = value
+    },
     errorsHas(field) {
       return this.errors[field] !== undefined
     },
@@ -168,8 +204,10 @@ export default {
         name: this.name,
         email: this.email,
         message: this.message,
+        reason: this.reasonOptions.find(option => option.value == this.reason).label,
         gdpr_accepted: this.gdpr_accepted
       }
+
       const result = await emailService.send(data)
       return result.status
     },

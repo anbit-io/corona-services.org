@@ -52,12 +52,15 @@
               </li>
             </ul>
 
-            <nuxt-link
-              :to="{ path: localePath('/'), hash: 'contact' }"
+            <a
+              :href="
+                $router.resolve({ path: localePath('/'), hash: 'contact' }).href
+              "
               class="cta pricing-item__cta"
+              @click="delegateClick(pricing)"
             >
               {{ pricing.ctaLabel }}
-            </nuxt-link>
+            </a>
           </div>
         </div>
       </div>
@@ -94,6 +97,11 @@ export default {
           ctaLabel: this.$t("pricing.item_enterprise.ctaLabel")
         }
       ]
+    }
+  },
+  methods: {
+    delegateClick(pricing) {
+      this.$selectContactReason(`${pricing.id}_package`)
     }
   }
 }

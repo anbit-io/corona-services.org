@@ -40,6 +40,7 @@ const translations = {
         "In the tumultuous business of cutting-in and attending to a whale, there is much running backwards and forwards among.",
       label_name: "Name",
       label_email: "E-Mail",
+      label_reason: "Reason",
       label_message: "Message",
       label_submit: "Submit",
       label_gdpr:
@@ -48,6 +49,12 @@ const translations = {
       submit_error:
         "There was an issue while submitting your request. Please try again later."
     }
+  },
+
+  reason_options: {
+    plus_package: "Plus package - Order App for local businesses",
+    enterprise_package: "Enterprise - for businesses with more than one store",
+    general: "General question"
   },
 
   errors: {

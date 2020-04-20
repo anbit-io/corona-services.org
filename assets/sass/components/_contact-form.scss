@@ -21,6 +21,7 @@
       }
 
       &--textarea,
+      &--select,
       &--gdpr,
       &--submit {
         @apply w-full;
@@ -30,6 +31,19 @@
       &--submit {
         @apply justify-center;
       }
+
+      &--select {
+        .contact-form {
+          &__input {
+            @apply appearance-none;
+
+            option {
+              @apply bg-white py-5;
+            }
+          }
+        }
+      }
+
 
       &--gdpr {
         .contact-form {

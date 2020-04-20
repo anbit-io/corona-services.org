@@ -43,6 +43,7 @@ const translations = {
       label_email: "E-Mail",
       label_message: "Nachricht",
       label_submit: "Abschicken",
+      label_reason: "Grund",
       label_gdpr:
         "Ich habe die <a href='https://corona-services.org/privacy'>Datenschutzrichtlinie</a> gelesen und bin damit einverstanden.",
       acknowledgement:
@@ -50,6 +51,12 @@ const translations = {
       submit_error:
         "Beim Senden Ihrer Anfrage ist ein Problem aufgetreten. Bitte versuchen Sie es später noch einmal."
     }
+  },
+
+  reason_options: {
+    plus_package: "Plus package - Order App for local businesses",
+    enterprise_package: "Enterprise - for businesses with more than one store",
+    general: "General question"
   },
 
   errors: {

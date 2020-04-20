@@ -166,4 +166,15 @@ const MobileMenu = {
   }
 }
 
+const ContactForm = {
+  install: function(Vue) {
+    let EventBus = new Vue()
+    Vue.prototype.$EventBus = EventBus
+    Vue.prototype.$selectContactReason = function(value) {
+      this.$EventBus.$emit("select-contact-reason", value)
+    }
+  }
+}
+
 Vue.use(MobileMenu)
+Vue.use(ContactForm)
