@@ -40,16 +40,20 @@
 
     &__links {
         @apply flex justify-center items-center;
+
+        @screen xs-max {
+            @apply flex-col mt-3;
+        }
     }
 
     &__link {
         @apply font-semibold;
 
-        @screen sm-max {
-            @apply mx-6;
+        @screen xs-max {
+            @apply mx-3 mb-4;
         }
 
-        @screen md {
+        @screen sm {
             @apply ml-16;
         }
     }
