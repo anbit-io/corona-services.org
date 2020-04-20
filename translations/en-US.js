@@ -63,7 +63,13 @@ const translations = {
     empty: "Please fill this field.",
     business: "Please select a business type.",
     gdpr_accepted:
-      "Please accept the privacy policy before submitting the form."
+      "Please accept the privacy policy before submitting the form.",
+    page_not_found: "Page not found.",
+    an_error_occured: "An error occurred.",
+    subtitle:
+      "It seems this is not what you were looking for. You can start by going to ",
+    home: "Home page",
+    subtitle_contact: "or Contact us by filling out the form below."
   },
 
   privacy_page,

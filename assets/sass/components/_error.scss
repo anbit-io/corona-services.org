@@ -1,0 +1,25 @@
+.error {
+    @apply pt-20 pb-6 w-full mx-auto px-5;
+    @apply flex flex-col items-center;
+
+    max-width: 600px;
+
+    &__title,
+    &__subtitle {
+        @apply text-center;
+    }
+
+    &__title,
+    &__subtitle,
+    &__cta {
+        @apply mb-10;
+    }
+    
+    &__title {
+        @apply text-5xl font-bold text-primary;
+    }
+
+    &__subtitle {
+        @apply text-2xl;
+    }
+}

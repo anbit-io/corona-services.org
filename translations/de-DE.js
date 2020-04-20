@@ -64,7 +64,14 @@ const translations = {
     empty: "Bitte füllen Sie dieses Feld aus.",
     business: "Bitte wählen Sie einen Geschäftstyp.",
     gdpr_accepted:
-      "Bitte akzeptieren Sie die Datenschutzbestimmungen, bevor Sie das Formular abschicken."
+      "Bitte akzeptieren Sie die Datenschutzbestimmungen, bevor Sie das Formular abschicken.",
+    page_not_found: "Seite nicht gefunden.",
+    an_error_occured: "Ein Fehler ist aufgetreten.",
+    subtitle:
+      "Es scheint, dass dies nicht das ist, wonach Sie gesucht haben. Sie können beginnen, indem Sie zu gehen ",
+    home: "Startseite",
+    subtitle_contact:
+      "oder Kontaktieren Sie uns, indem Sie das folgende Formular ausfüllen."
   },
 
   privacy_page,
