@@ -117,7 +117,7 @@ export default {
     bestchoice: "Beste Wahl",
 
     item_plus: {
-      per_unit: "month",
+      per_unit: "Monat",
       name: "Plus",
       description:
         "Ideal für Restaurants, Metzgereien, Bäckereien oder lokalen Einzelhandel.",
