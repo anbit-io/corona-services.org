@@ -23,7 +23,7 @@ const translations = {
   header_menu: {
     our_services: "Leistungen",
     why_us: "Ihre App",
-    how_it_works: "Wie es funktioniert?",
+    how_it_works: "Ablauf",
     pricing: "Preise",
     our_clients: "Referenzen"
   },
