@@ -51,20 +51,17 @@
             <label for="reason" class="contact-form__label">
               {{ $t("footer.contact_form.label_reason") }} :
             </label>
-            <select
-              ref="reason"
-              v-model="reason"
-              class="contact-form__input"
-              name="reason"
-            >
-              <option
-                v-for="(option, key) in reasonOptions"
-                :key="key"
-                :value="option.value"
-              >
-                {{ option.label }}
-              </option>
-            </select>
+            <div class="contact-form__field-group">
+              <p v-for="(option, key) in reasonOptions" :key="key">
+                <input
+                  v-model="reason"
+                  type="radio"
+                  name="reason"
+                  :value="option.value"
+                >
+                <span>{{ option.label }}</span>
+              </p>
+            </div>
           </div>
           <div class="contact-form__field contact-form__field--select">
             <label for="reason" class="contact-form__label">
@@ -187,6 +184,7 @@ export default {
   computed: {
     reasonOptions() {
       return [
+        { value: "general", label: this.$t("reason_options.general") },
         {
           value: "plus_package",
           label: this.$t("reason_options.plus_package")
@@ -194,8 +192,7 @@ export default {
         {
           value: "enterprise_package",
           label: this.$t("reason_options.enterprise_package")
-        },
-        { value: "general", label: this.$t("reason_options.general") }
+        }
       ]
     },
     businessTypeOptions() {
