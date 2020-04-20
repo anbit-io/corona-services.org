@@ -28,9 +28,9 @@ export default {
   },
 
   why_us: {
-    title: "Warum wir?",
+    title: "Ihre Bestell-App",
     subtitle:
-      "Wir sind froh, lokale Unternehmer und Verbraucher unterstützen zu können – gerade in der Krise.",
+      "So können Sie auch in der Krise Ihre Services anbieten und verkaufen. Daneben erschließen Sie neue Kundenfelder, bspw. junge Menschen.",
     support_local: {
       title: "#Lokale Unternehmen unterstützen",
       description:
@@ -84,20 +84,20 @@ export default {
   },
 
   easy_setup: {
-    title: "Ein einfaches Setup für den baldigen Start.",
+    title: "Starten Sie heute",
     step_1: {
-      title: "Wählen Sie ein Paket",
-      description: "Welche Geschäftsbeschreibung?"
+      title: "Unternehmensart auswählen",
+      description: "Was für ein Unternehmen führen Sie?"
     },
     step_2: {
       title: "Informationen bereitstellen",
       description:
-        "Vereinbaren Sie einen Anruf mit unserem Support und stellen Sie eine Liste Ihrer Produkte und weiterer allgemeiner Unternehmen bereit."
+        "Stellen Sie Ihre Produkte & Preise bereit. Wir richten Ihre App ein."
     },
     step_3: {
-      title: "Shop starten",
+      title: "App-Shop starten",
       description:
-        "Nachdem unser Team die Einrichtung abgeschlossen hat, können Sie mit dem Verkauf beginnen."
+        "Erreichen Sie Ihre Kunden Zuhause & starten Sie den Verkauf per App!"
     },
     cta_label: "Brauchen Sie Hilfe?"
   },
