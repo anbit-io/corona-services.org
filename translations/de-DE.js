@@ -36,17 +36,17 @@ const translations = {
     link_privacy: "Datenschutzerklärung",
     link_impressum: "Impressum",
     contact_form: {
-      title: "Nehmen wir Kontakt auf",
+      title: "Erreichen Sie uns",
       subtitle:
-        "In dem turbulenten Geschäft, einen Wal einzuschneiden und sich um ihn zu kümmern, läuft viel hin und her.",
+        "Schreiben Sie uns. Wir freuen uns von Ihnen zu hören.",
       label_name: "Name",
       label_email: "E-Mail",
-      label_message: "Botschaft",
-      label_submit: "Einreichen",
+      label_message: "Nachricht",
+      label_submit: "Abschicken",
       label_gdpr:
         "Ich habe die <a href='https://corona-services.org/privacy'>Datenschutzrichtlinie</a> gelesen und bin damit einverstanden.",
       acknowledgement:
-        "Danke, dass Sie uns kontaktiert haben! Wir werden Sie bald erreichen.",
+        "Vielen Dank für Ihr Interesse! Wir melden uns in Kürze bei Ihnen.",
       submit_error:
         "Beim Senden Ihrer Anfrage ist ein Problem aufgetreten. Bitte versuchen Sie es später noch einmal."
     }
