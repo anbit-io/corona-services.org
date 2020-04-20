@@ -140,7 +140,7 @@ export default {
       no_price: "Bitte nehmen Sie Kontakt auf",
       description:
         "Maßgeschneiderte IT-Lösungen für Unternehmen mit mehreren Standorten sowie große Verkaufsflächen (z.B. Modehäuser). ",
-      ctaLabel: "Bitte nehmen Sie Kontakt auf"
+      ctaLabel: "Kundenservice kontaktieren"
     }
   },
 
