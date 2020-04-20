@@ -37,7 +37,7 @@
             $router.resolve({ path: localePath('/'), hash: 'contact' }).href
           "
         >
-          {{ $t("easy_setup.cta_label") }}
+          {{ $t("services.cta_label") }}
         </a>
         <!-- <div class="services__call-support">
           <span>
