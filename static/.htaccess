@@ -71,3 +71,5 @@
   BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
   Header append Vary User-Agent
 </IfModule>
+
+ErrorDocument 404 /404/index.html

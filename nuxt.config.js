@@ -182,7 +182,8 @@ export default {
   },
 
   generate: {
-    fallback: true
+    fallback: true,
+    routes: ["404"]
   },
 
   build: {
