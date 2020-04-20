@@ -48,6 +48,9 @@
             </span>
           </div>
           <div class="contact-form__field contact-form__field--select">
+            <label for="reason" class="contact-form__label">
+              {{ $t("footer.contact_form.label_reason") }} :
+            </label>
             <select
               ref="reason"
               v-model="reason"
@@ -204,7 +207,8 @@ export default {
         name: this.name,
         email: this.email,
         message: this.message,
-        reason: this.reasonOptions.find(option => option.value == this.reason).label,
+        reason: this.reasonOptions.find(option => option.value == this.reason)
+          .label,
         gdpr_accepted: this.gdpr_accepted
       }
 

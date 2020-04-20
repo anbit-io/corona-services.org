@@ -34,6 +34,10 @@
 
       &--select {
         .contact-form {
+
+          &__label {
+            @apply mb-3 font-medium text-gray-dark;
+          }
           &__input {
             @apply appearance-none;
 

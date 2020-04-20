@@ -37,8 +37,7 @@ const translations = {
     link_impressum: "Impressum",
     contact_form: {
       title: "Erreichen Sie uns",
-      subtitle:
-        "Schreiben Sie uns. Wir freuen uns von Ihnen zu hören.",
+      subtitle: "Schreiben Sie uns. Wir freuen uns von Ihnen zu hören.",
       label_name: "Name",
       label_email: "E-Mail",
       label_message: "Nachricht",
