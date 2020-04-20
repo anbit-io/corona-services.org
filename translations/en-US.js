@@ -20,14 +20,14 @@ const translations = {
   },
 
   header_menu: {
-    our_services: "Our Services",
+    our_services: "Services",
     why_us: "Your app",
     how_it_works: "How it works?",
     pricing: "Pricing",
     our_clients: "Our Clients"
   },
 
-  header_cta: "Let's start",
+  header_cta: "Get started",
 
   ...home,
 
@@ -42,7 +42,7 @@ const translations = {
       label_email: "E-Mail",
       label_message: "Message",
       label_submit: "Submit",
-      label_reason: "Reason",
+      label_reason: "Subject",
       label_business: "Business type",
       placeholder_business: "Select a business type",
       label_gdpr:
