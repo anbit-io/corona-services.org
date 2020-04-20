@@ -14,9 +14,15 @@
         <p class="banner__para" :class="`${name}__para`">
           {{ $t(`${name}.para`) }}
         </p>
-        <CTA class="banner__cta" :class="`${name}__cta`" :href="ctaHref">
+        <a
+          class="cta transition banner__cta"
+          :class="`${name}__cta`"
+          :href="
+            $router.resolve({ path: localePath('/'), hash: 'contact' }).href
+          "
+        >
           {{ ctaLabel }}
-        </CTA>
+        </a>
       </div>
 
       <div class="banner__bg" :class="`${name}__bg`">
@@ -51,19 +57,13 @@
 </template>
 
 <script>
-import CTA from "../common/CTA"
 export default {
-  components: { CTA },
   props: {
     image: {
       type: Object,
       default: null
     },
     name: {
-      type: String,
-      default: ""
-    },
-    ctaHref: {
       type: String,
       default: ""
     },

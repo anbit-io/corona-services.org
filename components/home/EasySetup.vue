@@ -18,20 +18,21 @@
         </div>
       </div>
       <div class="easy-setup__cta-wrapper">
-        <CTA href="mailto:info@corona-service.org" :inverted="true">
+        <a
+          class="cta cta--inverted transition "
+          :href="
+            $router.resolve({ path: localePath('/'), hash: 'contact' }).href
+          "
+        >
           {{ $t("easy_setup.cta_label") }}
-        </CTA>
+        </a>
       </div>
     </div>
   </section>
 </template>
 
 <script>
-import CTA from "../common/CTA"
 export default {
-  components: {
-    CTA
-  },
   computed: {
     steps() {
       return [

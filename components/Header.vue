@@ -40,9 +40,9 @@
         </div>
         <a
           class="header__cta transition"
-          target="_blank"
-          rel="noopener noreferrer"
-          href="mailto:info@corona-service.org"
+          :href="
+            $router.resolve({ path: localePath('/'), hash: 'contact' }).href
+          "
         >
           {{ $t("header_cta") }}
         </a>

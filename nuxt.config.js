@@ -177,6 +177,10 @@ export default {
     }
   },
 
+  router: {
+    trailingSlashes: true
+  },
+
   generate: {
     fallback: true
   },

@@ -6,7 +6,6 @@
       ext: 'png',
       alt: 'Business during corona pandemic'
     }"
-    :cta-href="`tel:${$t('contact_no')}`"
     :cta-label="$t('hero.cta_label')"
   />
 </template>
