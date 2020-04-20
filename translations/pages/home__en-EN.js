@@ -21,7 +21,7 @@ export default {
     modal: {
       title: "Corona Services",
       content: "You will shortly be able order from your local retailer here.",
-      cta_label: "info@corona-service.org",
+      cta_label: "info@corona-services.org",
       mailto_subject: "More information - Order app & Website"
     }
   },
@@ -29,9 +29,9 @@ export default {
   why_us: {
     title: "Your App",
     subtitle:
-      "With an order website or app, you can offer and sell your services even in a crisis. In addition, you open up new customer fields, for example young people.",
+      "With your own order app or website module, you can offer and sell your services even in a crisis. In addition, you open up new sustainable customer fields, for example young people .",
     support_local: {
-      title: "Support Local",
+      title: "Support local",
       description:
         "We are glad to be able to support local shops and consumers - especially during the crisis."
     },
@@ -78,7 +78,7 @@ export default {
     online_catalog: {
       title: "Online catalog",
       description:
-        "Present all your products and services online. With a few clicks you can always update your offer."
+        "Show all your products and services online. With a few clicks you can always update your offer."
     }
   },
 
@@ -131,7 +131,7 @@ export default {
         "Online Payment",
         "No commission"
       ],
-      ctaLabel: "More information"
+      ctaLabel: "Get started"
     },
 
     item_enterprise: {
@@ -139,7 +139,7 @@ export default {
       no_price: "Get in touch with our support team",
       description:
         "Tailor-made IT solutions for companies with several stores and large sales areas (e.g. fashion stores).",
-      ctaLabel: "Please get in touch"
+      ctaLabel: "Learn more"
     }
   },
 
