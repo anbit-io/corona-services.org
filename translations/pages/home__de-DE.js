@@ -137,7 +137,7 @@ export default {
 
     item_enterprise: {
       name: "Enterprise",
-      no_price: "Kontaktieren Sie uns für den preis",
+      no_price: "Bitte nehmen Sie Kontakt auf",
       description:
         "Maßgeschneiderte IT-Lösungen für Unternehmen mit mehreren Standorten sowie große Verkaufsflächen (z.B. Modehäuser). ",
       ctaLabel: "Bitte nehmen Sie Kontakt auf"
