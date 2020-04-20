@@ -22,13 +22,13 @@ const translations = {
 
   header_menu: {
     our_services: "Leistungen",
-    why_us: "Warum wir?",
+    why_us: "Ihre App",
     how_it_works: "Wie es funktioniert?",
-    pricing: "Pricing",
+    pricing: "Preise",
     our_clients: "Referenzen"
   },
 
-  header_cta: "Jetzt starten",
+  header_cta: "Jetzt loslegen",
 
   ...home,
 
@@ -53,9 +53,9 @@ const translations = {
   },
 
   reason_options: {
-    plus_package: "Plus package - Order App for local businesses",
-    enterprise_package: "Enterprise - for businesses with more than one store",
-    general: "General question"
+    plus_package: "Plus - Bestell-App für lokale Unternehmen",
+    enterprise_package: "Enterprise - Individuelle IT-Lösungen für Unternehmen",
+    general: "Allgemeine Anfrage"
   },
 
   errors: {
