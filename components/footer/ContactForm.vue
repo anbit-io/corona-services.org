@@ -66,6 +66,31 @@
               </option>
             </select>
           </div>
+          <div class="contact-form__field contact-form__field--select">
+            <label for="reason" class="contact-form__label">
+              {{ $t("footer.contact_form.label_business") }} :
+            </label>
+            <select
+              ref="business"
+              v-model="business"
+              class="contact-form__input"
+              name="business"
+            >
+              <option :value="null">
+                {{ $t("footer.contact_form.placeholder_business") }}
+              </option>
+              <option
+                v-for="(option, key) in businessTypeOptions"
+                :key="key"
+                :value="option.value"
+              >
+                {{ option.label }}
+              </option>
+            </select>
+            <span :v-if="errorsHas('business')" class="contact-form__error">
+              {{ getError("business") }}
+            </span>
+          </div>
           <div class="contact-form__field contact-form__field--textarea">
             <textarea
               ref="message"
@@ -152,6 +177,7 @@ export default {
       email: "",
       message: "",
       reason: "general",
+      business: null,
       gdpr_accepted: false,
       acknowledgement: null,
       errors: {},
@@ -171,15 +197,29 @@ export default {
         },
         { value: "general", label: this.$t("reason_options.general") }
       ]
+    },
+    businessTypeOptions() {
+      return [
+        { label: this.$t("services.items.bakery"), value: "bakery" },
+        { label: this.$t("services.items.butchery"), value: "butchery" },
+        { label: this.$t("services.items.vegetables"), value: "veg" },
+        { label: this.$t("services.items.retail"), value: "retailer" },
+        { label: this.$t("services.items.restaurant"), value: "restaurant" },
+        { label: this.$t("services.items.beverages"), value: "beverages" }
+      ]
     }
   },
   mounted() {
     this.dismissAcknowledgement()
     this.$EventBus.$on("select-contact-reason", this.setContactReason)
+    this.$EventBus.$on("select-business-type", this.setBusinessType)
   },
   methods: {
     setContactReason(value) {
       this.reason = value
+    },
+    setBusinessType(value) {
+      this.business = value
     },
     errorsHas(field) {
       return this.errors[field] !== undefined
@@ -209,6 +249,9 @@ export default {
         message: this.message,
         reason: this.reasonOptions.find(option => option.value == this.reason)
           .label,
+        business: this.businessTypeOptions.find(
+          option => option.value == this.business
+        ).label,
         gdpr_accepted: this.gdpr_accepted
       }
 
@@ -238,22 +281,32 @@ export default {
         name: this.name,
         email: this.email,
         message: this.message,
+        business: this.business,
         gdpr_accepted: this.gdpr_accepted
       }
 
       let errors = {}
 
       for (const [fieldName, fieldValue] of Object.entries(fields)) {
-        if (fieldName == "gdpr_accepted") {
-          if (fieldValue == false) {
-            errors[fieldName] = this.$t("errors.gdpr_accepted")
-          }
-        } else {
-          if (fieldValue == "") {
-            errors[fieldName] = this.$t("errors.empty")
-          }
+        switch (fieldName) {
+          case "gdpr_accepted":
+            if (fieldValue == false) {
+              errors[fieldName] = this.$t("errors.gdpr_accepted")
+            }
+            break
+          case "business":
+            if (fieldValue == null) {
+              errors[fieldName] = this.$t("errors.business")
+            }
+            break
+          default:
+            if (fieldValue == "") {
+              errors[fieldName] = this.$t("errors.empty")
+            }
+            break
         }
       }
+
       this.errors = errors
       return !Object.keys(errors).length
     }

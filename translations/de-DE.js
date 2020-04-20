@@ -43,6 +43,8 @@ const translations = {
       label_message: "Nachricht",
       label_submit: "Abschicken",
       label_reason: "Grund",
+      label_business: "Unternehmensart",
+      placeholder_business: "Wählen Sie einen Geschäftstyp",
       label_gdpr:
         "Ich habe die <a href='https://corona-services.org/privacy'>Datenschutzrichtlinie</a> gelesen und bin damit einverstanden.",
       acknowledgement:
@@ -60,6 +62,7 @@ const translations = {
 
   errors: {
     empty: "Bitte füllen Sie dieses Feld aus.",
+    business: "Bitte wählen Sie einen Geschäftstyp.",
     gdpr_accepted:
       "Bitte akzeptieren Sie die Datenschutzbestimmungen, bevor Sie das Formular abschicken."
   },

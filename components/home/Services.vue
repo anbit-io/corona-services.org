@@ -15,9 +15,10 @@
           >
             <a
               class="service-block"
-              :href="servicesHref"
-              rel="noopener noreferrer"
-              target="_blank"
+              :href="
+                $router.resolve({ path: localePath('/'), hash: 'contact' }).href
+              "
+              @click="delegateClick(service)"
             >
               <span class="service-block__icon transition">
                 <svg-icon :name="service.icon" />
@@ -73,6 +74,11 @@ export default {
         { label: this.$t("services.items.restaurant"), icon: "restaurant" },
         { label: this.$t("services.items.beverages"), icon: "beverages" }
       ]
+    }
+  },
+  methods: {
+    delegateClick(service) {
+      this.$selectBusinessType(service.icon)
     }
   }
 }

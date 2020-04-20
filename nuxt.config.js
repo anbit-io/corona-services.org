@@ -160,7 +160,7 @@ export default {
       ssr: false
     },
     {
-      src: "~/plugins/mobileMenu.js",
+      src: "~/plugins/customPlugins.js",
       ssr: false
     },
     {
