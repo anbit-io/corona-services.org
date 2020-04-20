@@ -99,14 +99,14 @@ export default {
       description:
         "Erreichen Sie Ihre Kunden Zuhause & starten Sie den Verkauf per App!"
     },
-    cta_label: "Brauchen Sie Hilfe?"
+    cta_label: "Wünschen Sie Hilfe?"
   },
 
   featured: {
     title: "Bestmöglich schützen und Umsatz steigern",
     para:
       "Wir helfen Ihnen, weiterhin Produkte und Services Ihren Kunden anzubieten und zu verkaufen. Lokale Unternehmen sind für Ihre Kunden da - gerade jetzt!",
-    cta_label: "In Kontakt kommen"
+    cta_label: "Jetzt loslegen"
   },
 
   pricing: {
@@ -132,7 +132,7 @@ export default {
         "Schneller Support",
         "Keine Provisionen"
       ],
-      ctaLabel: "Mehr Informationen"
+      ctaLabel: "Jetzt loslegen"
     },
 
     item_enterprise: {
