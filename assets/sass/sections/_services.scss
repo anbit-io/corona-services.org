@@ -69,7 +69,11 @@
         }
     }
 
-    &__call-support {
+    &__cta {
+        @apply mt-4;
+    }
+
+    /*&__call-support {
         @apply flex flex-col text-center text-dark;
 
         span {
@@ -84,7 +88,7 @@
                 @apply text-primary-dark;
             }
         }
-    }
+    }*/
 }
 
 .service-block {

@@ -16,7 +16,7 @@ export default {
       restaurant: "Restaurants",
       beverages: "Getränke"
     },
-    cta: "Weitere Informationen",
+    cta_label: "Weitere Informationen",
     call_support: "Oder rufen Sie unseren Support an",
     modal: {
       title: "Corona Services",

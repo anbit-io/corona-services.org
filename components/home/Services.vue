@@ -30,7 +30,15 @@
         </ul>
       </div>
       <div class="services__footer">
-        <div class="services__call-support">
+        <a
+          class="services__cta cta transition "
+          :href="
+            $router.resolve({ path: localePath('/'), hash: 'contact' }).href
+          "
+        >
+          {{ $t("easy_setup.cta_label") }}
+        </a>
+        <!-- <div class="services__call-support">
           <span>
             {{ $t("services.call_support") }}
           </span>
@@ -42,19 +50,14 @@
           >
             {{ $t("contact_no") }}
           </a>
-        </div>
+        </div> -->
       </div>
     </div>
-    <!-- <ServicesModal /> -->
   </section>
 </template>
 
 <script>
-// import ServicesModal from "./ServicesModal"
 export default {
-  // components: {
-  //   ServicesModal
-  // },
   computed: {
     servicesHref() {
       return `mailto:info@corona-service.org?subject=${encodeURIComponent(
@@ -72,10 +75,5 @@ export default {
       ]
     }
   }
-  // methods: {
-  //   // showModal() {
-  //   //   this.$modal.show("services-modal")
-  //   // }
-  // }
 }
 </script>
