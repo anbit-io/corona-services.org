@@ -151,7 +151,7 @@ export default {
     ["nuxt-i18n", nuxtI18nConfig],
     "@nuxtjs/sitemap",
     "~/modules/svg-sprite/module.js",
-    "@bazzite/nuxt-optimized-images"
+    "@aceforth/nuxt-optimized-images"
   ],
 
   plugins: [
@@ -245,7 +245,7 @@ export default {
       quality: [0.45, 0.65]
     },
     webp: {
-      quality: 45
+      quality: 90
     },
     responsive: {
       name: "img/[hash:7]-[width].[ext]",
