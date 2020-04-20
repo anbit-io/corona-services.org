@@ -120,7 +120,7 @@ export default {
       per_unit: "month",
       name: "Plus",
       description:
-        "Sie besitzen ein Restaurant, Metzgerei, Bäckerei oder lokalen Einzelhandel? Dies ist die richtige Wahl für Sie! Ideal für Restaurants, Metzgereien, Bäckereien oder lokalen Einzelahndel.",
+        "Ideal für Restaurants, Metzgereien, Bäckereien oder lokalen Einzelhandel.",
       price: "90",
       fees: "Keine Provision!",
       features: [
