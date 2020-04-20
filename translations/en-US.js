@@ -21,7 +21,7 @@ const translations = {
 
   header_menu: {
     our_services: "Our Services",
-    why_us: "Why us?",
+    why_us: "Your app",
     how_it_works: "How it works?",
     pricing: "Pricing",
     our_clients: "Our Clients"
