@@ -3,7 +3,7 @@ export default {
     title: "Does Corona influence your company? ",
     para:
       " We are here for you! You can offer a pick-up and delivery service via your own online shop or app. Thus you protect employees and customers! ",
-    cta_label: "+49 - 241 5600 7360"
+    cta_label: "Get in touch"
   },
 
   services: {
@@ -27,9 +27,9 @@ export default {
   },
 
   why_us: {
-    title: "Why us?",
+    title: "Your App",
     subtitle:
-      "We want to support you and want to implement innovative solutions that you are prepared for the current times and future as well.",
+      "With an order website or app, you can offer and sell your services even in a crisis. In addition, you open up new customer fields, for example young people.",
     support_local: {
       title: "Support Local",
       description:
@@ -83,28 +83,28 @@ export default {
   },
 
   easy_setup: {
-    title: "An easy setup for launching soon.",
+    title: "Start today & increase sales",
     step_1: {
-      title: "Choose a package",
-      description: "Which business description?"
+      title: "Choose business type",
+      description: "What kind of business do you run?"
     },
     step_2: {
       title: "Provide information",
       description:
-        "Arrange a call with our support & provide a list of your products and further general company."
+        "Provide your products & prices. We set up your app"
     },
     step_3: {
       title: "Launch shop",
       description:
-        "After our team has completed the setup, you can start selling."
+        "Reach your customers at home & start selling via your own app!"
     },
-    cta_label: "Need help?"
+    cta_label: "Contact support"
   },
 
   featured: {
-    title: "Best possible protection and increased turnover ",
+    title: "Protect staff & increase sales",
     para:
-      "We help you to continue to offer and sell products and services to your customers. Local companies are there for your customers!",
+      "We help you to continue to offer and sell products and services to your customers. Local companies are there for their customers!",
     cta_label: "Get in Touch"
   },
 
@@ -136,9 +136,9 @@ export default {
 
     item_enterprise: {
       name: "Enterprise",
-      no_price: "Contact us for the price",
+      no_price: "Get in touch with our support team",
       description:
-        "Tailor-made IT solutions for companies with several locations and large sales areas (e.g. fashion stores).",
+        "Tailor-made IT solutions for companies with several stores and large sales areas (e.g. fashion stores).",
       ctaLabel: "Please get in touch"
     }
   },
