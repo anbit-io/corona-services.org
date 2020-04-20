@@ -1,5 +1,5 @@
 <template>
-  <section id="why-us" ref="whyus" class="section section--why-us why-us">
+  <section id="your-app" ref="whyus" class="section section--why-us why-us">
     <div class="section__container why-us__container">
       <div class="section__header why-us__header">
         <h3 class="section__title why-us__title">
