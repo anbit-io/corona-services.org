@@ -10,7 +10,10 @@
         </p>
       </div>
       <div class="section__content">
-        <form class="contact-form" @submit.prevent="submitForm">
+        <form
+          class="contact-form contact-form--footer"
+          @submit.prevent="submitForm"
+        >
           <div
             v-if="acknowledgement"
             class="contact-form__acknowlegement"
@@ -45,47 +48,6 @@
             >
             <span :v-if="errorsHas('email')" class="contact-form__error">
               {{ getError("email") }}
-            </span>
-          </div>
-          <div class="contact-form__field contact-form__field--select">
-            <label for="reason" class="contact-form__label">
-              {{ $t("footer.contact_form.label_reason") }} :
-            </label>
-            <div class="contact-form__field-group">
-              <p v-for="(option, key) in reasonOptions" :key="key">
-                <input
-                  v-model="reason"
-                  type="radio"
-                  name="reason"
-                  :value="option.value"
-                >
-                <span>{{ option.label }}</span>
-              </p>
-            </div>
-          </div>
-          <div class="contact-form__field contact-form__field--select">
-            <label for="reason" class="contact-form__label">
-              {{ $t("footer.contact_form.label_business") }} :
-            </label>
-            <select
-              ref="business"
-              v-model="business"
-              class="contact-form__input"
-              name="business"
-            >
-              <option :value="null">
-                {{ $t("footer.contact_form.placeholder_business") }}
-              </option>
-              <option
-                v-for="(option, key) in businessTypeOptions"
-                :key="key"
-                :value="option.value"
-              >
-                {{ option.label }}
-              </option>
-            </select>
-            <span :v-if="errorsHas('business')" class="contact-form__error">
-              {{ getError("business") }}
             </span>
           </div>
           <div class="contact-form__field contact-form__field--textarea">
@@ -132,41 +94,6 @@
 </template>
 
 <script>
-const emailService = {
-  serialize: function(o) {
-    var r = []
-    return (
-      Object.keys(o).forEach(function(e) {
-        var n = "boolean" == typeof o[e] ? +o[e] : o[e]
-        r.push(encodeURIComponent(e) + "=" + encodeURIComponent(n))
-      }),
-      r.join("&")
-    )
-  },
-  send: function(e) {
-    return fetch(
-      "https://email.microservices.corona-services.org/api/emails/send",
-      {
-        method: "POST",
-        mode: "cors",
-        headers: {
-          Accept: "text/html, application/xhtml+xml",
-          "Content-Type": "application/x-www-form-urlencoded"
-        },
-        redirect: "follow",
-        referrerPolicy: "no-referrer",
-        body: emailService.serialize(e)
-      }
-    )
-      .then(function(e) {
-        return e.text()
-      })
-      .then(function(e) {
-        return JSON.parse(e)
-      })
-  }
-}
-
 export default {
   data() {
     return {
@@ -181,43 +108,11 @@ export default {
       submitting: false
     }
   },
-  computed: {
-    reasonOptions() {
-      return [
-        { value: "general", label: this.$t("reason_options.general") },
-        {
-          value: "plus_package",
-          label: this.$t("reason_options.plus_package")
-        },
-        {
-          value: "enterprise_package",
-          label: this.$t("reason_options.enterprise_package")
-        }
-      ]
-    },
-    businessTypeOptions() {
-      return [
-        { label: this.$t("services.items.bakery"), value: "bakery" },
-        { label: this.$t("services.items.butchery"), value: "butchery" },
-        { label: this.$t("services.items.vegetables"), value: "veg" },
-        { label: this.$t("services.items.retail"), value: "retailer" },
-        { label: this.$t("services.items.restaurant"), value: "restaurant" },
-        { label: this.$t("services.items.beverages"), value: "beverages" }
-      ]
-    }
-  },
+  computed: {},
   mounted() {
     this.dismissAcknowledgement()
-    this.$EventBus.$on("select-contact-reason", this.setContactReason)
-    this.$EventBus.$on("select-business-type", this.setBusinessType)
   },
   methods: {
-    setContactReason(value) {
-      this.reason = value
-    },
-    setBusinessType(value) {
-      this.business = value
-    },
     errorsHas(field) {
       return this.errors[field] !== undefined
     },
@@ -244,15 +139,12 @@ export default {
         name: this.name,
         email: this.email,
         message: this.message,
-        reason: this.reasonOptions.find(option => option.value == this.reason)
-          .label,
-        business: this.businessTypeOptions.find(
-          option => option.value == this.business
-        ).label,
+        reason: "",
+        business: "",
         gdpr_accepted: this.gdpr_accepted
       }
 
-      const result = await emailService.send(data)
+      const result = await this.$emailService.send(data)
       return result.status
     },
     showAcknowledgement() {
@@ -278,7 +170,6 @@ export default {
         name: this.name,
         email: this.email,
         message: this.message,
-        business: this.business,
         gdpr_accepted: this.gdpr_accepted
       }
 
@@ -289,11 +180,6 @@ export default {
           case "gdpr_accepted":
             if (fieldValue == false) {
               errors[fieldName] = this.$t("errors.gdpr_accepted")
-            }
-            break
-          case "business":
-            if (fieldValue == null) {
-              errors[fieldName] = this.$t("errors.business")
             }
             break
           default:

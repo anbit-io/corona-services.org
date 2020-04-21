@@ -1,0 +1,24 @@
+.modal {
+    @apply relative px-3;
+    &__close {
+        @apply font-medium text-primary px-6 py-5 cursor-pointer;
+        @apply  absolute right-0 top-0; 
+        z-index: 10;
+
+        &:active,
+        &:focus {
+            @apply outline-none;
+        }
+    }
+    &__body {
+        @apply pt-3;
+    }
+}
+
+.v--modal-overlay {
+    z-index: 1100 !important;
+}
+
+.v--modal-overlay .v--modal-box {
+    @apply rounded-md;
+}

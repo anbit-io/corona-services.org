@@ -43,7 +43,7 @@ const translations = {
       label_message: "Message",
       label_submit: "Submit",
       label_reason: "Subject",
-      label_business: "Business type",
+      label_business: "Select a business type",
       placeholder_business: "Select a business type",
       label_gdpr:
         "I have read the <a href='https://corona-services.org/en/privacy'>privacy policy</a> and agree to it.",
@@ -51,6 +51,11 @@ const translations = {
       submit_error:
         "There was an issue while submitting your request. Please try again later."
     }
+  },
+
+  modal_contact_form: {
+    close: "Close Contact form",
+    title: "Now, about your project..."
   },
 
   reason_options: {

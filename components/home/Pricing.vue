@@ -52,15 +52,12 @@
               </li>
             </ul>
 
-            <a
-              :href="
-                $router.resolve({ path: localePath('/'), hash: 'contact' }).href
-              "
+            <button
               class="cta pricing-item__cta"
-              @click="delegateClick(pricing)"
+              @click="showContactModal(pricing)"
             >
               {{ pricing.ctaLabel }}
-            </a>
+            </button>
           </div>
         </div>
       </div>
@@ -100,8 +97,12 @@ export default {
     }
   },
   methods: {
-    delegateClick(pricing) {
-      this.$selectContactReason(`${pricing.id}_package`)
+    showContactModal(pricing) {
+      if (pricing) {
+        this.$showContactModal({ contactReason: `${pricing.id}_package` })
+      } else {
+        this.$showContactModal()
+      }
     }
   }
 }

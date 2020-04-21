@@ -43,7 +43,7 @@ const translations = {
       label_message: "Nachricht",
       label_submit: "Abschicken",
       label_reason: "Grund",
-      label_business: "Unternehmensart",
+      label_business: "Wählen Sie einen Geschäftstyp",
       placeholder_business: "Wählen Sie einen Geschäftstyp",
       label_gdpr:
         "Ich habe die <a href='https://corona-services.org/privacy'>Datenschutzrichtlinie</a> gelesen und bin damit einverstanden.",
@@ -52,6 +52,11 @@ const translations = {
       submit_error:
         "Beim Senden Ihrer Anfrage ist ein Problem aufgetreten. Bitte versuchen Sie es später noch einmal."
     }
+  },
+
+  modal_contact_form: {
+    close: "Close Contact form",
+    title: "Now, about your project..."
   },
 
   reason_options: {

@@ -18,14 +18,9 @@
         </div>
       </div>
       <div class="easy-setup__cta-wrapper">
-        <a
-          class="cta cta--inverted transition "
-          :href="
-            $router.resolve({ path: localePath('/'), hash: 'contact' }).href
-          "
-        >
+        <button class="cta cta--inverted transition " @click="showContactModal">
           {{ $t("easy_setup.cta_label") }}
-        </a>
+        </button>
       </div>
     </div>
   </section>
@@ -52,6 +47,11 @@ export default {
           description: this.$t("easy_setup.step_3.description")
         }
       ]
+    }
+  },
+  methods: {
+    showContactModal() {
+      this.$showContactModal()
     }
   }
 }

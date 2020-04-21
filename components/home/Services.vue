@@ -13,45 +13,21 @@
             :key="key"
             class="services__item"
           >
-            <a
-              class="service-block"
-              :href="
-                $router.resolve({ path: localePath('/'), hash: 'contact' }).href
-              "
-              @click="delegateClick(service)"
-            >
+            <div class="service-block" @click="showContactModal(service)">
               <span class="service-block__icon transition">
                 <svg-icon :name="service.icon" />
               </span>
               <span class="service-block__label">
                 {{ service.label }}
               </span>
-            </a>
+            </div>
           </li>
         </ul>
       </div>
       <div class="services__footer">
-        <a
-          class="services__cta cta transition "
-          :href="
-            $router.resolve({ path: localePath('/'), hash: 'contact' }).href
-          "
-        >
+        <button class="services__cta cta transition " @click="showContactModal">
           {{ $t("services.cta_label") }}
-        </a>
-        <!-- <div class="services__call-support">
-          <span>
-            {{ $t("services.call_support") }}
-          </span>
-          <a
-            class="transition"
-            :href="`tel:${$t('contact_no')}`"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            {{ $t("contact_no") }}
-          </a>
-        </div> -->
+        </button>
       </div>
     </div>
   </section>
@@ -77,8 +53,12 @@ export default {
     }
   },
   methods: {
-    delegateClick(service) {
-      this.$selectBusinessType(service.icon)
+    showContactModal(service) {
+      if (service) {
+        this.$showContactModal({ businessType: service.icon })
+      } else {
+        this.$showContactModal()
+      }
     }
   }
 }

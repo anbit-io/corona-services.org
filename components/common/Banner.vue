@@ -14,15 +14,13 @@
         <p class="banner__para" :class="`${name}__para`">
           {{ $t(`${name}.para`) }}
         </p>
-        <a
+        <button
           class="cta transition banner__cta"
           :class="`${name}__cta`"
-          :href="
-            $router.resolve({ path: localePath('/'), hash: 'contact' }).href
-          "
+          @click="showContactModal"
         >
           {{ ctaLabel }}
-        </a>
+        </button>
       </div>
 
       <div class="banner__bg" :class="`${name}__bg`">
@@ -74,6 +72,11 @@ export default {
     lazyload: {
       type: Boolean,
       default: false
+    }
+  },
+  methods: {
+    showContactModal() {
+      this.$showContactModal()
     }
   }
 }

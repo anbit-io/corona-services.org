@@ -41,14 +41,9 @@
             </div>
           </div>
         </div>
-        <a
-          class="header__cta transition"
-          :href="
-            $router.resolve({ path: localePath('/'), hash: 'contact' }).href
-          "
-        >
+        <button class="header__cta transition" @click="showContactModal">
           {{ $t("header_cta") }}
-        </a>
+        </button>
 
         <div
           ref="mobileMenu"
@@ -112,6 +107,9 @@ export default {
   methods: {
     switchLanguage($e) {
       this.$i18n.setLocale($e.target.value)
+    },
+    showContactModal() {
+      this.$showContactModal()
     }
   }
 }
