@@ -14,7 +14,7 @@ export default {
   head: {
     titleTemplate: "%s | Corona Service",
     htmlAttrs: {
-      lang: "de-DE"
+      lang: "en-US"
     },
     meta: [
       { charset: "utf-8" },
@@ -23,7 +23,7 @@ export default {
         hid: "description",
         name: "description",
         content:
-          "Einfach Essen, Getränke oder andere Dienstleistungen unter Beachtung der Quarantänemaßnahmen bestellen."
+          "Simply order food, drinks or other services in accordance with the quarantine measures."
       },
       {
         hid: "keywords",
@@ -42,12 +42,12 @@ export default {
       {
         hid: "og:locale",
         property: "og:locale",
-        content: "de-DE"
+        content: "en-US"
       },
       {
         hid: "og:locale:alternate",
         property: "og:locale:alternate",
-        content: "en-US"
+        content: "de-DE"
       },
       {
         hid: "og:site_name",
@@ -57,14 +57,13 @@ export default {
       {
         hid: "og:title",
         property: "og:title",
-        content:
-          "Corona Service | Lebensmittel & Services bei lokalen Unternehmen bestellen"
+        content: "Corona Service | Order food & services from local companies"
       },
       {
         hid: "og:description",
         property: "og:description",
         content:
-          "Einfach Essen, Getränke oder andere Dienstleistungen unter Beachtung der Quarantänemaßnahmen bestellen."
+          "Simply order food, drinks or other services in accordance with the quarantine measures."
       },
       {
         hid: "og:image",
@@ -104,14 +103,13 @@ export default {
       {
         hid: "twitter:title",
         property: "twitter:title",
-        content:
-          "Corona Service | Lebensmittel & Services bei lokalen Unternehmen bestellen"
+        content: "Corona Service | Order food & services from local companies"
       },
       {
         hid: "twitter:description",
         property: "twitter:description",
         content:
-          "Einfach Essen, Getränke oder andere Dienstleistungen unter Beachtung der Quarantänemaßnahmen bestellen."
+          "Simply order food, drinks or other services in accordance with the quarantine measures."
       },
       {
         hid: "twitter:image",
