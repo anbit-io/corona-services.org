@@ -2,7 +2,7 @@
     @apply bg-primary text-white pt-16 pb-16;
 
     &__title {
-        @apply w-full font-bold text-center mb-16 leading-tight;
+        @apply w-full font-semibold text-center mb-16 leading-tight;
         font-size: 36px;
 
         @screen md {
@@ -45,7 +45,8 @@
     }
 
     &__step-title {
-        @apply text-3xl font-semibold mb-3;
+        @apply font-semibold mb-3;
+        font-size: 1.75rem;
     }
 
     &__step-description {}

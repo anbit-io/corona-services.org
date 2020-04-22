@@ -37,18 +37,19 @@
     }
 
     &__title {
-        @apply text-dark font-bold leading-none mb-20px mt-6;
+        @apply text-dark font-semibold mb-20px mt-6;
 
         font-size: 32px;
+        line-height: 1.2;
         
         @screen md {
-            font-size: 48px;
+            font-size: 42px;
         }
         
     }
 
     &__para {
-        @apply text-darker font-medium mb-8;
+        @apply text-darker mb-8;
 
         line-height: 1.6;
         letter-spacing: 0.025rem;

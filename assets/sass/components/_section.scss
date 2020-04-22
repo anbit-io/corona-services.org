@@ -12,7 +12,7 @@
     }
 
     &__title {
-        @apply font-bold mb-6 text-center leading-tight;
+        @apply font-semibold mb-6 text-center leading-tight;
 
         font-size: 36px;
 
@@ -24,6 +24,7 @@
     &__subtitle {
         @apply w-full text-center mx-auto;
 
+        letter-spacing: 0.5px;
         max-width: 600px;
     }
 

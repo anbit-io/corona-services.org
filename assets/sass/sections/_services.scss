@@ -106,7 +106,8 @@
     }
 
     &__label {
-        @apply block font-semibold text-center text-xl px-2;
+        @apply block font-medium text-center px-2;
+        font-size: 1.15rem;
     }
 
     &:hover {

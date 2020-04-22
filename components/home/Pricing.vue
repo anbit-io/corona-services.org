@@ -5,7 +5,7 @@
         <h3 class="section__title pricing__title">
           {{ $t("pricing.title") }}
         </h3>
-        <p class="pricing__subtitle">
+        <p class="section__subtitle pricing__subtitle">
           {{ $t("pricing.subtitle") }}
         </p>
       </div>

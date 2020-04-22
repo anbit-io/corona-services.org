@@ -96,7 +96,7 @@
     }
 
     &__cta {
-        @apply rounded bg-primary text-white font-bold text-center;
+        @apply rounded bg-primary text-white font-medium text-center;
 
         @screen xs-max {
             @apply hidden;
@@ -167,7 +167,7 @@
         }
     }
     &__link {
-        @apply font-semibold;
+        @apply font-medium;
         font-size: 15px;
     }
 
