@@ -11,6 +11,14 @@
 
     &__main {
         @apply w-full;
+
+        .body--has-fixed-header & {
+            padding-top: 100px;
+
+            @screen lg {
+                padding-top: 120px;
+            }
+        }
     }
 
     &__info {

@@ -1,5 +1,10 @@
 <template>
-  <header class="header">
+  <header
+    v-fixed-header="{
+      threshold: 100
+    }"
+    class="header"
+  >
     <nav class="header__nav">
       <nuxt-link :to="localePath('/')" class="site__info transition">
         <h1 class="site__title">
@@ -44,44 +49,39 @@
         <button class="header__cta transition" @click="showContactModal">
           {{ $t("header_cta") }}
         </button>
-
-        <div
-          ref="mobileMenu"
-          v-mobile-menu
-          class="header__menu header-menu header-menu--ss"
-        >
-          <div ref="mobileMenuBg" class="header-menu__bg" />
-          <div class="header-menu__container">
-            <div
-              v-for="(item, key) in menuItems"
-              :key="key"
-              class="header-menu__item"
-            >
-              <a
-                :href="
-                  $router.resolve({ path: localePath('/'), hash: item.path })
-                    .href
-                "
-                class="header-menu__link"
-                @click="
-                  delayRouting(
-                    { path: localePath('/'), hash: item.path },
-                    $event
-                  )
-                "
-              >
-                {{ item.label }}
-              </a>
-            </div>
-          </div>
-        </div>
-
         <div
           ref="mobileMenuToggle"
           v-mobile-menu-toggle
           class="header__menu-toggle"
         >
           <span />
+        </div>
+      </div>
+
+      <div
+        ref="mobileMenu"
+        v-mobile-menu
+        class="header__menu header-menu header-menu--ss"
+      >
+        <div ref="mobileMenuBg" class="header-menu__bg" />
+        <div class="header-menu__container">
+          <div
+            v-for="(item, key) in menuItems"
+            :key="key"
+            class="header-menu__item"
+          >
+            <a
+              :href="
+                $router.resolve({ path: localePath('/'), hash: item.path }).href
+              "
+              class="header-menu__link"
+              @click="
+                delayRouting({ path: localePath('/'), hash: item.path }, $event)
+              "
+            >
+              {{ item.label }}
+            </a>
+          </div>
         </div>
       </div>
     </nav>

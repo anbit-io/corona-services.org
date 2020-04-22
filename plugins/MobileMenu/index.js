@@ -1,6 +1,6 @@
-import Vue from "vue"
 import RafQueue from "./rafQueue"
 import anime from "animejs/lib/anime.es.js"
+
 let rafQueue = new RafQueue()
 
 let menuAnimation = null
@@ -166,21 +166,4 @@ const MobileMenu = {
   }
 }
 
-const ContactForm = {
-  install: function(Vue) {
-    let EventBus = new Vue()
-    Vue.prototype.$EventBus = EventBus
-
-    Vue.prototype.$selectContactReason = function(value) {
-      this.$EventBus.$emit("select-contact-reason", value)
-    }
-
-    Vue.prototype.$proxyRouterCall = function(routeConfig, e) {
-      e.preventDefault()
-      this.$router.push(routeConfig)
-    }
-  }
-}
-
-Vue.use(MobileMenu)
-Vue.use(ContactForm)
+export default MobileMenu
