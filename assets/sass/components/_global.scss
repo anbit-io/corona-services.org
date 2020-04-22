@@ -18,7 +18,9 @@ body, html {
 }
 
 .scroll-lock {
-    overflow: hidden;
+    @screen md-max {
+        overflow: hidden;
+    }
 }
 
 .blur-up {

@@ -188,13 +188,15 @@
     }
 
     &--ss {
+        @apply hidden;
+
         @screen md-max {
             @apply fixed top-0 left-0 right-0 bottom-0 h-screen;
             z-index: 999;
         }
 
         @screen lg {
-            @apply hidden;
+            display: none !important;
         }
         
         .header-menu__container {

@@ -82,7 +82,8 @@ function createMenuAnimation($el, duration, context) {
       targets: ".header-menu--ss .header-menu__item",
       opacity: [0, 1],
       translateY: display ? [-15, 0] : [0, -15],
-      delay: (el, i) => i * 100
+      delay: (el, i) => i * 75,
+      offset: "-100"
     })
 
   return timeline
