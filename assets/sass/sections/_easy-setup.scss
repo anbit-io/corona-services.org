@@ -1,9 +1,18 @@
 .easy-setup {
-    @apply bg-primary text-white pt-16 pb-16;
+    @apply relative text-white pt-32 pb-10;
+
+    &:before {
+        @apply absolute left-0 right-0 bg-primary;
+        top: 60px;
+        bottom: -40px;
+        content: "";
+        z-index: 1;
+    }
 
     &__title {
-        @apply w-full font-semibold text-center mb-16 leading-tight;
+        @apply relative w-full font-semibold text-center mb-16 leading-tight;
         font-size: 36px;
+        z-index: 10;
 
         @screen md {
             font-size: 40px;
@@ -11,7 +20,8 @@
     }
 
     &__steps {
-        @apply w-full flex items-start ;
+        @apply relative w-full flex items-start ;
+        z-index: 20;
 
         @screen md-max {
             @apply flex-wrap justify-center;
@@ -52,6 +62,7 @@
     &__step-description {}
 
     &__cta-wrapper {
-        @apply flex justify-center;
+        @apply relative flex justify-center;
+        z-index: 30;
     }
 }

@@ -1,16 +1,5 @@
-@keyframes fanOut {
-    from {
-        opacity: 0;
-    }
-    
-    to {
-        opacity: 1;
-        transform: translate(0,0);
-    }
-}
-
 .why-us {
-    @apply pt-12;
+    @apply pt-32;
 
     &__content {
         @apply pt-16 flex flex-wrap;

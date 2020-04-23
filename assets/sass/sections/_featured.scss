@@ -2,16 +2,12 @@
     $featured: &;
 
     @screen sm-max {
-        padding-bottom: 95px;
-    }
-
-    @screen md-only {
-        padding-bottom: 30px;
+        padding-bottom: 20px;
     }
 
     @screen lg {
         @apply pt-3;
-        padding-bottom: 105px;
+        padding-bottom: 45px;
     }
 
     

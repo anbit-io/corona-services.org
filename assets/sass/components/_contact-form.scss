@@ -1,5 +1,10 @@
 .section--contact-form {
-    @apply pt-16 pb-16 px-0;
+    @apply pt-24 pb-16 px-0;
+
+    @screen md {
+        @apply pt-32;
+    }
+
     .section {
       &__content {
         @apply px-0;

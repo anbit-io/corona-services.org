@@ -1,13 +1,5 @@
 .services {
-    @apply pt-16;
-
-    @screen sm-max {
-        @apply pb-20;
-    }
-
-    @screen md {
-        @apply pb-24;
-    }
+    padding-top: 120px;
 
     &__subtitle {
         @apply text-lg;

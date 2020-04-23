@@ -2,18 +2,10 @@
     $hero: &;
 
     @apply pt-1;
-
-    @screen sm-max {
-        padding-bottom: 70px;
-    }
-
-    @screen md-only {
-        padding-bottom: 30px;
-    }
-    
+ 
     @screen lg {
         @apply pt-3;
-        padding-bottom: 115px;
+        padding-bottom: 55px;
     }
 
 
