@@ -1,0 +1,106 @@
+
+.input-radio {
+    @apply relative w-full h-full flex items-center;
+  
+    &,
+    input {
+      @apply cursor-pointer;
+    }
+    
+    &__style {
+        @apply block absolute left-0 right-0 top-0 bottom-0;
+        @apply bg-white;
+        z-index: 20;
+        
+        &:before,
+        &:after {
+            @apply absolute;
+            content: "";
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        &:before {
+            @apply border-2 border-gray-dark;
+            border-radius: 50%;
+            left: 12px;
+            width: 18px;
+            height: 18px;
+        }
+    }
+
+    input {
+      @apply relative mr-3;
+      z-index: 10;
+
+      &:checked {
+            + .input-radio__style {
+                &:before {
+                    @apply border-primary bg-white;
+                }
+
+                &:after {
+                    @apply bg-primary;
+                    width: 10px;
+                    height: 10px;
+                    left: 16px;
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
+  
+    &--block {
+        @apply p-3;
+
+        .input-radio__style {            
+            &:before {
+                @apply border;
+                height: 24px;
+                width: 24px;
+            }
+        
+            &:after {
+                @apply hidden;
+            }
+          }
+        
+      input {
+        &:checked {
+          + .input-radio__style {
+            @apply bg-primary rounded-md;
+            
+            &:before {
+                @apply border-white;
+            }
+  
+            &:after {
+                @apply block bg-white;
+                left: 24px;
+                width: 16px;
+                height: 8px;
+                border-radius: 0;
+                border-left: 0.165rem solid theme('colors.primary.default');
+                border-bottom: 0.165rem solid theme('colors.primary.default');
+                transform-origin: left;
+                transform: rotate(-45deg) translate(-25%, -50%);
+              }
+  
+            + .input-radio__label {
+              @apply text-white;
+            }
+          }
+        }
+      }
+      .input-radio {
+        &__style {
+        }
+      }
+    }
+  
+    &__label {
+      @apply relative;
+      z-index: 30;
+    }
+  }
+  

@@ -18,8 +18,7 @@
     @apply relative;
     z-index: 1;
 
-    input[type="checkbox"],
-    input[type="radio"] {
+    input[type="checkbox"] {
       @apply relative mr-3;
 
       &:before,
@@ -59,35 +58,6 @@
         }
       }
     }
-
-    input[type="radio"] {
-      &:before,
-      &:after {
-        left: 50%;
-        transform: translate(-50%, -50%);
-        border-radius: 50%;
-      }
-      
-      &:before {
-        @apply border-2 border-gray-dark;
-        width: 18px;
-        height: 18px;
-      }
-    
-
-      &:checked {
-        &:before {
-          @apply border-primary;
-        }
-
-        &:after {
-          @apply bg-primary;
-          width: 9px;
-          height: 9px;
-        }
-      }
-    }
-
     
     &--footer {
       @apply pt-16;
@@ -176,61 +146,18 @@
         @apply pl-2;
       }
 
-      
-
-      &--styled {
+      &--business {
         @apply flex flex-wrap;
-        
+
         p {
-          @apply w-full py-3 relative px-3;
-
-          min-height: 60px;
-
-          @screen sm {
-            @apply w-1/2;
-          }
-        }
-
-        input[type="radio"] {
-          &:before {
-            @apply border;
-            width: 24px;
-            height: 24px;
-          }
-
-          &:after {
-            border-radius: 0;
-          }
+            @apply w-full relative pl-1 pr-3;
   
-          &:checked {
-            &:before,
-            &::after {
-              @apply bg-white;
-            }
-
-            &:after {
-              border-left: 0.165rem solid theme('colors.primary.default');
-              border-bottom: 0.165rem solid theme('colors.primary.default');
-              width: 14px;
-              height: 7px;
-          
-              left: 50%;
-              transform-origin: left;
-              transform: rotate(-45deg) translate(-25%, -50%);
-            }
-
-            + span {
-              @apply text-white;
-
-              &:before {
-                @apply absolute left-0 right-0 top-0 bottom-0;
-                @apply bg-primary rounded-md;
-                content: "";
-                z-index: -10;
-              }
+            min-height: 60px;
+  
+            @screen sm {
+              @apply w-1/2;
             }
           }
-        }
       }
     }
 
@@ -317,63 +244,3 @@
       }
     }    
   }
-
-.loader,
-.loader:before,
-.loader:after {
-  @apply bg-gray-dark;
-  -webkit-animation: load1 1s infinite ease-in-out;
-  animation: load1 1s infinite ease-in-out;
-  width: 1em;
-  height: 4em;
-}
-.loader {
-  @apply text-gray-dark;
-  text-indent: -9999em;
-  margin: 88px auto;
-  position: relative;
-  font-size: 11px;
-  -webkit-transform: translateZ(0);
-  -ms-transform: translateZ(0);
-  transform: translateZ(0);
-  -webkit-animation-delay: -0.16s;
-  animation-delay: -0.16s;
-}
-.loader:before,
-.loader:after {
-  position: absolute;
-  top: 0;
-  content: '';
-}
-.loader:before {
-  left: -1.5em;
-  -webkit-animation-delay: -0.32s;
-  animation-delay: -0.32s;
-}
-.loader:after {
-  left: 1.5em;
-}
-@-webkit-keyframes load1 {
-  0%,
-  80%,
-  100% {
-    box-shadow: 0 0;
-    height: 4em;
-  }
-  40% {
-    box-shadow: 0 -2em;
-    height: 5em;
-  }
-}
-@keyframes load1 {
-  0%,
-  80%,
-  100% {
-    box-shadow: 0 0;
-    height: 4em;
-  }
-  40% {
-    box-shadow: 0 -2em;
-    height: 5em;
-  }
-}

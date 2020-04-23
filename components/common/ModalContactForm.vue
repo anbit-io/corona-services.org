@@ -52,16 +52,16 @@
             {{ $t("footer.contact_form.label_business") }} :
           </label>
           <div
-            class="contact-form__field-group contact-form__field-group--styled"
+            class="contact-form__field-group contact-form__field-group--business"
           >
             <p v-for="(option, key) in businessTypeOptions" :key="key">
-              <input
+              <InputRadio
                 v-model="business"
-                type="radio"
                 name="business"
+                :block-styled="true"
                 :value="option.value"
-              >
-              <span>{{ option.label }}</span>
+                :label="option.label"
+              />
             </p>
           </div>
           <span :v-if="errorsHas('business')" class="contact-form__error">
@@ -76,13 +76,12 @@
           </label>
           <div class="contact-form__field-group">
             <p v-for="(option, key) in reasonOptions" :key="key">
-              <input
+              <InputRadio
                 v-model="reason"
-                type="radio"
                 name="reason"
                 :value="option.value"
-              >
-              <span>{{ option.label }}</span>
+                :label="option.label"
+              />
             </p>
           </div>
         </div>
@@ -129,7 +128,12 @@
 </template>
 
 <script>
+import InputRadio from "../common/InputRadio"
+
 export default {
+  components: {
+    InputRadio
+  },
   props: {
     businessType: {
       type: String,
