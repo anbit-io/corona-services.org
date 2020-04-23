@@ -1,15 +1,50 @@
 .modal {
     @apply relative px-3;
     &__close {
-        @apply font-medium text-primary px-6 py-5 cursor-pointer;
-        @apply  absolute right-0 top-0; 
+        @apply font-medium text-primary mr-3 mt-3 cursor-pointer transition;
+        @apply  absolute right-0 top-0;
+        width: 35px;
+        height: 35px;
+
         z-index: 10;
+
+
+        &:before,
+        &:after {
+            content: "";
+            @apply absolute left-0 right-0;
+            @apply bg-primary rounded transition;
+            height: 3px;
+
+            top: 50%;
+            transform-origin: center center;
+        }
+        
+        &:before {
+            transform: translateY(-50%) rotate(45deg);
+        }
+        &:after {
+            transform: translateY(-50%) rotate(135deg);
+        }
+
+        &:hover {
+            &:before,
+            &:after {
+                @apply bg-primary-dark;
+            }
+        }
+
+        &:active {
+            transform: scale(0.9);
+        }
 
         &:active,
         &:focus {
             @apply outline-none;
         }
     }
+
+
     &__body {
         @apply pt-3;
     }

@@ -1,6 +1,9 @@
 body, html {
     font-family: $font-family-primary;
     font-size: 15px;
+}
+
+html {
     scroll-behavior: smooth;
 }
 

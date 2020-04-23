@@ -9,9 +9,11 @@
     @before-open="beforeOpen"
   >
     <div class="modal">
-      <button class="modal__close" @click="closeModal">
-        {{ $t("modal_contact_form.close") }}
-      </button>
+      <button
+        class="modal__close"
+        :title="$t('modal_contact_form.close')"
+        @click="closeModal"
+      />
       <div class="modal__body">
         <ModalContactForm v-bind="modalParams" @dismiss="closeModal" />
       </div>
