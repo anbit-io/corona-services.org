@@ -46,7 +46,7 @@ const translations = {
       label_business: "Select a business type",
       placeholder_business: "Select a business type",
       label_gdpr:
-        "I have read the <a href='https://corona-services.org/en/privacy'>privacy policy</a> and agree to it.",
+        "I have read the <a target='_blank' href='https://corona-services.org/en/privacy'>privacy policy</a> and agree to it.",
       acknowledgement: "Thank you for contacting us! we will reach you soon.",
       submit_error:
         "There was an issue while submitting your request. Please try again later."
@@ -55,7 +55,12 @@ const translations = {
 
   modal_contact_form: {
     close: "Close Contact form",
-    title: "Now, about your project..."
+    title: "Now, about your project...",
+    subtitle:
+      "We like being on a first-name basis, but it also helps us get in touch with you.",
+    label_name: "What is your full name?",
+    label_email: "What is your e-mail address?",
+    label_business: "What sort of business are you running?"
   },
 
   reason_options: {

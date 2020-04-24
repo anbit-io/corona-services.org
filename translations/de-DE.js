@@ -46,7 +46,7 @@ const translations = {
       label_business: "Wählen Sie einen Geschäftstyp",
       placeholder_business: "Wählen Sie einen Geschäftstyp",
       label_gdpr:
-        "Ich habe die <a href='https://corona-services.org/privacy'>Datenschutzrichtlinie</a> gelesen und bin damit einverstanden.",
+        "Ich habe die <a target='_blank' href='https://corona-services.org/privacy'>Datenschutzrichtlinie</a> gelesen und bin damit einverstanden.",
       acknowledgement:
         "Vielen Dank für Ihr Interesse! Wir melden uns in Kürze bei Ihnen.",
       submit_error:
@@ -56,7 +56,12 @@ const translations = {
 
   modal_contact_form: {
     close: "Kontaktformular schließen",
-    title: "Nun zu Ihrem Projekt..."
+    title: "Nun zu Ihrem Projekt...",
+    subtitle:
+      "Wir mögen es, mit Vornamen zu sein, aber es hilft uns auch, mit Ihnen in Kontakt zu treten.",
+    label_name: "Wie lautet Dein voller Name?",
+    label_email: "Wie lautet deine E-Mail Adresse?",
+    label_business: "Was für ein Geschäft betreiben Sie?"
   },
 
   reason_options: {

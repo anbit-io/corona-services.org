@@ -55,9 +55,10 @@
 
         .input-radio {
 
-          &__style {            
+          &__style {
+            @apply bg-gray-lighter rounded-md;
+
             &:before {
-              @apply border;
               left: 12px;
               height: 24px;
               width: 24px;

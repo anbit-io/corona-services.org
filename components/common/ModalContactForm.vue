@@ -11,13 +11,18 @@
       <span class="loader" />
     </div>
     <div class="contact-form__header">
-      {{ $t("modal_contact_form.title") }}
+      <div class="contact-form__title">
+        {{ $t("modal_contact_form.title") }}
+      </div>
+      <p class="contact-form__subtitle">
+        {{ $t("modal_contact_form.subtitle") }}
+      </p>
     </div>
     <div class="contact-form__row">
       <div class="contact-form__col contact-form__col--lg">
         <div class="contact-form__field contact-form__field--text">
           <label for="name" class="contact-form__label">
-            {{ $t("footer.contact_form.label_name") }} :
+            {{ $t("modal_contact_form.label_name") }}
           </label>
           <input
             ref="name"
@@ -33,7 +38,7 @@
         </div>
         <div class="contact-form__field contact-form__field--email">
           <label for="email" class="contact-form__label">
-            {{ $t("footer.contact_form.label_email") }} :
+            {{ $t("modal_contact_form.label_email") }}
           </label>
           <input
             ref="email"
@@ -49,7 +54,7 @@
         </div>
         <div class="contact-form__field contact-form__field--select">
           <label for="reason" class="contact-form__label">
-            {{ $t("footer.contact_form.label_business") }} :
+            {{ $t("modal_contact_form.label_business") }}
           </label>
           <div
             class="contact-form__field-group contact-form__field-group--business"

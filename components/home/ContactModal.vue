@@ -4,7 +4,7 @@
     :adaptive="true"
     transition="nice-modal-fade"
     height="auto"
-    width="1024"
+    width="1140"
     :scrollable="true"
     @before-open="beforeOpen"
   >
