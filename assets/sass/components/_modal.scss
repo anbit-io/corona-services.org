@@ -1,13 +1,16 @@
 .modal {
-    @apply relative px-3;
+    @apply relative;
+
+    @screen sm {
+        @apply px-4;
+    }
+
     &__close {
-        @apply font-medium text-primary mr-3 mt-3 cursor-pointer transition;
+        @apply font-medium text-primary mr-4 mt-4 cursor-pointer transition;
         @apply  absolute right-0 top-0;
         width: 35px;
         height: 35px;
-
         z-index: 10;
-
 
         &:before,
         &:after {
