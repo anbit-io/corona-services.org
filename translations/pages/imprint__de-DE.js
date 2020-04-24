@@ -10,8 +10,8 @@ Germany
 
 Kontakt:
 
-Telefon : <a href="tel:+49(0)241 5600 7360" target="_blank" rel="noopener noreferrer">+49 (0) 172 34 722 85</a>
-E-Mail : <a href="mailto:info@andre-baumunk.de" target="_blank" rel="noopener noreferrer">info@andre-baumunk.de</a>
+Telefon : <a href="tel:+49(0)241 5600 7360" target="_blank" rel="noopener noreferrer">+49 (0) 241 5600 7360</a>
+E-Mail : <a href="mailto:info@corona-services.org" target="_blank" rel="noopener noreferrer">info@corona-services.org</a>
 Vertretungsberechtigter Geschäftsführer: Andre Baumunk
 Registergericht: Amtsgericht Aachen
 Registernummer: HRB 22699
