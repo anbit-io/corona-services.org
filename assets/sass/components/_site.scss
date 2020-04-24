@@ -51,6 +51,8 @@
 
     &__langswitcher {
         @apply px-2 py-1 mr-3 bg-white border-2 border-primary rounded appearance-none font-medium;
+        @apply box-border;
+        
 
         @screen xs-max {
             @apply mr-0 mt-2;
