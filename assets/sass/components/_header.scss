@@ -10,6 +10,8 @@
 
         top: 50%;
         transform: translate(0, 50%) rotate(0deg);
+        transition: transform 0.3s ease-in, 
+                    background-color 0.3s ease-in;
 
         &, 
         &:before,
@@ -17,7 +19,6 @@
             @apply absolute w-full rounded-full bg-primary;
             height: 3px;
             transform-origin: center center;
-            transition: all 0.3s ease-out 0.3s;
         }
 
         &:before,
@@ -26,31 +27,49 @@
         }
 
         &:before {
-            transform: translate(0, #{-$hamburger-size/3}px) rotate(0deg);
+            opacity: 1;
+            top: #{-$hamburger-size/3}px;
+            transform:  rotate(0deg);
+            transition: top 0.1s ease-in 0.3s,
+                        background-color 0.3s ease-in,
+                        opacity 0.1s ease-in 0.12s;
         }
 
         &:after {
-            transform: translate(0, #{$hamburger-size/3}px) rotate(0deg);
+            bottom: #{-$hamburger-size/3}px;
+            transform: rotate(0deg);
+            transition: transform 0.3s ease-out,
+                        background-color 0.3s ease-in,
+                        bottom 0.1s ease-in 0.32s;
         }
     }
 
     &[data-expanded="true"] {
         > span {
-            transform: translate(0, 50%) rotate(-135deg);
-            
+            transform: translate(0, 50%) rotate(-225deg);
+            transition: transform 0.3s  ease-out 0.12s,
+                        background-color 0.3s ease-out 0.12s;
+
             &, 
             &:before,
             &:after {
                 @apply bg-white;
-                transition: all 0.3s ease-out;
             }
 
             &:before {
-                transform: translate(0, 0) rotate(-90deg);
+                top: 0;
+                opacity: 0;
+                transition: top 0.1s ease-out,
+                            opacity 0.1s ease-out,
+                            background-color 0.3s ease-out 0.12s;
             }
     
             &:after {
-                transform: translate(0, 0)  rotate(-270deg);
+                bottom: 0;
+                transform: rotate(90deg);
+                transition: bottom 0.1s ease-out,
+                            background-color 0.3s ease-out 0.12s,
+                            transform 0.3s ease-out 0.12s;
             }
         }
     }
