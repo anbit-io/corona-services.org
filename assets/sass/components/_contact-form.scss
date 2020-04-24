@@ -17,47 +17,6 @@
     @apply flex flex-wrap justify-evenly items-start pb-4;
     @apply relative;
     z-index: 1;
-
-    input[type="checkbox"] {
-      @apply relative mr-3;
-
-      &:before,
-      &:after {
-        @apply absolute cursor-pointer bg-white;
-        content: "";
-        top:50%;
-      }
-    }
-
-    input[type="checkbox"] {
-
-      &:before {
-        @apply rounded border-2 border-primary;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 20px;
-        height: 20px;
-      }
-    
-
-      &:checked {
-        &:before,
-        &:after {
-          @apply bg-primary;
-        }
-        
-        &:after {
-          border-left: 3px solid #ffffff;
-          border-bottom: 3px solid #ffffff;
-          width: 14px;
-          height: 7px;
-        
-          left: 50%;
-          transform-origin: left;
-          transform: rotate(-45deg) translate(-25%, -50%);
-        }
-      }
-    }
     
     &--footer {
       @apply pt-16;
@@ -118,12 +77,9 @@
             }
           }
 
-          &__input {
-            @apply cursor-pointer;
-            width: 30px;
-
+          &__label-text {
             @screen sm-max {
-              @apply mr-3;
+              @apply ml-3;
             }
           }
         }
@@ -136,14 +92,6 @@
       
       p {
         @apply mb-3 flex items-center;
-      }
-
-      input {
-        @apply ml-2;
-      }
-
-      span {
-        @apply pl-2;
       }
 
       &--business {

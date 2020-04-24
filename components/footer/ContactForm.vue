@@ -10,84 +10,81 @@
         </p>
       </div>
       <div class="section__content">
-        <form
-          class="contact-form contact-form--footer"
-          @submit.prevent="submitForm"
-        >
-          <div
-            v-if="acknowledgement"
-            class="contact-form__acknowlegement"
-            @click="dismissAcknowledgement"
+        <client-only>
+          <form
+            class="contact-form contact-form--footer"
+            @submit.prevent="submitForm"
           >
-            {{ acknowledgement }}
-          </div>
-          <div v-show="submitting" class="contact-form__spinner">
-            <span class="loader" />
-          </div>
-          <div class="contact-form__field contact-form__field--text">
-            <input
-              ref="name"
-              v-model="name"
-              class="contact-form__input"
-              type="text"
-              name="name"
-              :placeholder="$t('footer.contact_form.label_name')"
+            <div
+              v-if="acknowledgement"
+              class="contact-form__acknowlegement"
+              @click="dismissAcknowledgement"
             >
-            <span :v-if="errorsHas('name')" class="contact-form__error">
-              {{ getError("name") }}
-            </span>
-          </div>
-          <div class="contact-form__field contact-form__field--email">
-            <input
-              ref="email"
-              v-model="email"
-              class="contact-form__input"
-              type="email"
-              name="email"
-              :placeholder="$t('footer.contact_form.label_email')"
-            >
-            <span :v-if="errorsHas('email')" class="contact-form__error">
-              {{ getError("email") }}
-            </span>
-          </div>
-          <div class="contact-form__field contact-form__field--textarea">
-            <textarea
-              ref="message"
-              v-model="message"
-              class="contact-form__input"
-              rows="5"
-              name="message"
-              :placeholder="$t('footer.contact_form.label_message')"
-            />
-            <span :v-if="errorsHas('message')" class="contact-form__error">
-              {{ getError("message") }}
-            </span>
-          </div>
-          <div class="contact-form__field contact-form__field--gdpr">
-            <label for="privacypolicy" class="contact-form__label">
+              {{ acknowledgement }}
+            </div>
+            <div v-show="submitting" class="contact-form__spinner">
+              <span class="loader" />
+            </div>
+            <div class="contact-form__field contact-form__field--text">
               <input
-                v-model="gdpr_accepted"
+                ref="name"
+                v-model="name"
                 class="contact-form__input"
-                type="checkbox"
-                name="gdpr_accepted"
+                type="text"
+                name="name"
+                :placeholder="$t('footer.contact_form.label_name')"
               >
-              <span v-html="$t('footer.contact_form.label_gdpr')" />
-            </label>
-            <span
-              :v-if="errorsHas('gdpr_accepted')"
-              class="contact-form__error"
-            >
-              {{ getError("gdpr_accepted") }}
-            </span>
-          </div>
-          <div class="contact-form__field contact-form__field--submit">
-            <input
-              type="submit"
-              class="contact-form__submit transition"
-              :value="$t('footer.contact_form.label_submit')"
-            >
-          </div>
-        </form>
+              <span :v-if="errorsHas('name')" class="contact-form__error">
+                {{ getError("name") }}
+              </span>
+            </div>
+            <div class="contact-form__field contact-form__field--email">
+              <input
+                ref="email"
+                v-model="email"
+                class="contact-form__input"
+                type="email"
+                name="email"
+                :placeholder="$t('footer.contact_form.label_email')"
+              >
+              <span :v-if="errorsHas('email')" class="contact-form__error">
+                {{ getError("email") }}
+              </span>
+            </div>
+            <div class="contact-form__field contact-form__field--textarea">
+              <textarea
+                ref="message"
+                v-model="message"
+                class="contact-form__input"
+                rows="5"
+                name="message"
+                :placeholder="$t('footer.contact_form.label_message')"
+              />
+              <span :v-if="errorsHas('message')" class="contact-form__error">
+                {{ getError("message") }}
+              </span>
+            </div>
+            <div class="contact-form__field contact-form__field--gdpr">
+              <label for="privacypolicy" class="contact-form__label">
+                <InputCheckbox v-model="gdpr_accepted" name="gdpr_accepted" />
+                <span v-html="$t('footer.contact_form.label_gdpr')" />
+              </label>
+              <span
+                :v-if="errorsHas('gdpr_accepted')"
+                class="contact-form__error"
+              >
+                {{ getError("gdpr_accepted") }}
+              </span>
+            </div>
+            <div class="contact-form__field contact-form__field--submit">
+              <input
+                type="submit"
+                class="contact-form__submit transition"
+                :value="$t('footer.contact_form.label_submit')"
+              >
+            </div>
+          </form>
+        </client-only>
       </div>
     </div>
   </section>

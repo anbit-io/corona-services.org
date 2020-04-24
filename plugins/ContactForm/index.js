@@ -1,3 +1,6 @@
+import InputRadio from "../../components/common/InputRadio"
+import InputCheckbox from "../../components/common/InputCheckbox"
+
 const emailService = {
   serialize: function(o) {
     var r = []
@@ -36,6 +39,9 @@ const emailService = {
 const ContactForm = {
   install: function(Vue) {
     let EventBus = new Vue()
+
+    Vue.component("InputRadio", InputRadio)
+    Vue.component("InputCheckbox", InputCheckbox)
 
     Vue.prototype.$EventBus = EventBus
 

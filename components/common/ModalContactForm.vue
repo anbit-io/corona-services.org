@@ -104,13 +104,11 @@
     <div class="contact-form__row contact-form__row--footer">
       <div class="contact-form__field contact-form__field--gdpr">
         <label for="privacypolicy" class="contact-form__label">
-          <input
-            v-model="gdpr_accepted"
-            class="contact-form__input"
-            type="checkbox"
-            name="gdpr_accepted"
-          >
-          <span v-html="$t('footer.contact_form.label_gdpr')" />
+          <InputCheckbox v-model="gdpr_accepted" name="gdpr_accepted" />
+          <span
+            class="contact-form__label-text"
+            v-html="$t('footer.contact_form.label_gdpr')"
+          />
         </label>
         <span :v-if="errorsHas('gdpr_accepted')" class="contact-form__error">
           {{ getError("gdpr_accepted") }}
@@ -128,16 +126,11 @@
 </template>
 
 <script>
-import InputRadio from "../common/InputRadio"
-
 export default {
-  components: {
-    InputRadio
-  },
   props: {
     businessType: {
       type: String,
-      default: null
+      default: ""
     },
     contactReason: {
       type: String,

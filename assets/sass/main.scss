@@ -21,8 +21,10 @@
 @import 'components/contact-form';
 @import 'components/error';
 @import 'components/modal';
-@import 'components/input-radio';
 @import 'components/loader';
+
+@import 'components/form/input-radio';
+@import 'components/form/input-checkbox';
 
 @import 'sections/hero';
 @import 'sections/services';
