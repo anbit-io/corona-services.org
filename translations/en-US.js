@@ -55,12 +55,12 @@ const translations = {
 
   modal_contact_form: {
     close: "Close Contact form",
-    title: "Now, about your project...",
+    title: "Your own business app!",
     subtitle:
-      "We like being on a first-name basis, but it also helps us get in touch with you.",
-    label_name: "What is your full name?",
-    label_email: "What is your e-mail address?",
-    label_business: "What sort of business are you running?"
+      "Please provide some details about your businesses. We will contact you afterwards.",
+    label_name: "Name",
+    label_email: "E-Mail",
+    label_business: "Type"
   },
 
   reason_options: {
