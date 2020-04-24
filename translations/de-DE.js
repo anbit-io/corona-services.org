@@ -56,7 +56,7 @@ const translations = {
 
   modal_contact_form: {
     close: "Kontaktformular schließen",
-    title: "Über Ihr Geschäft...",
+    title: "Ihre eigene Bestell-App...",
     subtitle:
       "Bitte füllen Sie das Formular aus. Wir werden uns in Kürze bei Ihnen melden.",
     label_name: "Unternehmensname",
