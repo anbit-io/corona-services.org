@@ -11,8 +11,8 @@ Germany
 
 Contact:
 
-Telephone : <a href="tel:+4901723472285" target="_blank" rel="noopener noreferrer">+49 (0) 172 34 722 85</a> 
-E-Mail : <a href="mailto:info@andre-baumunk.de" target="_blank" rel="noopener noreferrer">info@andre-baumunk.de</a>
+Telephone : <a href="tel:+4924156007360" target="_blank" rel="noopener noreferrer">+49 (0) 241 5600 7360</a> 
+E-Mail : <a href="mailto:info@corona-services.org" target="_blank" rel="noopener noreferrer">info@corona-services.org</a>
 Managing Director authorized to represent: Andre Baumunk
 Register court: District court Aachen
 Register number: HRB 22699
