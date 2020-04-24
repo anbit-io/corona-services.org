@@ -42,7 +42,7 @@ const translations = {
       label_email: "E-Mail",
       label_message: "Nachricht",
       label_submit: "Abschicken",
-      label_reason: "Grund",
+      label_reason: "Betreff",
       label_business: "Wählen Sie einen Geschäftstyp",
       placeholder_business: "Wählen Sie einen Geschäftstyp",
       label_gdpr:
@@ -56,12 +56,12 @@ const translations = {
 
   modal_contact_form: {
     close: "Kontaktformular schließen",
-    title: "Nun zu Ihrem Projekt...",
+    title: "Über Ihr Geschäft...",
     subtitle:
-      "Wir mögen es, mit Vornamen zu sein, aber es hilft uns auch, mit Ihnen in Kontakt zu treten.",
-    label_name: "Wie lautet Dein voller Name?",
-    label_email: "Wie lautet deine E-Mail Adresse?",
-    label_business: "Was für ein Geschäft betreiben Sie?"
+      "Bitte füllen Sie das Formular aus. Wir werden uns in Kürze bei Ihnen melden.",
+    label_name: "Unternehmensname",
+    label_email: "E-Mail",
+    label_business: "Branche"
   },
 
   reason_options: {
