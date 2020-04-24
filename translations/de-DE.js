@@ -55,8 +55,8 @@ const translations = {
   },
 
   modal_contact_form: {
-    close: "Close Contact form",
-    title: "Now, about your project..."
+    close: "Kontaktformular schließen",
+    title: "Nun zu Ihrem Projekt..."
   },
 
   reason_options: {
