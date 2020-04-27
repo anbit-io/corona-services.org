@@ -1,8 +1,14 @@
 .modal {
     @apply relative;
 
-    @screen sm {
-        @apply px-4;
+    @screen xs-max {
+        @apply pb-24;
+    }
+
+    @media screen and (min-color-index:0) and(-webkit-min-device-pixel-ratio:0) {
+        @screen sm {
+            @apply px-4;
+        }
     }
 
     &__close {
@@ -54,9 +60,10 @@
 }
 
 .v--modal-overlay {
-    z-index: 1100 !important;
+    z-index: 9999;
 }
 
-.v--modal-overlay .v--modal-box {
+.v--modal-box,
+.v-modal__content {
     @apply rounded-md;
 }

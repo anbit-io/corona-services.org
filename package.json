@@ -19,6 +19,7 @@
     "@nuxtjs/sitemap": "^2.0.1",
     "@nuxtjs/svg-sprite": "^0.4.10",
     "animejs": "^3.2.0",
+    "body-scroll-lock": "^3.0.1",
     "lazysizes": "^5.2.0",
     "lqip-loader": "^2.2.0",
     "markdown-it-attrs": "3.0.2",

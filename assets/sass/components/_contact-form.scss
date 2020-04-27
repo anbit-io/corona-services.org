@@ -170,10 +170,13 @@
         }
 
         &::before {
-          @apply absolute top-0 border-t border-gray-light;
+          @apply absolute top-0 left-0 right-0 border-t border-gray-light;
           content: "";
-          left: -15px;
-          right: -15px;
+
+          @screen sm {
+            left: -15px;
+            right: -15px;
+          }
         }
 
         .contact-form__field {

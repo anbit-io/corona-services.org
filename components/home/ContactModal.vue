@@ -1,11 +1,15 @@
 <template>
   <modal
     name="contact-modal"
-    :adaptive="true"
     transition="nice-modal-fade"
-    height="auto"
-    width="1140"
+    :adaptive="true"
     :scrollable="true"
+    width="1140"
+    height="auto"
+    :reset="true"
+    :pivot-y="0.5"
+    :delay="100"
+    :focus-trap="true"
     @before-open="beforeOpen"
   >
     <div class="modal">

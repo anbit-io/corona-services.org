@@ -7,6 +7,10 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+    -webkit-overflow-scrolling: touch;
+}
+
 /*
  * Fortunately, users in some browsers/operating systems 
  * can express their preference for reduced motion 

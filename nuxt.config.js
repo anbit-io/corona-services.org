@@ -154,8 +154,7 @@ export default {
 
   plugins: [
     {
-      src: "~/plugins/lazysizes.js",
-      ssr: false
+      src: "~/plugins/lazysizes.js"
     },
     {
       src: "~/plugins/customPlugins.js",
