@@ -6,11 +6,11 @@ export default {
   ],
   lazy: true,
   langDir: "translations/",
-  defaultLocale: "de",
+  defaultLocale: "en",
   detectBrowserLanguage: {
     useCookie: true,
     cookieKey: "i18n_redirected",
     alwaysRedirect: true,
-    fallbackLocale: "de"
+    fallbackLocale: "en"
   }
 }

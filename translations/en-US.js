@@ -46,7 +46,7 @@ const translations = {
       label_business: "Select a business type",
       placeholder_business: "Select a business type",
       label_gdpr:
-        "I have read the <a target='_blank' href='https://corona-services.org/en/privacy'>privacy policy</a> and agree to it.",
+        "I have read the <a target='_blank' href='https://corona-services.org/privacy'>privacy policy</a> and agree to it.",
       acknowledgement: "Thank you for contacting us! we will reach you soon.",
       submit_error:
         "There was an issue while submitting your request. Please try again later."
