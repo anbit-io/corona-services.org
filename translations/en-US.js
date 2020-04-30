@@ -37,7 +37,7 @@ const translations = {
     contact_form: {
       title: "Let's get in touch",
       subtitle:
-        "In the tumultuous business of cutting-in and attending to a whale, there is much running backwards and forwards among.",
+        "Write to us. We will be glad to help you.",
       label_name: "Name",
       label_email: "E-Mail",
       label_message: "Message",
