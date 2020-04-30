@@ -126,7 +126,7 @@ export default {
         "Pick-up or delivery service",
         "Protect employees, clients & family",
         "Own logo & corporate colors",
-        "Contactless payment (online payment)",
+        "Contact free payment (online payment)",
         "Quick support",
         "Online Payment",
         "No commission"
